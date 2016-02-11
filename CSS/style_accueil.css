@@ -1,0 +1,34 @@
+
+
+body {
+		color:white;
+		background-image:url("bg_accueil.jpg");
+		background-position:center center;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+#logo {
+		vertical-align: middle;
+		}
+
+p { 
+ 		text-align:center; /* centrage horizontal d'un élément en-ligne */ 
+ 		font-size: 15px;
+ 		margin-left: 350px;
+ 		margin-right: 350px;
+ 	}
+#timeline{
+	text-align: center;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+#enter{
+	text-align:center;
+	margin-left: 350px;
+ 	margin-right: 350px;
+	}
+
+#info {
+	float:left;
+	margin-left: 40px;
+	}
