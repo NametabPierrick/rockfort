@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Dancing Circles</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="modal">
+  <h1>Select an audio source</h1>
+  <div class="form-field">
+    <label>SoundCloud URL</label>
+    <input type="text" id="soundcloud-input" value="https://soundcloud.com/mrsuicidesheep/xanwow-utopia">
+  </div>
+  <div class="form-field">
+    <button class="button" id="load-sound-button">Load SoundCloud Audio</button>
+  </div>
+  <hr>
+  <div class="form-field">
+    <label>Use Microphone</label>
+    <button class="button" id="microphone-button">Use Microphone</button>
+  </div>
+  <hr>
+  <div class="form-field">
+    <label>Use Local Audio File</label>
+    <p>
+      Drag file anywhere onto this pen
+    </p>
+  </div>
+  <div class="drop-message">
+    <p>
+      Go ahead, drop it!
+    </p>
+  </div>
+</div>
+
+<div class="overlay"></div>
+
+<canvas id="canvas"></canvas>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
