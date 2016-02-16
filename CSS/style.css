@@ -7,11 +7,16 @@ body {
 	background-image:url("../img/background/bg_accueil.jpg");
 	background-position:center center;
 	font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 #logo {
-	/*vertical-align: middle;*/
-        margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     display: block;
 }
@@ -27,7 +32,21 @@ p {
 	width: 600px;
 	margin-right: auto;
 	margin-left: auto;
-    margin-top: 5%;
+    text-align:center;
+}
+
+#table {
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+#table-cell{
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 #timeline{
