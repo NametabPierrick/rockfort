@@ -2,35 +2,30 @@
 <html>
 
 <head>
-        <title>Rockfort</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <title>Rockfort</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-
+        <div id="overlay"></div>
         <div id= "logo">
             <p><span><img src="img/logo/logo_rock.png" width="300"></span></p>
         </div>
 
-        <div>   <p> Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ? <br>Tu t’apprêtes à découvrir les 250 chansons rock du classement Rolling Stones sous un nouveau jour. Nous t’avons préparé des informations inédites à travers une expérience originale et interactive. <br><br>Pour commencer ton voyage, selectionne une période à l’aide de la timeline ci-dessous. Es-tu prêt ? 
-        </p> 
-        </div>
+        <div id="content">
+            <p> Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ? Tu t’apprêtes à découvrir les 250 chansons rock du classement Rolling Stones sous un nouveau jour. Nous t’avons préparé des informations inédites à travers une expérience originale et interactive. Pour commencer ton voyage, selectionne une période à l’aide de la timeline ci-dessous. Es-tu prêt ?</p> 
+    
 
-        <div id="timeline">
-                <img src= "img/barre_timeline.png" >
-        </div>
+            <input type="hidden" class="range-slider" value="23" />
+   
 
-        <div id="enter"class="bouton">
-                <img src= "img/button/btn_enter.png" >
-        </div>
 
-        <div id="info"class="bouton">
-                <img src= "img/button/btn_info.png" href='info.html'>
-        </div>
+            <button id="submit">Let's Rock</button>
+    </div>
 
+    <button id="info">i</button>
 
 </body>
-
 </html>
