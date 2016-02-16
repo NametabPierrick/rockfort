@@ -7,23 +7,46 @@ body {
 	background-image:url("../img/background/bg_accueil.jpg");
 	background-position:center center;
 	font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 #logo {
-	vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 p { 
  	text-align:center; /* centrage horizontal d'un élément en-ligne */ 
  	font-size: 15px;
- 	/*margin-left: 350px;
- 	margin-right: 350px;*/
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 #content {
 	width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+    text-align:center;
+}
+
+#table {
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+#table-cell{
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 #timeline{
@@ -46,6 +69,7 @@ p {
     display: block;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 #submit:hover{
