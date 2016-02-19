@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Map_genre test</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script> 
 </head>
 	<style>
 
@@ -10,58 +11,71 @@
 			width: 1024px;
 			margin: auto;
 		}
+
 		#genre{
 			margin: auto;
 		}
+
 	</style>
 <body>
 
-	<canvas id="genre">
+	<canvas id="genre" width="1024px" height="800px">
 
 	</canvas>
 
 	<script>
 		
-		var c=document.getElementById("genre");
+		var c = $("#genre")[0];
 		var ctx=c.getContext("2d");
+		/*var ctx=c.getContext("2d");
+		var ctx=c.getContext("2d");*/
 
 		/*anim la creation du ligne*/
+		function affiche_ligne(){
+			var startX = 100;
+			var startY = 75;
+			var endX = 250;
+			var endY = 60;
+			var amount = 0;
 
-		/*var startX = 100;
-		var startY = 75;
-		var endX = 250;
-		var endY = 60;
-		var amount = 0;
-		setInterval(function() {
-		    amount += 0.05; // change to alter duration
-		    if (amount > 1) amount = 1;
-		    c.clearRect(0, 0, canvas.width, canvas.height);
-		    c.strokeStyle = "black";
-		    c.moveTo(startX, startY);
-		    // lerp : a  + (b - a) * f
-		    c.lineTo(startX + (endX - startX) * amount, 
-		             startY + (endY - startY) * amount);
-		    c.stroke();
-		}, 30);​*/
+			setInterval(function(){
+				amount += 0.05; // change to alter duration
+			    if (amount > 1) amount = 1;
+			    /*ctx.clearRect(0, 0, c.width, c.height);*/
+			    ctx.strokeStyle = "black";
+			    ctx.moveTo(startX, startY);
+			    // lerp : a  + (b - a) * f
+			    ctx.lineTo(startX + (endX - startX) * amount,
+			             startY + (endY - startY) * amount);
+			    ctx.stroke();
+			}, 30);
+		}
 
+		/*cercle 1*/
 		ctx.beginPath();
 		ctx.arc(100,75,50,0,2*Math.PI);
 		ctx.closePath();
-		ctx.fillStyle= "green";
+		ctx.fillStyle = "red";
 		ctx.fill();
-		ctx.stroke();
 
+		/*cercle 2 reecrit*/
 		ctx.beginPath();
 		ctx.arc(250,60,30,0,2*Math.PI);
 		ctx.closePath();
-		ctx.fillStyle= "green";
+		ctx.fillStyle = "green";
 		ctx.fill();
-		ctx.stroke();
 
 		ctx.beginPath();
-		ctx.moveTo(100,75);
-		ctx.lineTo(250,60);
-		ctx.stroke();
+		ctx.arc(-9999,-9999,30,0,2*Math.PI);
+		ctx.closePath();
+		ctx.fillStyle = "green";
+		ctx.fill();
+
+		/*line1*/
+		//ctx.beginPath();
+		//ctx.moveTo(100,75);
+		//ctx.lineTo(250,60);
+		//ctx.stroke();
 
 	</script>
 </body>
