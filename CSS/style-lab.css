@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+}
+
+body {
+	background-color:#141722;
+	background-position:center center;
+	font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    display: inline-block;
+    margin-left: 32px;
+    margin-right: 15px;
+    height:85px;
+}
+
+#content {
+	width: 1366px;
+	margin-right: auto;
+	margin-left: auto;
+    text-align:center;
+    padding-top:40px;
+}
+
+#lab {
+    width: 1086px;
+    margin-right: 280px;
+    text-align:center;
+}
+
+
+ /*  #table {
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+#table-cell{
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+} */
+
+h1 {
+    vertical-align: top;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 39px;
+    font-weight: 100;
+    color: #bfc4dc;
+    text-transform: uppercase;
+    text-shadow: rgb(81, 107, 240) 0px 0px 20px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 100;
+    padding:50px 0 0 30px;
+    color: #b6bacc;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+hr {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0;
+    width:640px;
+    margin:54px 20px 0 4px;
+}
+
+p { 
+    text-align:center; /* centrage horizontal d'un élément en-ligne */ 
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+#info {
+    vertical-align: top;
+    margin-top: 20px;
+	border-radius: 40px;
+    border: 2px solid #a2a2a2;
+    color: #a2a2a2;
+    overflow: hidden;
+    width: 36px;
+    padding: 6px 0;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#info:hover{
+	color: #e2e6fd;
+	border-color: #e2e6fd;
+	box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0 inset;
+	text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
+}
+
+#playlist {
+    background-color: #262b40;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 280px;
+}
+
+#icoCasque {
+    display: block;
+    margin: -28px 0 0 150px;
+}
