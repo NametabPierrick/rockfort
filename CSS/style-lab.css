@@ -16,23 +16,22 @@ html, body {
 
 #logo {
     display: inline-block;
-    margin-left: 32px;
     margin-right: 15px;
     height:85px;
 }
 
 #content {
-	width: 1366px;
-	margin-right: auto;
+	width: 1000px;
+	margin-right: 280px;
 	margin-left: auto;
     text-align:center;
     padding-top:40px;
 }
 
 #lab {
-    width: 1086px;
-    margin-right: 280px;
+    width: 1000px;
     text-align:center;
+
 }
 
 
@@ -71,11 +70,18 @@ h2 {
     text-align: left;
 }
 
+h3{
+    font-size: 18px;
+    color: white;
+    float:left;
+    margin-left: 20px;
+}
+
 hr {
     vertical-align: top;
     display: inline-block;
     box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0;
-    width:640px;
+    width:600px;
     margin:54px 20px 0 4px;
 }
 
@@ -120,4 +126,38 @@ p {
 #icoCasque {
     display: block;
     margin: -28px 0 0 150px;
+}
+
+#equalizer {
+    
+    width: 1000px;
+    height: 225px;
+    margin-left: 0px;
+    margin-top: 10px;
+   
+}
+#viz_equalizer{
+    background-color:white;
+    width: 600px;
+    height: 225px;
+    float: left;
+}
+
+#parametre {
+    background-color:white;
+    width: 360px;
+    height: 190px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right;
+
+}
+
+#mots{
+    background-color:white;
+    width: 980px;
+    height: 106px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
