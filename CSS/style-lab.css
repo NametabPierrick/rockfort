@@ -21,19 +21,23 @@ html, body {
 }
 
 #content {
-	width: 1000px;
-	margin-right: 280px;
+	width: 1366px;
+	margin-right: auto;
 	margin-left: auto;
     text-align:center;
     padding-top:40px;
 }
 
 #lab {
-    width: 1000px;
+    width: 1086px;
+    margin-right: 280px;
     text-align:center;
 
 }
 
+#equalizer, #suggestion, #mots {
+  margin-left:50px;
+}
 
  /*  #table {
     height: 100%;
@@ -74,15 +78,17 @@ h3{
     font-size: 18px;
     color: white;
     float:left;
+}
+
+#equalizer h3 {
     margin-left: 20px;
 }
 
-h4{
-    font-size: 18px;
-    color: white;
-    float:left;
-    margin-bottom: 20px;
+#suggestion h3 {
+    margin-left: 5px;
+    margin-top: -10px;
 }
+
 
 hr {
     vertical-align: top;
@@ -144,7 +150,6 @@ p {
     
     width: 1000px;
     height: 225px;
-    margin-left: 0px;
     margin-top: 10px;
    
 }
@@ -174,33 +179,67 @@ p {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+/* ============================================================
+  SUGGESTION
+============================================================ */
+
 #suggestion {
     width: 980px;
     height:140px;
 }
-#sug1 {
+
+#suggestion img {
+    float:left;
+}
+
+#suggestion h4 {
+  font-size: 16px;
+  text-align: left;
+  color: white;
+  font-weight: 500;
+  padding-left:130px;
+  line-height: 1;
+}
+
+#suggestion h4.artiste {
+  padding-top:25px;
+}
+
+#suggestion h5 {
+  font-size: 14px;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+  padding-left:130px;
+  margin-top:-5px;
+}
+
+
+#sug1,  #sugg2, #sugg3 {
     background-color: #262b40;
     width:310px;
-    height: 100px;
+    height: 110px;
     float: left;
+    margin-top: -25px;
     }
 
 #sug2 {
     background-color: #262b40;
     width:310px;
-    height: 100px;
+    height: 110px;
     float:left;
     margin-left: 25px;
-    
+    margin-top: -25px;
 }
 
 #sug3{
     background-color: #262b40;
     width:310px;
-    height: 100px;
+    height: 110px;
     float:right;
     margin-left: 20px;
-    
+    margin-top: -25px;
 }
 /* ============================================================
   COMMON Toggle Button
@@ -208,7 +247,7 @@ p {
 #ToggleBt{
     bottom :40px;
     right: 40px;
-    float: right;
+    margin-left:100px;
 }
 
 #wrapper {
@@ -252,10 +291,9 @@ p {
   SWITCH 2 - ROUND FLAT
 ============================================================ */
 input.cmn-toggle-round-flat + label {
-  padding: 2px;
-  width: 120px;
-  height: 60px;
-  background-color: #dddddd;
+  width: 80px;
+  height: 40px;
+  background-color: #98a8f1;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
@@ -265,7 +303,9 @@ input.cmn-toggle-round-flat + label {
   -moz-transition: background 0.4s;
   -o-transition: background 0.4s;
   transition: background 0.4s;
+  box-shadow: 0px 0px 10px rgb(81, 107, 240)
 }
+
 input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
   display: block;
   position: absolute;
@@ -291,7 +331,7 @@ input.cmn-toggle-round-flat + label:after {
   top: 4px;
   left: 4px;
   bottom: 4px;
-  width: 52px;
+  width: 32px;
   background-color: #6883ff;
   -webkit-border-radius: 52px;
   -moz-border-radius: 52px;
@@ -307,6 +347,6 @@ input.cmn-toggle-round-flat:checked + label {
   background-color: #8ce196;
 }
 input.cmn-toggle-round-flat:checked + label:after {
-  margin-left: 60px;
+  margin-left: 40px;
   background-color: #8ce196;
 }
