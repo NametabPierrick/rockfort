@@ -84,11 +84,6 @@ h3{
     left: 620px;
 }
 
-#suggestion h3 {
-    margin-left: 5px;
-    margin-top: -10px;
-}
-
 
 hr {
     vertical-align: top;
@@ -193,7 +188,14 @@ p {
 }
 
 #suggestion img {
-    float:left;
+    margin-left:-200px;
+}
+
+#suggestion h3 {
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: -12px;
+    text-align: left;
 }
 
 #suggestion h4 {
@@ -206,7 +208,7 @@ p {
 }
 
 #suggestion h4.artiste {
-  padding-top:25px;
+  margin-top:-95px;
 }
 
 #suggestion h5 {
@@ -223,7 +225,6 @@ p {
     background-color: #262b40;
     width:310px;
     height: 110px;
-    float: left;
     margin-top: -25px;
     }
 
@@ -231,18 +232,18 @@ p {
     background-color: #262b40;
     width:310px;
     height: 110px;
-    float:left;
-    margin-left: 25px;
-    margin-top: -25px;
+    margin-left: 335px;
+    margin-top: -110px;
+    display: block;
 }
 
 #sug3{
     background-color: #262b40;
     width:310px;
     height: 110px;
-    float:right;
-    margin-left: 20px;
-    margin-top: -25px;
+    margin-left: 670px;
+    margin-top: -110px;
+    display: block;
 }
 /* ============================================================
   COMMON Toggle Button
