@@ -77,11 +77,11 @@ h2 {
 h3{
     font-size: 18px;
     color: white;
-    float:left;
 }
 
 #equalizer h3 {
-    margin-left: 20px;
+    position: absolute;
+    left: 620px;
 }
 
 #suggestion h3 {
@@ -151,13 +151,14 @@ p {
     width: 1000px;
     height: 225px;
     margin-top: 10px;
+    position: relative;
    
 }
 #viz_equalizer{
     background-color:white;
     width: 600px;
     height: 225px;
-    float: left;
+    position: absolute;
 }
 
 #parametre {
@@ -167,7 +168,9 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
-    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 
 }
 
@@ -272,7 +275,7 @@ p {
 /* ============================================================
   COMMON
 ============================================================ */
-.cmn-toggle {
+/*.cmn-toggle {
   position: absolute;
   margin-left: -9999px;
   visibility: hidden;
@@ -286,11 +289,11 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+}*/
 /* ============================================================
   SWITCH 2 - ROUND FLAT
 ============================================================ */
-input.cmn-toggle-round-flat + label {
+/*input.cmn-toggle-round-flat + label {
   width: 80px;
   height: 40px;
   background-color: #98a8f1;
@@ -349,4 +352,56 @@ input.cmn-toggle-round-flat:checked + label {
 input.cmn-toggle-round-flat:checked + label:after {
   margin-left: 40px;
   background-color: #8ce196;
+}*/
+
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #a5b1eb; border-radius: 27px;
+    box-shadow: 0px 0px 20px #516bf0, 0px 0px 20px #516bf0 inset;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 42px; padding: 0; line-height: 40px;
+    font-size: 14px; color: white; font-weight: 100;
+    text-shadow: #f4f6fd 0px 0px 20px, #f4f6fd 0px 0px 20px, #f4f6fd 0px 0px 20px;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "LAB";
+    padding-right: 15px;
+    background-color: #1c2030; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-inner:after {
+    content: "MAP";
+    padding-left: 11px;
+    background-color: #1c2030; color: #FFFFFF;
+    text-align: left;
+}
+.onoffswitch-switch {
+    display: block; width: 34px; height: 34px; margin: 6px;
+    background: #6883ff;
+    position: absolute; top: 0; bottom: 0;
+    right: 0px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right:45px; 
 }
