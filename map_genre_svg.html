@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>map_genre_svg</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script> 
+	<style>
+		.link_circle_1{
+			display: none;
+			stroke: #000;
+		    stroke-width: 1;
+		    stroke-dasharray: 800px;
+		    stroke-dashoffset: 1px;
+		    animation-name: draw;
+		    animation-duration: 5s;
+		   /*  animation-fill-mode: forwards; */ // Stay on the last frame
+		    /* animation-iteration-count: 1; */ // Run only once
+		    animation-timing-function: linear;
+		}
+
+		@keyframes draw {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<?xml version="1.0" encoding="utf-8"?>
+	<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	</style>
+	<g id="trait1" class="link_circle_1">
+		<line id="XMLID_3_" class="st0" x1="512" y1="138" x2="382" y2="350"/>
+	</g>
+	<g id="trait2" class="link_circle_1">
+		<line id="XMLID_5_" class="st0" x1="512" y1="138" x2="684.5" y2="422.5"/>
+	</g>
+	<g id="circle1">
+		<circle id="XMLID_1_" cx="512" cy="138" r="49"/>
+	</g>
+	<g id="circle2">
+		<circle id="XMLID_2_" cx="382" cy="350" r="40"/>
+	</g>
+	<g id="circle3">
+		<circle id="XMLID_4_" cx="684.5" cy="422.5" r="32.5"/>
+	</g>
+	</svg>
+
+	<script>
+
+	$('#circle1').click(function(){
+		$('.link_circle_1').fadeIn();
+	})
+
+	</script>
+</body>
+</html>
