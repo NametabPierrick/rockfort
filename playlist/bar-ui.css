@@ -22,7 +22,7 @@
  font-smoothing: antialiased;
  text-rendering: optimizeLegibility;
  min-width: 20em;
- max-width: 30em;
+ max-width: 280px;
  /* take out overflow if you want an absolutely-positioned playlist dropdown. */
  border-radius: 2px;
  overflow: hidden;
@@ -43,7 +43,7 @@
 }
 
 .sm2-bar-ui ul {
- line-height: 1em;
+ line-height: 2em;
 }
 
 /* want things left-aligned? */
@@ -98,7 +98,7 @@
 .sm2-bar-ui .bd,
 .sm2-bar-ui .sm2-extra-controls {
  position: relative;
- background-color: #2288cc;
+ background-color: #262b40;
  /*
  transition: background 0.2s ease-in-out;
  */
@@ -321,7 +321,7 @@
  min-width: 200px;
  max-width: 20em;
  /* a little more spacing */
- padding-left: 0.75em;
+ padding-left: -0.25em;
  padding-right: 0.75em;
 }
 
@@ -751,8 +751,14 @@
  list-style-type: none;
 }
 
-.sm2-element ul,
+
 .sm2-element ul li {
+ margin: 0px;
+ padding: 0px;
+ margin-right: 10px;
+}
+
+.sm2-element ul {
  margin: 0px;
  padding: 0px;
 }
@@ -846,17 +852,17 @@
 }
 
 .sm2-playlist-wrapper ul {
- max-height: 9.25em;
+ max-height: 380px;
  overflow: auto;
 }
 
 .sm2-playlist-wrapper ul li {
- border-bottom: 1px solid rgba(0,0,0,0.05);
+ border-bottom: 1px solid #343b58;
 }
 
-.sm2-playlist-wrapper ul li:nth-child(odd) {
+/*.sm2-playlist-wrapper ul li:nth-child(odd) {
  background-color: rgba(255,255,255,0.03);
-}
+}*/
 
 .sm2-playlist-wrapper ul li a {
  display: block;
@@ -890,9 +896,14 @@
 }
 
 .sm2-playlist-wrapper ul li.selected a {
- background-color: rgba(0,0,0,0.25);
+ /*background-color: rgba(0,0,0,0.25);
  background-image: url(../image/black-20.png);
- background-image: none, none;
+ background-image: none, none;*/
+     background-image: url(play.svg);
+    padding-left: 48px;
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: 9px;
 }
 
 .sm2-bar-ui.dark-text ul li.selected a {
@@ -933,17 +944,17 @@
 /* some custom scrollbar trickery, where supported */
 
 .sm2-playlist-wrapper ul::-webkit-scrollbar {
- width: 10px;
+ width: 8px;
 }
 
 .sm2-playlist-wrapper ul::-webkit-scrollbar-track {
- background: rgba(0,0,0,0.33);
- border-radius: 10px;
+ background: #343b58;
+ border-radius: 8px;
 }
  
 .sm2-playlist-wrapper ul::-webkit-scrollbar-thumb {
- border-radius: 10px;
- background: #fff;
+ border-radius: 8px;
+ background: #b6bacc;
 }
 
 .sm2-extra-controls {

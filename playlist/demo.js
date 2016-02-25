@@ -147,7 +147,7 @@
 
     }()),
 
-    events: (function() {
+    /*events: (function() {
 
       var add, remove, preventDefault;
 
@@ -188,7 +188,7 @@
         remove: remove
       };
 
-    }())
+    }())*/
 
   };
 
@@ -209,9 +209,9 @@
       };
 
       // initial values
-      demoData.backgroundValue = demoData.colorPicker.value;
+      /*demoData.backgroundValue = demoData.colorPicker.value;
       demoData.opacityValue = demoData.opacityPicker.value;
-      demoData.sizeValue = demoData.sizePicker.value;
+      demoData.sizeValue = demoData.sizePicker.value;*/
 
       function hexToRGB(hex) {
         // http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb/11508164#11508164
@@ -254,7 +254,7 @@
 
       }
 
-      utils.events.add(demoData.colorPicker, 'change', function(e) {
+      /*utils.events.add(demoData.colorPicker, 'change', function(e) {
 
         var target = e.target || e.srcElement,
             color = target.value;
@@ -293,7 +293,7 @@
           node.style.fontSize = size + 'px';
         });
 
-      });
+      });*/
 
       function changeBackground(e, isPage) {
 
@@ -344,13 +344,13 @@
 
       }
 
-      utils.events.add(demoData.pageBackgroundPicker, 'change', function(e) {
+      /*utils.events.add(demoData.pageBackgroundPicker, 'change', function(e) {
         changeBackground(e, true);
       });
 
       utils.events.add(demoData.playerBackgroundPicker, 'change', function(e) {
         changeBackground(e, false);
-      });
+      });*/
 
       function handleOpacityMouseMove() {
 
@@ -389,7 +389,7 @@
        * Applies to Firefox Nightly at time of writing (03/2014.)
        */
 
-      utils.events.add(demoData.opacityPicker, 'mousedown', function(e) {
+      /*utils.events.add(demoData.opacityPicker, 'mousedown', function(e) {
 
         var moveHandler,
             upHandler;
@@ -466,7 +466,7 @@
           upHandler.detach();
         });
 
-      });
+      });*/
 
       function applyToNodes(selector, method) {
         var i, j, nodes = utils.dom.getAll((selector || playerSelector));
@@ -486,7 +486,7 @@
 
       }
 
-      utils.events.add(document.getElementById('fullwidth'), 'click', function(e) {
+      /*utils.events.add(document.getElementById('fullwidth'), 'click', function(e) {
         applyToNodes(null, function(node) {
           utils.css.toggle(node, 'full-width');
           updateDemoCode();
@@ -520,7 +520,7 @@
           players[i].actions.menu();
         }
         updateDemoCode();
-      });
+      });*/
 
   });
 
