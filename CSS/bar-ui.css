@@ -10,8 +10,7 @@
  position: relative;
  display: inline-block;
  width: 100%;
- font-family: helvetica, arial, verdana, sans-serif;
- font-weight: normal;
+ font-family: 'Open Sans', sans-serif;
  /* prevent background border bleed */
  -webkit-background-clip: padding-box;
  background-clip: padding-box;
@@ -33,7 +32,8 @@
 .sm2-bar-ui .sm2-playlist li {
  text-align: center;
  margin-top: -2px;
- font-size: 95%;
+ font-size: 12px;
+ font-weight: 100;
  line-height: 1em;
 }
 
@@ -96,14 +96,16 @@
 }
 
 .sm2-main-controls {
-  margin-top: 425px;
+  margin-top: 400px;
+  background-color: #1c2030;
+  padding-bottom: 12px;
 }
 
 .sm2-bar-ui .bd,
 .sm2-bar-ui .sm2-extra-controls {
  position: relative;
- background-color: #262b40;
- /*
+ /*background-color: #262b40;
+ 
  transition: background 0.2s ease-in-out;
  */
 }
@@ -171,7 +173,7 @@
 }
 
 .sm2-bar-ui .sm2-playlist-wrapper {
- background-color: rgba(0,0,0,0.1);
+ /*background-color: rgba(0,0,0,0.1);*/
 }
 
 .sm2-bar-ui .sm2-extra-controls .bd {
@@ -202,6 +204,12 @@
 .sm2-bar-ui,
 .sm2-bar-ui .bd a {
  color: #b6bacc;
+}
+
+.sm2-bar-ui,
+.sm2-bar-ui .bd a .nomArtiste {
+ font-size: 18px;
+ font-weight: normal;
 }
 
 .sm2-bar-ui.dark-text,
@@ -373,13 +381,14 @@
  line-height: 0.9em;
  min-width: 2em; /* if you have sounds > 10:00 in length, make this bigger. */
  vertical-align: middle;
-     color: #6883ff;
+ color: #6883ff;
 }
 
 .sm2-bar-ui .sm2-playlist {
  position: relative;
  height: 1.45em;
- padding-top: 10px;
+ padding-top: 18px;
+ padding-bottom: 5px;
 }
 
 .sm2-bar-ui .sm2-playlist-target {
@@ -423,6 +432,11 @@
  text-align: center;
 }
 
+.sm2-bar-ui .sm2-playlist ul li .nomArtiste{
+  font-weight: normal;
+  font-size: 15px;
+}
+
 .sm2-row {
  position: relative;
  display: table-row;
@@ -431,6 +445,7 @@
 .sm2-progress-bd {
  /* spacing between progress track/ball and time (position) */
  padding: 0px 0.8em;
+     margin-top: 3px;
 }
 
 .sm2-progress .sm2-progress-track,
@@ -454,7 +469,7 @@
 }
 
 .sm2-progress{
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
 .volume-shade,
@@ -541,9 +556,8 @@ width: 0.9333em;
 .play-pause,
 .play-pause:hover,
 .paused .play-pause:hover {
- background-image: url(../image/icomoon/entypo-25px-ffffff/PNG/play.png);
- background-image: none, url(../img/play.svg);
- background-size: 67.5%;
+ background-image: none, url(../img/play.png);
+ /*background-size: 67.5%;*/
  background-position: 40% 53%;
 }
 
@@ -574,25 +588,22 @@ width: 0.9333em;
 }
 
 .menu {
- background-image: url(list2.png);
- background-image: none, url(../img/list.svg);
- background-size: 58%;
+ background-image: none, url(../img/random.png);
+ /*background-size: 58%;*/
  background-position: 54% 51%;
 }
 
 .previous {
- background-image: url(first.png);
- background-image: none, url(../img/first.svg);
+ background-image: none, url(../img/previous.png);
 }
 
 .next {
- background-image: url(last.png);
- background-image: none, url(../img/last.svg);
+ background-image: none, url(../img/next.png);
 }
 
 .previous,
 .next {
- background-size: 49.5%;
+ /*background-size: 49.5%;*/
  background-position: 50% 50%;
 }
 
@@ -610,10 +621,9 @@ width: 0.9333em;
 }
 
 .repeat {
- background-image: url(../image/icomoon/entypo-25px-ffffff/PNG/loop.png);
- background-image: none, url(../img/loop.svg);
+ background-image: none, url(../img/repeat.png);
  background-position: 50% 43%;
- background-size: 54%;
+ /*background-size: 54%;*/
 }
 
 .sm2-extra-controls .repeat {
@@ -826,7 +836,7 @@ width: 0.9333em;
 .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer {
  height: auto;
  opacity: 1;
- margin-bottom: 40px;
+ margin-bottom: 70px;
 }
 
 .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer a {
@@ -875,7 +885,7 @@ width: 0.9333em;
 }
 
 .sm2-playlist-wrapper ul li {
- border-bottom: 1px solid #343b58;
+ border-top: 1px solid #343b58;
 }
 
 /*.sm2-playlist-wrapper ul li:nth-child(odd) {
@@ -886,8 +896,10 @@ width: 0.9333em;
  display: block;
  padding: 0.5em 0.25em 0.5em 0.75em;
  margin-right: 0px;
- font-size: 90%;
+ font-size: 15px;
+ font-weight: 100;
  vertical-align: middle;
+ padding-left: 30px;
 }
 
 .sm2-playlist-wrapper ul li a.sm2-exclude {
@@ -920,11 +932,11 @@ width: 0.9333em;
  /*background-color: rgba(0,0,0,0.25);
  background-image: url(../image/black-20.png);
  background-image: none, none;*/
-     background-image: url(../img/play_blue.svg);
-    padding-left: 48px;
+     background-image: url(../img/player_blue.png);
+    padding-left: 30px;
     background-repeat: no-repeat;
-    background-position-x: 7px;
-    background-position-y: 9px;
+    background-position-x: 10px;
+    background-position-y: 50%;
     color: #6883ff;
 }
 
