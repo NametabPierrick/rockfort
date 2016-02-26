@@ -2,36 +2,25 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
-<title>SoundManager 2: Bar UI Player (prototype)</title>
+<title>Test Playlist</title>
 <meta name="viewport" content="width=500, initial-scale=1">
-<script type="text/javascript" src="soundmanager2.js"></script>
-<script src="bar-ui.js"></script>
-<link rel="stylesheet" href="bar-ui.css" />
+<script type="text/javascript" src="js/soundmanager2.js"></script>
+<script src="js/bar-ui.js"></script>
+<link rel="stylesheet" href="css/bar-ui.css" />
 
 <!-- demo for this page only, you don't need this stuff -->
-<script src="demo.js"></script>
-<link rel="stylesheet" href="demo.css" />
+<script src="js/demo.js"></script>
+<link rel="stylesheet" href="css/demo.css" />
 
 </head>
 
 <body>
 
-
-
 <div class="sm2-bar-ui fixed playlist-open flat">
 
  <div class="bd sm2-main-controls">
 
-  <div class="sm2-inline-texture"></div>
-  <div class="sm2-inline-gradient"></div>
-
-  <div class="sm2-inline-element sm2-button-element">
-   <div class="sm2-button-bd">
-    <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
-   </div>
-  </div>
-
-  <div class="sm2-inline-element sm2-inline-status">
+   <div class="sm2-inline-element sm2-inline-status">
 
    <div class="sm2-playlist">
     <div class="sm2-playlist-target">
@@ -63,11 +52,25 @@
    </div>
   </div>-->
 
+    <div class="sm2-inline-element sm2-button-element sm2-menu">
+   <div class="sm2-button-bd">
+    <a href="#menu" class="sm2-inline-button menu">menu</a>
+   </div>
+  </div>
+
   <div class="sm2-inline-element sm2-button-element">
    <div class="sm2-button-bd">
     <a href="#prev" title="Previous" class="sm2-inline-button previous">&lt; previous</a>
    </div>
   </div>
+
+   <div class="sm2-inline-element sm2-button-element">
+   <div class="sm2-button-bd">
+    <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+   </div>
+  </div>
+
+  
 
   <div class="sm2-inline-element sm2-button-element">
    <div class="sm2-button-bd">
@@ -90,19 +93,12 @@
   </div>
   -->
 
-  <div class="sm2-inline-element sm2-button-element sm2-menu">
-   <div class="sm2-button-bd">
-    <a href="#menu" class="sm2-inline-button menu">menu</a>
-   </div>
-  </div>
+
 
  </div>
 
  <div class="bd sm2-playlist-drawer sm2-element">
 
-  <div class="sm2-inline-texture">
-   <div class="sm2-box-shadow"></div>
-  </div>
 
   <!-- playlist content is mirrored here -->
 
@@ -114,7 +110,7 @@
      <li>
       <div class="sm2-row">
        <div class="sm2-col sm2-wide">
-        <a href="jain.mp3"><b>Jain</b> - Come<span class="label">Explicit</span></a>
+        <a href="mp3/jain.mp3"><b>Jain</b> - Come<span class="label">Explicit</span></a>
        </div>
        <div class="sm2-col">
         <a href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20LA%20%28Prod%20Chin%20Injetti%29.mp3" target="_blank" title="Download &quot;LA&quot;" class="sm2-icon sm2-music sm2-exclude">Download this track</a>
@@ -123,7 +119,7 @@
      </li>-->
 
      <!-- standard one-line items -->
-     <li><a href="jain.mp3"><b>Jain</b>Come</a></li>
+     <li><a href="mp3/jain.mp3"><b>Jain</b> - Come</a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20People%20Asking.mp3"><b>SonReal</b> - People Asking <span class="label">Explicit</span></a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20Already%20There%20Remix%20ft.%20Rich%20Kidd%2C%20Saukrates.mp3"><b>SonReal</b> - Already There Remix ft. Rich Kidd, Saukrates <span class="label">Explicit</span></a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/The%20Fugitives%20-%20Graffiti%20Sex.mp3"><b>The Fugitives</b> - Graffiti Sex</a></li>
@@ -135,9 +131,9 @@
      <li><a href="http://freshly-ground.com/data/audio/sm2/20130320%20-%20Po%27ipu%20Beach%20Waves.ogg">Po'ipu Beach Waves (OGG)</a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/bottle-pop.wav">A corked beer bottle (WAV)</a></li>
      <li><a href="../../demo/_mp3/rain.mp3">Rain</a></li>
-     <li><a href="jain.mp3"><b>Jain</b> - Come</a></li>
-     <li><a href="jain.mp3"><b>Jain</b> - Come</a></li>
-     <li><a href="jain.mp3"><b>Jain</b> - Come</a></li>
+     <li><a href="mp3/jain.mp3"><b>Jain</b> - Come</a></li>
+     <li><a href="mp3/jain.mp3"><b>Jain</b> - Come</a></li>
+     <li><a href="mp3/jain.mp3"><b>Jain</b> - Come</a></li>
     
     </ul>
   

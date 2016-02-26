@@ -6,7 +6,7 @@ body {
 	background-color:#141722;
 	background-position:center center;
 	font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 html, body {
@@ -136,10 +136,10 @@ p {
     margin: -28px 0 0 150px;
 }
 
-#player{
+/*#player{
     width: 280px;
     height:512px;
-}
+}*/
 
 #equalizer {
     

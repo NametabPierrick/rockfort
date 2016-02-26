@@ -197,7 +197,7 @@
 
 .sm2-bar-ui,
 .sm2-bar-ui .bd a {
- color: #fff;
+ color: #b6bacc;
 }
 
 .sm2-bar-ui.dark-text,
@@ -232,6 +232,10 @@
  background-color: rgba(0,0,0,0.25);
  background-image: url(../image/black-25.png);
  background-image: none, none;
+}
+
+.sm2-menu{
+  margin-left: 35px;
 }
 
 .sm2-bar-ui .bd .sm2-extra-controls .sm2-button-element:active .sm2-inline-button,
@@ -365,11 +369,13 @@
  line-height: 0.9em;
  min-width: 2em; /* if you have sounds > 10:00 in length, make this bigger. */
  vertical-align: middle;
+     color: #6883ff;
 }
 
 .sm2-bar-ui .sm2-playlist {
  position: relative;
  height: 1.45em;
+ padding-top: 10px;
 }
 
 .sm2-bar-ui .sm2-playlist-target {
@@ -387,6 +393,7 @@
  overflow: hidden;
  white-space: nowrap;
  text-overflow: ellipsis;
+     color: #6883ff;
 }
 
 .sm2-bar-ui p,
@@ -427,7 +434,7 @@
 .sm2-progress .sm2-progress-bar {
  position: relative;
  width: 100%;
- height: 0.65em;
+ height: 4px;
  border-radius: 0.65em;
 }
 
@@ -437,9 +444,13 @@
  left: 0px;
  top: 0px;
  width: 0px;
- background-color: rgba(0,0,0,0.33);
+ background-color: #5c74dc;
  background-image: url(../image/black-33.png);
  background-image: none, none;
+}
+
+.sm2-progress{
+  padding: 0 10px;
 }
 
 .volume-shade,
@@ -458,16 +469,18 @@
  position: absolute;
  top: 0px;
  left: 0px;
- width: 1em;
+  /*width: 1em;
  height: 1em;
  margin: -0.2em 0px 0px -0.5em;
  width: 14px;
  height: 14px;
- margin: -2px 0px 0px -7px;
- width: 0.9333em;
+ margin: -2px 0px 0px -7px;*/
+width: 0.9333em;
  height: 0.9333em;
  margin: -0.175em 0px 0px -0.466em;
- background-color: #fff;
+ width: 9px;
+ height: 9px;
+ background-color: #5c74dc;
  padding: 0px;
 /*
  z-index: 1;
@@ -483,7 +496,7 @@
 */
 
 .sm2-progress .sm2-progress-track {
- background-color: rgba(0,0,0,0.4);
+ background-color: #333b5a;
  background-image: url(../image/black-33.png); /* legacy */
  background-image: none, none; /* modern browsers */
 }
@@ -525,21 +538,21 @@
 .play-pause:hover,
 .paused .play-pause:hover {
  background-image: url(../image/icomoon/entypo-25px-ffffff/PNG/play.png);
- background-image: none, url(play.svg);
+ background-image: none, url(../img/play.svg);
  background-size: 67.5%;
  background-position: 40% 53%;
 }
 
 .playing .play-pause {
  background-image: url(../image/icomoon/entypo-25px-ffffff/PNG/pause.png);
- background-image: none, url(../image/icomoon/entypo-25px-ffffff/SVG/pause.svg);
+ background-image: none, url(..img/pause.svg);
  background-size: 57.6%;
  background-position: 50% 53%;
 }
 
 .sm2-volume-control {
  background-image: url(../image/icomoon/entypo-25px-ffffff/PNG/volume.png);
- background-image: none, url(volume.svg);
+ background-image: none, url(..img/volume.svg);
 }
 
 .sm2-volume-control,
@@ -553,24 +566,24 @@
  opacity: 0.33;
 /* -webkit-filter: invert(1);*/
  background-image: url(volume.png);
- background-image: none, url(volume.svg);
+ background-image: none, url(..img/volume.svg);
 }
 
 .menu {
  background-image: url(list2.png);
- background-image: none, url(list.svg);
+ background-image: none, url(..img/list.svg);
  background-size: 58%;
  background-position: 54% 51%;
 }
 
 .previous {
  background-image: url(first.png);
- background-image: none, url(first.svg);
+ background-image: none, url(..img/first.svg);
 }
 
 .next {
  background-image: url(last.png);
- background-image: none, url(last.svg);
+ background-image: none, url(..img/last.svg);
 }
 
 .previous,
@@ -594,7 +607,7 @@
 
 .repeat {
  background-image: url(../image/icomoon/entypo-25px-ffffff/PNG/loop.png);
- background-image: none, url(loop.svg);
+ background-image: none, url(..img/loop.svg);
  background-position: 50% 43%;
  background-size: 54%;
 }
@@ -706,7 +719,7 @@
  height: 100%;
  top: 0px;
  left: 0px;
- background: none, url(spinner.svg);
+ background: none, url(../img/spinner.svg);
  background-size: 72%;
  background-position: 50%;
  background-repeat: no-repeat;
@@ -809,6 +822,7 @@
 .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer {
  height: auto;
  opacity: 1;
+ margin-bottom: 40px;
 }
 
 .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer a {
@@ -884,9 +898,10 @@
 }
 
 .sm2-playlist-wrapper ul li:hover a {
- background-color: rgba(0,0,0,0.20);
+ /*background-color: rgba(0,0,0,0.20);
  background-image: url(../image/black-20.png);
- background-image: none, none;
+ background-image: none, none;*/
+ color: #6883ff;
 }
 
 .sm2-bar-ui.dark-text .sm2-playlist-wrapper ul li:hover a {
@@ -895,15 +910,18 @@
  background-image: none, none;
 }
 
+
+
 .sm2-playlist-wrapper ul li.selected a {
  /*background-color: rgba(0,0,0,0.25);
  background-image: url(../image/black-20.png);
  background-image: none, none;*/
-     background-image: url(play.svg);
+     background-image: url(../img/play_blue.svg);
     padding-left: 48px;
     background-repeat: no-repeat;
     background-position-x: 7px;
     background-position-y: 9px;
+    color: #6883ff;
 }
 
 .sm2-bar-ui.dark-text ul li.selected a {
@@ -988,7 +1006,7 @@
 /* --- full width stuff --- */
 
 .sm2-bar-ui .sm2-inline-element {
- display: table-cell;
+ /*display: table-cell;*/
 }
 
 .sm2-bar-ui .sm2-inline-element {
@@ -1001,6 +1019,7 @@
  width: 100%;
  min-width: 100%;
  max-width: 100%;
+ display: table-header-group;
 }
 
 .sm2-bar-ui > .bd {
