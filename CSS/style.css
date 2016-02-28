@@ -6,6 +6,7 @@ body {
 	color:white;
 	background-image:url("../img/background/bg_accueil.jpg");
 	background-position:center center;
+    background-color: #000;
 	font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
@@ -15,10 +16,141 @@ html, body {
     height: 100%;
 }
 
-#logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+@-webkit-keyframes logoAnimation {
+    
+    0% {background-image: url(../img/logo/../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    2.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    7.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    10% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    12.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    15% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    17.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    20% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    22.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    25% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    27.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    30% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    32.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    35% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    40% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    42.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    45% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    47.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    50% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    52.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    55% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    57.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    65% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    67.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    70% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    72.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;} 
+    75% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    77.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    80% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    82.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    85% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    87.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    90% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    92.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    95% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    97.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.logo-rockfort {
+      width: 232px;
+      height: 232px;
+      margin: 0px auto;
+      background-size: 100% 100%;
+      -webkit-animation: logoAnimation 4s linear;
+      -moz-animation: logoAnimation 4s linear;
+      -o-animation: logoAnimation 4s linear;
+      background-image: url(../img/logo/logo-rockfort-allume.svg);
+      
+}
+
+@-moz-keyframes logoAnimation {
+    0% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    2.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    7.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    10% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    12.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    15% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    17.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    20% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    22.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    25% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    27.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    30% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    32.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    35% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    40% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    42.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    45% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    47.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    50% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    52.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    55% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    57.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    65% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    67.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    70% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    72.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;} 
+    75% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    77.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    80% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    82.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    85% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    87.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    90% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    92.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    95% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    97.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes logoAnimation {
+    0% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    2.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    7.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    10% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    12.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    15% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    17.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    20% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    22.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    25% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    27.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    30% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    32.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    35% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    40% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    42.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    45% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    47.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    50% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    52.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    55% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    57.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    65% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    67.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    70% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    72.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;} 
+    75% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    77.5% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    80% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    82.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    85% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    87.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    90% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    92.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    95% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
+    97.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
+    100% {opacity: 1;}
 }
 
 p { 
