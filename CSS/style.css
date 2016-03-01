@@ -1,21 +1,81 @@
-*{
-	margin: 0;
-}
-
-body {
-	color:white;
-	background-image:url("../img/background/bg_accueil.jpg");
-	background-position:center center;
-    background-color: #000;
-	font-family: 'Open Sans', sans-serif;
-    text-align: center;
-}
-
 html, body {
     width: 100%;
     height: 100%;
 }
 
+body { 
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+}
+
+p { 
+    text-align:center; /* centrage horizontal d'un élément en-ligne */ 
+    color:white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+h1 {
+    vertical-align: top;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 39px;
+    font-weight: 100;
+    color: #bfc4dc;
+    text-transform: uppercase;
+    text-shadow: rgb(81, 107, 240) 0px 0px 20px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 100;
+    padding:50px 0 0 30px;
+    color: #b6bacc;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h3{
+    font-size: 18px;
+    color: white;
+}
+
+hr {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0;
+    width:600px;
+    margin:54px 20px 0 4px;
+}
+
+/* ============================================================
+  START HOME
+============================================================ */
+
+body#home {
+    background-image:url("../img/background/bg_accueil.jpg");
+    background-position:center center;
+    background-color: #000;
+    text-align: center;
+}
+
+/* ============================================================
+  LOGO ANIME
+============================================================ */
+
+.logo-rockfort {
+      width: 232px;
+      height: 232px;
+      margin: 0px auto;
+      background-size: 100% 100%;
+      -webkit-animation: logoAnimation 4s linear;
+      -moz-animation: logoAnimation 4s linear;
+      -o-animation: logoAnimation 4s linear;
+      background-image: url(../img/logo/logo-rockfort-allume.svg);
+  }
 
 @-webkit-keyframes logoAnimation {
     
@@ -57,18 +117,6 @@ html, body {
     95% {background-image: url(../img/logo/logo-rockfort-allteint.svg);opacity: 1;}
     97.5% {background-image: url(../img/logo/logo-rockfort-allume.svg);opacity: 1;}
     100% {opacity: 1;}
-}
-
-.logo-rockfort {
-      width: 232px;
-      height: 232px;
-      margin: 0px auto;
-      background-size: 100% 100%;
-      -webkit-animation: logoAnimation 4s linear;
-      -moz-animation: logoAnimation 4s linear;
-      -o-animation: logoAnimation 4s linear;
-      background-image: url(../img/logo/logo-rockfort-allume.svg);
-      
 }
 
 @-moz-keyframes logoAnimation {
@@ -153,14 +201,11 @@ html, body {
     100% {opacity: 1;}
 }
 
-p { 
- 	text-align:center; /* centrage horizontal d'un élément en-ligne */ 
- 	font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
+/* ============================================================
+  CONTENT HOME
+============================================================ */
 
-#content {
+#contentHome {
 	width: 600px;
 	margin-right: auto;
 	margin-left: auto;
@@ -213,27 +258,6 @@ p {
 	text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
 }
 
-#info {
-	position: fixed;
-	top: 40px;
-	right: 40px;
-	border-radius: 40px;
-    border: 2px solid #fff;
-    color: #fff;
-    overflow: hidden;
-    width: 40px;
-    padding: 5px 0;
-    background-color: transparent;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-#info:hover{
-	color: #e2e6fd;
-	border-color: #e2e6fd;
-	box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0 inset;
-	text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
-}
 
 #overlay {
     width: 100%;
@@ -247,3 +271,294 @@ p {
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 33%,rgba(0,0,0,1) 76%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 33%,rgba(0,0,0,1) 76%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+/* ============================================================
+  BOUTON INFO
+============================================================ */
+
+#info {
+    vertical-align: top;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: 2px solid #a2a2a2;
+    color: #a2a2a2;
+    overflow: hidden;
+    width: 36px;
+    padding: 6px 0;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#info:hover{
+    color: #e2e6fd;
+    border-color: #e2e6fd;
+    box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0 inset;
+    text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
+}
+
+
+/* ============================================================
+  END - HOME
+============================================================ */
+
+
+/* ============================================================
+  START - CONTENT LAB
+============================================================ */
+
+body#leLab {
+    background-color:#141722;
+}
+
+
+#logo {
+    display: inline-block;
+    margin-right: 15px;
+    height:85px;
+}
+
+#contentLab {
+    width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+    padding-top:40px;
+}
+
+#lab {
+    width: 1086px;
+    margin-right: 280px;
+    text-align:center;
+}
+
+
+/* ============================================================
+  EQUALIZER
+============================================================ */
+
+#equalizer {
+    margin-left:50px;
+    width: 1000px;
+    height: 225px;
+    margin-top: 10px;
+    position: relative;
+   
+}
+#viz_equalizer{
+    background-color:white;
+    width: 600px;
+    height: 225px;
+    position: absolute;
+}
+
+#equalizer h3 {
+    position: absolute;
+    left: 620px;
+    margin: 0;
+}
+
+/* ============================================================
+  PARAMETRES
+============================================================ */
+
+#parametre {
+    background-color:white;
+    width: 360px;
+    height: 190px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+
+/* ============================================================
+  MOTS
+============================================================ */
+
+#mots{
+    background-color:white;
+    width: 980px;
+    height: 106px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left:50px;
+}
+
+/* ============================================================
+  SUGGESTION
+============================================================ */
+
+#suggestion {
+    margin-left:50px;
+    width: 980px;
+    height:140px;
+}
+
+#suggestion img {
+    margin-left:-200px;
+}
+
+#suggestion h3 {
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: -12px;
+    text-align: left;
+}
+
+#suggestion h4 {
+  font-size: 16px;
+  text-align: left;
+  color: white;
+  font-weight: 500;
+  padding-left:130px;
+  line-height: 1;
+    margin: 0;
+}
+
+#suggestion h4.artiste {
+  margin-top:-95px;
+}
+
+#suggestion h5 {
+  font-size: 14px;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+  padding-left:130px;
+  margin-top:-5px;
+}
+
+
+#sug1,  #sugg2, #sugg3 {
+    background-color: #262b40;
+    width:310px;
+    height: 110px;
+    margin-top: 20px;
+    }
+
+#sug2 {
+    background-color: #262b40;
+    width:310px;
+    height: 110px;
+    margin-left: 335px;
+    margin-top: -110px;
+    display: block;
+}
+
+#sug3{
+    background-color: #262b40;
+    width:310px;
+    height: 110px;
+    margin-left: 670px;
+    margin-top: -110px;
+    display: block;
+}
+
+/* ============================================================
+  TOGGLE BUTTON
+============================================================ */
+#ToggleBt{
+    bottom :40px;
+    right: 40px;
+    margin-left:100px;
+}
+
+#wrapper {
+  min-width: 600px;
+}
+
+.settings {
+  display: table;
+  width: 100%;
+}
+.settings .row {
+  display: table-row;
+}
+
+.settings .switch {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #a5b1eb; border-radius: 27px;
+    box-shadow: 0px 0px 20px #516bf0, 0px 0px 20px #516bf0 inset;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 42px; padding: 0; line-height: 40px;
+    font-size: 14px; color: white; font-weight: 100;
+    text-shadow: #f4f6fd 0px 0px 20px, #f4f6fd 0px 0px 20px, #f4f6fd 0px 0px 20px;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "LAB";
+    padding-right: 15px;
+    background-color: #1c2030; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-inner:after {
+    content: "MAP";
+    padding-left: 11px;
+    background-color: #1c2030; color: #FFFFFF;
+    text-align: left;
+}
+.onoffswitch-switch {
+    display: block; width: 34px; height: 34px; margin: 6px;
+    background: #6883ff;
+    position: absolute; top: 0; bottom: 0;
+    right: 0px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right:45px; 
+}
+
+
+/* ============================================================
+  PLAYLIST
+============================================================ */
+
+#icoCasque {
+    display: block;
+    margin: -28px 0 0 150px;
+}
+
+
+#playlist {
+    background-color: #262b40;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 280px;
+}
+
+/* ============================================================
+  END CONTENT LAB
+============================================================ */
+
