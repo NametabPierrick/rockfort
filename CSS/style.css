@@ -558,6 +558,37 @@ body#leLab {
     width: 280px;
 }
 
+#infoBulle{
+    position: absolute;
+    top: 118px;
+    left: -460px;
+    width: 400px;
+    background-color: #262b40;
+    padding: 20px;
+}
+
+#infoBulle p{
+    text-align: left;
+    color: #b6bacc;
+    margin: 0;
+}
+
+.subMenu p {
+    font-size: 13px;
+    line-height: 13px;
+    text-align: left;
+    color: #b6bacc;
+}
+
+.sm2-element .subMenu li {
+    overflow: hidden;
+    /*background: #1C2030;*/
+    padding: 14px;
+}
+
+.selected .fleche_bottom{
+    top: 27px;
+}
 /* ============================================================
   END CONTENT LAB
 ============================================================ */
