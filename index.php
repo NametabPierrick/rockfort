@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    require_once('php/connexion.php');
+    echo $_SESSION['periode'];
+?>
+
 <!DOCTYPE HTML>
 <html>
 
