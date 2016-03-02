@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once('php/connexion.php');
-    echo $_SESSION['periode'];
+    $_SESSION['periode']="test";
 ?>
 
 <!DOCTYPE HTML>
