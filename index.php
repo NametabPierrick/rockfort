@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    require_once('php/connexion.php');
+    echo $_SESSION['periode'];
+?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -26,7 +32,7 @@
     
                 <input class="range-slider" type="hidden" value="1949,2009"/>
    
-                <button id="submit"><a href="lab.html">Let's Rock</a></button>
+                <button id="submit"><a href="lab.php">Let's Rock</a></button>
             </div>
         </div>
     </div>
