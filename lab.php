@@ -1,14 +1,10 @@
 <?php
 	session_start();
-<<<<<<< HEAD
 	require_once('php/connexion.php');
 	$periode = $_POST['periode'];
 	$annee = explode(",", $periode);
 	echo $annee[0]." et ";
 	echo $annee[1];
-=======
-	require_once('connexion.php');
->>>>>>> origin/master
 ?>
 <!DOCTYPE html>
 <html lang="fr">
