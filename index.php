@@ -1,7 +1,12 @@
 <?php
     session_start();
+<<<<<<< HEAD
     require_once('php/connexion.php');
 
+=======
+    require_once('connexion.php');
+    $_SESSION['periode']="test";
+>>>>>>> origin/master
 ?>
 
 <!DOCTYPE HTML>
