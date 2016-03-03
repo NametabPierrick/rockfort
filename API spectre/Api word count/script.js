@@ -2,29 +2,12 @@ var undoingText="";
 var READING_WPM=200;
 var more_stats_status=false;
 
-function getwccInfoForNonEnglishText(nonEnglishText){
-  var wccInfo=[];
-  var trimedText=$.trim(nonEnglishText);
-  wccInfo['num_character'] = trimedText.length;
-  var wordList=trimedText.split(/[\s\n]+/);
-  wccInfo['num_word']=trimedText.length>0? wordList.length:0;
-  return wccInfo;
-}
-function updateStats(){
-  getwccInfo();
-  densityStats();
-}
-
-function updateStatsWithExtraStatistics(){
-  getwccInfo(true);
-  densityStats();
-}
 
 
 function getwccInfo(withExtraStatistics){
   
   var text = $("#textbox").val();
-  var isNotEnglish=$("#isNotEnglish").prop('checked');
+  var English=$("#English").prop('checked');
   var wccInfo;
 
 
@@ -35,7 +18,7 @@ function getwccInfo(withExtraStatistics){
   var wccInfo_selected;
 
 
-  if(isNotEnglish){
+  if(English){
     wccInfo = getwccInfoForNonEnglishText(text);
     wccInfo_selected=getwccInfoForNonEnglishText(selected_text);
   }
@@ -52,8 +35,8 @@ function getwccInfo(withExtraStatistics){
 }
 
 function displaywccInfo(wccInfo,withExtraStatistics){
-  var isNotEnglish=$("#isNotEnglish").prop('checked');
-  if(!isNotEnglish){
+  var English=$("#English").prop('checked');
+  if(!English){
 	  $("#num_word").text(wccInfo['num_word']);  
 	  $("#num_character").text(wccInfo['num_character']);
 	  $("#num_character_wo_spaces").text(wccInfo['num_character_wo_spaces']);
@@ -141,8 +124,8 @@ function displaywccInfo(wccInfo,withExtraStatistics){
 }
 
 function displaywccInfo_Selected(wccInfo,withExtraStatistics){
-  var isNotEnglish=$("#isNotEnglish").prop('checked');
-  if(!isNotEnglish){
+  var English=$("#English").prop('checked');
+  if(!English){
     $("#num_word_selected").text(wccInfo['num_word']);  
     $("#num_character_selected").text(wccInfo['num_character']);
     $("#num_character_wo_spaces_selected").text(wccInfo['num_character_wo_spaces']);
@@ -244,27 +227,7 @@ function displaywccInfoInTitle(wccInfo){
     
   var str=wccInfo['num_word']+WORDS+", "+wccInfo['num_character']+CHARACTERS+".";
   
-  var isNotEnglish=$("#isNotEnglish").prop('checked');
-  if(!isNotEnglish && wccInfo['num_character']>0){
-  	  var readability="<span id='readability'> Readability level: ";
-	  if(wccInfo['dale_chall_index']>10)
-		readability+="college graduate";
-	  else if(wccInfo['dale_chall_index']>9)
-			readability+="college student";
-	  else if(wccInfo['dale_chall_index']>8)
-			readability+="11-12th grade student";
-	  else if(wccInfo['dale_chall_index']>7)
-			readability+="9-10th grade student";
-	  else if(wccInfo['dale_chall_index']>6)
-	        readability+="7-8th grade student";
-	  else if(wccInfo['dale_chall_index']>5)
-			readability+="5-6th grade student";
-	  else
-		    readability+="lower than 4th grade student";
 
-	  str+=readability+"</span>";
-  }
-  $("#counter").html(str);
 }
 
 function sumWeight(weights){
@@ -274,34 +237,12 @@ function sumWeight(weights){
   });
   return sum;
 }
-function displayWordCloud(){
-	$('#myCanvasContainer').show();
-	if( ! $('#myCanvas').tagcanvas({
-		 weight:true,
-		 weightMode:"both",
- 		 weightFrom:"data-weight",
-		 weightSizeMin:5,
-		 weightSizeMax:150
-	   },'tagList')) {
 
-	     $('#myCanvasContainer').hide();
-	}
-}
 
 function densityStats(){  
-  var isNotEnglish=$("#isNotEnglish").prop('checked');
-  if(isNotEnglish){
-	$("#topDensity").html("");
-	$('#myCanvasContainer').hide();
-	return;
-  }
-  var numTop=parseInt($("#numTopKeyWord").val());;
+  var numTop=5;
 
-
-  if($("#excludingCheckbox").prop('checked'))
     $.wordStats.setStopWords(true);
-  else
-    $.wordStats.setStopWords(false);
 
   $.wordStats.computeTopWords(numTop,$("#textbox"));
 
@@ -309,7 +250,8 @@ function densityStats(){
     numTop=$.wordStats.topWords.length;
   var sum=sumWeight($.wordStats.topWeights);
 
-  listHtml="<div id='densityList' class='row col-md-12'>";
+  listHtml="<div>";
+
   for(var i=0;i<numTop;i++){
     var word=$.wordStats.topWords[i];
     var weight=$.wordStats.topWeights[i];
@@ -317,145 +259,99 @@ function densityStats(){
     var timeAppeared=weight>1?"times":"time";
 	var orderInList=""+(i+1);	
 
-	listHtml+='<div class="col-md-4"><label class="density">'+orderInList+'. <strong>'+word+'</strong> - '+weight+' '+timeAppeared+'<span class="percentage"> ('+percentage+'%)</span></label></div>';
+	listHtml+='<div>'+orderInList+' - '+word+'  x  '+weight+' </div>';
 
   }
+
   listHtml+="</div>";
   $.wordStats.clear();
-  $("#topDensity").html(listHtml);
+  $("#result").html(listHtml);
 
 }
 
 
-function generateClicked(){
-  var typeOption = $('#typeOption').val();
-  var amountOption = $('#amountOption').val();
 
-  var lorem=$.lorem.getLorem({type:typeOption,amount:amountOption,ptags:false});
-  $("#textbox").val(lorem);
-
-  getwccInfo();
-  densityStats();
+function Cercle(x, y, rayon, couleur) {
+  this.x = x;
+  this.y = y;
+  this.rayon = rayon;
+  this.couleur = couleur;
+  this.isSelected = false;
 }
 
-function defaultinnerHTMLForOption(){
-  var typeOption = $('#typeOption').val();
 
-  switch(typeOption){
-    case "paragraphs":
-      $('#amountOption').val("3")
-      break;
-    case "words":
-      $('#amountOption').val("250")
-      break;
-    case "characters":
-      $('#amountOption').val("1000")
-      break;
-  }
-  generateClicked();
+var cercles = [];
+
+var canvas;
+var context;
+
+window.onload = function() {
+  canvas = document.getElementById("myCanvas");
+  context = canvas.getContext("2d");
+
+  
 }
 
-String.prototype.toTitleCase = function() {
-    var i, str, lowers, uppers;
-    str = this.replace(/([^\W_]+[^\s-]*) */g, function(txt) {
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
+function ajouterCercle() {
+  var numTop=5;
+      $.wordStats.setStopWords(true);
 
+  $.wordStats.computeTopWords(numTop,$("#textbox"));
 
-    lowers = ['A', 'An', 'The', 'And', 'But', 'Or', 'For', 'Nor', 'As', 'At', 
-    'By', 'For', 'From', 'In', 'Into', 'Near', 'Of', 'On', 'Onto', 'To', 'With'];
-    for (i = 0; i < lowers.length; i++)
-        str = str.replace(new RegExp('\\s' + lowers[i] + '\\s', 'g'), 
-            function(txt) {
-                return txt.toLowerCase();
-            });
+  if(numTop>$.wordStats.topWords.length)
+    numTop=$.wordStats.topWords.length;
+  var sum=sumWeight($.wordStats.topWeights);
+  for(var i=0;i<numTop;i++){
+    var word=$.wordStats.topWords[i];
+    var weight=$.wordStats.topWeights[i];
+    var percentage=(weight/sum*100).toFixed(1);
+    var timeAppeared=weight>1?"times":"time";
+    var orderInList=""+(i+1); 
 
-
-    uppers = ['Id', 'Tv'];
-    for (i = 0; i < uppers.length; i++)
-        str = str.replace(new RegExp('\\b' + uppers[i] + '\\b', 'g'), 
-            uppers[i].toUpperCase());
-
-    return str;
-}
-String.prototype.toAlternatingCase = function() {
-    var str="",i;
-    var isLower=false;
-    for (i = 0; i < this.length; i++){
-      if(/\s/.test(this[i])){
-        str+=this[i];
-        continue;
-      }
-      if(isLower)
-        str+=this[i].toLowerCase(); 
-      else
-        str+=this[i].toUpperCase();
-
-      if(this[i]!=this[i].toUpperCase()||this[i]!=this[i].toLowerCase())
-        isLower=!isLower;
-    }
+    var x = Math.floor(Math.random() * canvas.width);
+    var y = 50;
+    var rayon = weight * 10;
+    var couleurs = ['rgb230, 107, 240)', 'rgb(81, 107, 240)', 'rgb(180, 107, 240)', 'rgb(130, 107, 240)'];
+    var couleur = couleurs[Math.floor(Math.random() * couleurs.length)];
     
-    return str;
+    var cercle = new Cercle(x, y, rayon, couleur);
+    cercles.push(cercle);
+    
+    dessinerCercle();
+  }
+    $.wordStats.clear();
 }
-function convertCaseForText(){
-  var text = $("#textbox").val();  
-  var buttonID=$(this).attr("id");
-  switch (buttonID){
-	case "toUpperCaseButton":
-	  undoingText=text;
-	  text=text.toUpperCase();
-	  break;
-	case "toLowerCaseButton":
-	  undoingText=text;
-	  text=text.toLowerCase();
-	  break;
-	case "toSentenceCaseButton":
-	  undoingText=text;
-	  text=text+'.'
-	  text=text.replace(/\w[^.?!:\n]*[.?!:\n$]+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-	  text=text.substr(0,text.length-1);
-	  break;
-	case "toTitleCaseButton":
-	  undoingText=text;
-	  text=text.toTitleCase();	  
-	  break;
-  case "toAlternatingCaseButton":
-    undoingText=text;
-    text=text.toAlternatingCase();
-    break;
-	case "toToggleCaseButton":
-	  undoingText=text;
-	  text=text.replace(/[\w]*/g, function(txt){return txt.charAt(0).toLowerCase() + txt.substr(1).toUpperCase();});
-	  break;
-	case "htmlStripButton":
-	  undoingText=text;
-	  html="<html>"+text+"</html>";
-	  text=$(html).text();
-	  break;
-	case "clearTextButton":
-	  undoingText=text;
-	  text="";
-	  break;
-	case "undoButton":
-	  if(undoingText.length!=0){
-	    var temp=text;
-	    text=undoingText;
-	    undoingText=temp;
-	  }
-	  break;
-  }    
-  $("#textbox").val(text);
-  updateStats();
+
+
+function dessinerCercle() {
+  
+
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  
+  for(var i = 0; i < cercles.length; i++) {
+    
+    var cercle = cercles[i];
+    
+    context.globalAlpha = 0.8;
+    context.beginPath();
+    context.arc(cercle.x, cercle.y, cercle.rayon, 0, Math.PI * 2);
+    
+    context.fillStyle = cercle.couleur;
+    context.strokeStyle = "rgb(81, 107, 240)";
+
+    
+    context.fill();
+    context.stroke();
+    
+  }
 }
+
+
 function clear_text(){
   $("#textbox").val("");
   updateStatsWithExtraStatistics();
 }
-function isNotEnglishUpdate(){
-  getwccInfo();
-  densityStats();
-  $("#counter").focus();
-}
+
 $(document).ready(function(){
 
   
@@ -463,26 +359,14 @@ $(document).ready(function(){
 
   textbox.on('input propertychange updateInfo keyup mousedown mouseup',getwccInfo);
   textbox.on('input propertychange updateInfo keyup mousedown mouseup',densityStats);
+  textbox.on('input propertychange updateInfo keyup mousedown mouseup',ajouterCercle);
   textbox.on('paste', function () {
   setTimeout(function () {
     getwccInfo();
     densityStats();
+    ajouterCercle();
   }, 10);
   });
-
-  $("#numTopKeyWord").on('keyup blur change',densityStats);
-  $("#excludingCheckbox").change(densityStats);
-
-  $("#isNotEnglish").change(isNotEnglishUpdate);
-
-  $('#amountOption').on('keyup keypress blur change',generateClicked);
-  
-
-  $("#typeOption").change(defaultinnerHTMLForOption);
-
-  $(".convert input").click(convertCaseForText);
-
-  $("#extraStatisticsButton").click(updateStatsWithExtraStatistics);
   
   resizeHeightOfDefinitionBox();
   $(window).resize(resizeHeightOfDefinitionBox);
@@ -529,229 +413,3 @@ function updateInputText(file, data){
   $("#close_file").click(clear_text);
   $("#counter").focus();
 }
-
-function resizeHeightOfDefinitionBox(){
-
-  var definitionBox=$("#definitionBox").height();
-  var infoBox=$("#infoBox").height();
-  if(infoBox>definitionBox)
-    $("#definitionBox").height($("#infoBox").height());
-  else
-    $("#infoBox").height($("#definitionBox").height());
-  
-  var statistics_height=$("#statistics").height();
-  var boxContainer_height=$("#boxContainer").height();
-
-  if(boxContainer_height>statistics_height)
-    $("#statistics").height($("#boxContainer").height());
-  else{
-    $("#boxContainer").height($("#statistics").height());
-  }
-}
-
-function generate_customized_ads(){
-  var img_url="assets/ads/why-would-you-appear-on-tv-news.jpg";
-  var img_str="<a rel='nofollow' target='_blank' href='http://funfortuneteller.net/app/what-would-you-on-the-tv-breaking-news-for'><img id='customized_img_ad' src='"+img_url+"'/></a>";
-  $("#customized_ads").html(img_str);
-}
-
-
-(function(factory) {
-
-  if (typeof define === 'function' && define.amd) {
-    define(['jquery'], factory);
-  } else if (typeof exports === 'object') {
-    factory(require('jquery'));
-  } else {
-    factory(jQuery);
-  }
-
-})(function($) {
-
-  var browserType,
-
-  textrange = {
-
-    get: function(property) {
-      return _textrange[browserType].get.apply(this, [property]);
-    },
-
-    set: function(start, length) {
-      var s = parseInt(start),
-          l = parseInt(length),
-          e;
-
-      if (typeof start === 'undefined') {
-        s = 0;
-      } else if (start < 0) {
-        s = this[0].value.length + s;
-      }
-
-      if (typeof length !== 'undefined') {
-        if (length >= 0) {
-          e = s + l;
-        } else {
-          e = this[0].value.length + l;
-        }
-      }
-
-      _textrange[browserType].set.apply(this, [s, e]);
-
-      return this;
-    },
-
-    setcursor: function(position) {
-      return this.textrange('set', position, 0);
-    },
-
-
-    replace: function(text) {
-      _textrange[browserType].replace.apply(this, [String(text)]);
-
-      return this;
-    },
-
-
-    insert: function(text) {
-      return this.textrange('replace', text);
-    }
-  },
-
-  _textrange = {
-    xul: {
-      get: function(property) {
-        var props = {
-          position: this[0].selectionStart,
-          start: this[0].selectionStart,
-          end: this[0].selectionEnd,
-          length: this[0].selectionEnd - this[0].selectionStart,
-          text: this.val().substring(this[0].selectionStart, this[0].selectionEnd)
-        };
-
-        return typeof property === 'undefined' ? props : props[property];
-      },
-
-      set: function(start, end) {
-        if (typeof end === 'undefined') {
-          end = this[0].value.length;
-        }
-
-        this[0].selectionStart = start;
-        this[0].selectionEnd = end;
-      },
-
-      replace: function(text) {
-        var start = this[0].selectionStart;
-        var end = this[0].selectionEnd;
-        var val = this.val();
-        this.val(val.substring(0, start) + text + val.substring(end, val.length));
-        this[0].selectionStart = start;
-        this[0].selectionEnd = start + text.length;
-      }
-    },
-
-    msie: {
-      get: function(property) {
-        var range = document.selection.createRange();
-
-        if (typeof range === 'undefined') {
-          var props = {
-            position: 0,
-            start: 0,
-            end: this.val().length,
-            length: this.val().length,
-            text: this.val()
-          };
-
-          return typeof property === 'undefined' ? props : props[property];
-        }
-
-        var start = 0;
-        var end = 0;
-        var length = this[0].value.length;
-        var lfValue = this[0].value.replace(/\r\n/g, '\n');
-        var rangeText = this[0].createTextRange();
-        var rangeTextEnd = this[0].createTextRange();
-        rangeText.moveToBookmark(range.getBookmark());
-        rangeTextEnd.collapse(false);
-
-        if (rangeText.compareEndPoints('StartToEnd', rangeTextEnd) === -1) {
-          start = -rangeText.moveStart('character', -length);
-          start += lfValue.slice(0, start).split('\n').length - 1;
-
-          if (rangeText.compareEndPoints('EndToEnd', rangeTextEnd) === -1) {
-            end = -rangeText.moveEnd('character', -length);
-            end += lfValue.slice(0, end).split('\n').length - 1;
-          } else {
-            end = length;
-          }
-        } else {
-          start = length;
-          end = length;
-        }
-
-        var props = {
-          position: start,
-          start: start,
-          end: end,
-          length: length,
-          text: range.text
-        };
-
-        return typeof property === 'undefined' ? props : props[property];
-      },
-
-      set: function(start, end) {
-        var range = this[0].createTextRange();
-
-        if (typeof range === 'undefined') {
-          return;
-        }
-
-        if (typeof end === 'undefined') {
-          end = this[0].value.length;
-        }
-
-        var ieStart = start - (this[0].value.slice(0, start).split("\r\n").length - 1);
-        var ieEnd = end - (this[0].value.slice(0, end).split("\r\n").length - 1);
-
-        range.collapse(true);
-
-        range.moveEnd('character', ieEnd);
-        range.moveStart('character', ieStart);
-
-        range.select();
-      },
-
-      replace: function(text) {
-        document.selection.createRange().text = text;
-      }
-    }
-  };
-
-  $.fn.textrange = function(method) {
-    if (typeof this[0] === 'undefined') {
-      return this;
-    }
-
-    if (typeof browserType === 'undefined') {
-      browserType = 'selectionStart' in this[0] ? 'xul' : document.selection ? 'msie' : 'unknown';
-    }
-
-    if (browserType === 'unknown') {
-      return this;
-    }
-
-    if (document.activeElement !== this[0]) {
-      this[0].focus();
-    }
-
-    if (typeof method === 'undefined' || typeof method !== 'string') {
-      return textrange.get.apply(this);
-    } else if (typeof textrange[method] === 'function') {
-      return textrange[method].apply(this, Array.prototype.slice.call(arguments, 1));
-    } else {
-      $.error("Method " + method + " does not exist in jQuery.textrange");
-    }
-  };
-});
