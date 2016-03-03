@@ -1,58 +1,8 @@
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-body { 
-    font-family: 'Open Sans', sans-serif;
-    margin:0;
-}
-
-p { 
-    text-align:center; /* centrage horizontal d'un élément en-ligne */ 
-    color:white;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-
-h1 {
-    vertical-align: top;
-    margin-top: 15px;
-    display: inline-block;
-    font-size: 39px;
-    font-weight: 100;
-    color: #bfc4dc;
-    text-transform: uppercase;
-    text-shadow: rgb(81, 107, 240) 0px 0px 20px;
-    letter-spacing: 10px;
-}
-
-h2 {
-    font-size: 26px;
-    font-weight: 100;
-    padding:50px 0 0 30px;
-    color: #b6bacc;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-h3{
-    font-size: 18px;
-    color: white;
-}
-
-h4{
-    font-size: 18px;
-    color: white;
-}
-hr {
-    vertical-align: top;
-    display: inline-block;
-    box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0;
-    width:600px;
-    margin:54px 20px 0 4px;
+html, body{
+  background-color: #141722;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* ============================================================
@@ -60,10 +10,10 @@ hr {
 ============================================================ */
 
 body#home {
-    background-image:url("../img/background/bg_accueil.jpg");
-    background-position:center center;
-    background-color: #000;
-    text-align: center;
+  background-image:url("../img/background/bg_accueil.jpg");
+  background-position:center center;
+  background-color: #000;
+  text-align: center;
 }
 
 /* ============================================================
@@ -71,15 +21,15 @@ body#home {
 ============================================================ */
 
 .logo-rockfort {
-      width: 232px;
-      height: 232px;
-      margin: 0px auto;
-      background-size: 100% 100%;
-      -webkit-animation: logoAnimation 4s linear;
-      -moz-animation: logoAnimation 4s linear;
-      -o-animation: logoAnimation 4s linear;
-      background-image: url(../img/logo/logo-rockfort-allume.svg);
-  }
+  width: 232px;
+  height: 232px;
+  margin: 0px auto;
+  background-size: 100% 100%;
+  -webkit-animation: logoAnimation 4s linear;
+  -moz-animation: logoAnimation 4s linear;
+  -o-animation: logoAnimation 4s linear;
+  background-image: url(../img/logo/logo-rockfort-allume.svg);
+}
 
 @-webkit-keyframes logoAnimation {
     
@@ -209,10 +159,16 @@ body#home {
   CONTENT HOME
 ============================================================ */
 
+#txt_accueil{
+  color: #ffffff;
+  font-size: 15px;
+  margin: 10px 0 50px 0;
+}
+
 #contentHome {
-	width: 600px;
-	margin-right: auto;
-	margin-left: auto;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
     text-align:center;
 }
 
@@ -231,12 +187,12 @@ body#home {
 }
 
 #timeline{
-	text-align: center;
-	margin-bottom: 25px;
-	margin-top: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
-#submit{ 	
+#submit{  
     border-radius: 50px;
     border: 2px solid #fff;
     overflow: hidden;
@@ -260,10 +216,10 @@ body#home {
 }
 
 #submit:hover{
-	color: #e2e6fd;
-	border-color: #e2e6fd;
-	box-shadow: 0px 0px 20px #516bf0, 0px 0px 20px #516bf0 inset;
-	text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
+  color: #e2e6fd;
+  border-color: #e2e6fd;
+  box-shadow: 0px 0px 20px #516bf0, 0px 0px 20px #516bf0 inset;
+  text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
 }
 
 #credit{    
@@ -301,11 +257,11 @@ body#home {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
     /*background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,1) 100%);*/
     background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.43) 33%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 33%,rgba(0,0,0,1) 76%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 33%,rgba(0,0,0,1) 76%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 33%,rgba(0,0,0,1) 76%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 33%,rgba(0,0,0,1) 76%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* ============================================================
@@ -338,162 +294,171 @@ body#home {
   END - HOME
 ============================================================ */
 
-
 /* ============================================================
-  START - CONTENT LAB
+  HEADER + CONTENEUR
 ============================================================ */
-
-body#leLab {
-    background-color:#141722;
+#super_container{
+  width: 1366px;
+  margin: auto;
 }
 
-
-#logo {
-    display: inline-block;
-    margin-right: 15px;
-    height:85px;
+header{
+  margin-top: 40px;
 }
 
-#contentLab {
-    width: 1366px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align:center;
-    padding-top:40px;
+#logo{
+  width: 105px;
+  margin-left: 5px;
+  margin-right: 15px;
 }
 
-#lab {
-    width: 1086px;
-    margin-right: 280px;
-    text-align:center;
+.titre_page{
+  font-size: 39px;
+  font-weight: 100;
+  color: #bfc4dc;
+  text-transform: uppercase;
+  text-shadow: rgb(81, 107, 240) 0px 0px 20px;
+  letter-spacing: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 0px;
 }
 
+#entete{
+  margin: 28px 0;
+  display: inline-block;
+  box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0;
+  width: 600px;
+}
 
+.info{
+  border-radius: 40px;
+  border: 2px solid #a2a2a2;
+  color: #a2a2a2;
+  overflow: hidden;
+  width: 36px;
+  padding: 6px 0;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: top;
+  margin: 20px 15px;
+}
+
+.info:hover{
+  cursor: pointer;
+  outline: none;
+  color: #e2e6fd;
+  border-color: #e2e6fd;
+  box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0 inset;
+  text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
+}
 /* ============================================================
-  EQUALIZER
+  PAGE LAB
 ============================================================ */
-
-#equalizer {
-    margin-left:50px;
-    width: 1000px;
-    height: 225px;
-    margin-top: 10px;
-    position: relative;
-   
-}
-#viz_equalizer{
-    background-color:white;
-    width: 600px;
-    height: 225px;
-    position: absolute;
+#lab{
+  width: 1086px;
+  padding: 0 50px;
 }
 
-#equalizer h3 {
-    position: absolute;
-    left: 620px;
-    margin: 0;
+h3.titre_encart{
+  font-size: 18px;
+  color: white;
 }
 
-/* ============================================================
-  PARAMETRES
-============================================================ */
-
-#parametre {
-    background-color:white;
-    width: 360px;
-    height: 190px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-
+#titre_parametre{
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
+#container_equalizer{
+  width: 1000px;
+  margin-top: 10px;
+}
 
-/* ============================================================
-  MOTS
-============================================================ */
+#spectre{
+  background-color: white;
+  width: 600px;
+  height: 225px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#contain_parametre{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#parametre{
+  background-color: white;
+  height: 190px;
+  width: 360px;
+}
 
 #mots{
-    background-color:white;
-    width: 980px;
-    height: 106px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left:50px;
+  background-color: #fff;
+  margin-top: 20px;
+  width: 980px;
+  height: 106px;
 }
 
 /* ============================================================
   SUGGESTION
 ============================================================ */
-
-#suggestion {
-    margin-left:50px;
-    width: 980px;
-    height:140px;
+.sug{
+  background-color: #262b40;
+  width:310px;
+  max-height: 110px;
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
 }
 
-#suggestion img {
-    margin-left:-200px;
+.sug:nth-of-type(1){
+  margin-left: 0px;
 }
 
-#suggestion h3 {
-    margin-left: 5px;
-    margin-top: -10px;
-    margin-bottom: -12px;
-    text-align: left;
+.pochette_sug{
+  display: inline-block;
 }
 
-#suggestion h4 {
-  font-size: 16px;
-  text-align: left;
+.contain_info_sug{
+  display: inline-block;
+  vertical-align: top;
+  padding: 13px 13px 0 13px;
   color: white;
-  font-weight: 500;
-  padding-left:130px;
-  line-height: 1;
-    margin: 0;
 }
 
-#suggestion h4.artiste {
-  margin-top:-95px;
-}
-
-#suggestion h5 {
+.genre_sug{
   font-size: 14px;
-  text-align: left;
-  color: white;
+  position: absolute;
+  bottom: 13px;
+}
+
+/* ============================================================
+  PANNEAU PLAYLIST
+============================================================ */
+#panel_right{
+  position: absolute;
+  width: 280px;
+  background-color: #262b40;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.titre_playlist{
+  font-size: 26px;
   font-weight: 100;
-  padding-left:130px;
-  margin-top:-5px;
+  margin: 50px 0 0 30px;
+  color: #b6bacc;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
-
-#sug1,  #sugg2, #sugg3 {
-    background-color: #262b40;
-    width:310px;
-    height: 110px;
-    margin-top: 20px;
-    }
-
-#sug2 {
-    background-color: #262b40;
-    width:310px;
-    height: 110px;
-    margin-left: 335px;
-    margin-top: -110px;
-    display: block;
-}
-
-#sug3{
-    background-color: #262b40;
-    width:310px;
-    height: 110px;
-    margin-left: 670px;
-    margin-top: -110px;
-    display: block;
+#icocasque{
+  display: inline-block;
+  margin-left: 10px;
 }
 
 /* ============================================================
@@ -572,41 +537,6 @@ body#leLab {
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right:45px; 
-}
-
-
-/* ============================================================
-  PLAYLIST
-============================================================ */
-
-#icoCasque {
-    display: block;
-    margin: -49px 0 0 150px;
-}
-
-
-#playlist {
-    background-color: #262b40;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 280px;
-}
-
-#infoBulle{
-    position: absolute;
-    top: 118px;
-    left: -460px;
-    width: 400px;
-    background-color: #262b40;
-    padding: 20px;
-}
-
-#infoBulle p{
-    text-align: left;
-    color: #b6bacc;
-    margin: 0;
 }
 
 .subMenu p {
