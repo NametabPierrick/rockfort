@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once('php/connexion.php');
-    $_SESSION['periode']="test";
+
 ?>
 
 <!DOCTYPE HTML>
@@ -32,13 +32,13 @@
     <div id="table">
         <div id="table-cell">
             <div id="contentHome">
-                 <div class="logo-rockfort"></div>
+                <div class="logo-rockfort"></div>
 
                 <p id="txt_accueil"> Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ? Tu t’apprêtes à découvrir les 250 chansons rock du classement Rolling Stones sous un nouveau jour. Nous t’avons préparé des informations inédites à travers une expérience originale et interactive. <br><br>Pour commencer ton voyage, selectionne une période à l’aide de la timeline ci-dessous. Es-tu prêt ?</p> 
-    
-                <input class="range-slider" type="hidden" value="1949,2009"/>
-   
-                <a href="lab.php"><button id="submit">Let's Rock</button></a>
+                <form action="lab.php" method="POST">
+                    <input class="range-slider" name="periode" type="hidden" value="1949,2009"/>
+                    <button id="submit">Let's Rock</button>
+                </form>
             </div>
         </div>
     </div>

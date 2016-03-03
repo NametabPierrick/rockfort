@@ -96,7 +96,7 @@
 }
 
 .sm2-main-controls {
-  /* margin-top: 400px; */
+  margin-top: 400px;
   background-color: #1c2030;
   padding-bottom: 12px;
 }
@@ -112,7 +112,7 @@
 
 .sm2-bar-ui .sm2-inline-gradient {
  /* gradient */
- /* position: absolute; */
+ position: absolute;
  left: 0px;
  top: 0px;
  width: 100%;
@@ -765,7 +765,7 @@ width: 0.9333em;
 
 .sm2-bar-ui.fixed .bd.sm2-playlist-drawer,
 .sm2-bar-ui.bottom .bd.sm2-playlist-drawer {
- /* position: absolute; */
+ position: absolute;
 }
 
 .sm2-bar-ui.fixed .sm2-playlist-wrapper,
@@ -776,8 +776,8 @@ width: 0.9333em;
 .sm2-bar-ui.fixed .bd.sm2-playlist-drawer,
 .sm2-bar-ui.bottom .bd.sm2-playlist-drawer {
  /* show playlist on top */
- /* bottom: 2.8em;
- */}
+ bottom: 2.8em;
+}
 
 .sm2-bar-ui .bd.sm2-playlist-drawer {
  opacity: 0.5;
@@ -795,7 +795,7 @@ width: 0.9333em;
 .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer {
  height: auto;
  opacity: 1;
- /* margin-bottom: 70px; */
+ margin-bottom: 70px;
 }
 
 .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer a {

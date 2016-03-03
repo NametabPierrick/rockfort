@@ -33,7 +33,7 @@ body#home {
 
 @-webkit-keyframes logoAnimation {
     
-    0% {background-image: url(../img/logo/../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
+    0% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
     2.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
     5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
     7.5% {background-image: url(../img/logo/logo-rockfort-eteint.svg);opacity: 1;}
@@ -193,26 +193,23 @@ body#home {
 }
 
 #submit{  
-    border-radius: 50px;
-    border: 2px solid #fff;
-    overflow: hidden;
-    text-transform: uppercase;
-    width: 210px;
-    padding: 10px 0;
-    background-color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 50px;
-    outline: none;
-    cursor: pointer;
-}
-
-#submit a {
-    text-decoration: none;
-    color: #fff;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  text-transform: uppercase;
+  width: 210px;
+  padding: 10px 0;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 #submit:hover{
