@@ -373,12 +373,24 @@ h3.titre_encart{
   margin-top: 10px;
 }
 
-#spectre{
+canvas:first-of-type{
+  width: 600px;
+  height: 225px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #262b40;
+}
+
+/* #spectre{
   background-color: white;
   width: 600px;
   height: 225px;
   display: inline-block;
   vertical-align: top;
+} */
+
+.invisible{
+  display: none;
 }
 
 #contain_parametre{
@@ -447,7 +459,7 @@ h3.titre_encart{
 .titre_playlist{
   font-size: 26px;
   font-weight: 100;
-  margin: 50px 0 0 30px;
+  margin: 50px 0 10px 30px;
   color: #b6bacc;
   text-transform: uppercase;
   display: inline-block;

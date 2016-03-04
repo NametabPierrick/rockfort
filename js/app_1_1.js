@@ -23,8 +23,9 @@ var App = {
 			pixelsPerSample:1
 		});
 		
-		document.body.insertBefore(this._oscope.getNode(), document.body.firstChild);
-		document.body.appendChild(this._oscope.getFPS());
+		//document.body.insertBefore(this._oscope.getNode(), document.body.firstChild);
+		document.getElementById("container_equalizer").insertBefore(this._oscope.getNode(), document.getElementById("container_equalizer").firstChild);
+		//document.body.appendChild(this._oscope.getFPS());
 		this._oscope.start();
 
 		this._setMode("local");
@@ -252,8 +253,8 @@ Object.assign(App.Local.prototype, App.File.prototype, {
 		this._clear();
 
 		var url = e.target.value;	
-		this._play(url, document.querySelector("#player"));
-		$('canvas').css('background-color', 'hsl('+Math.floor(Math.random()*360)+',50%,50%)');
+		this._play(url, document.querySelector("#start_song"));
+		//$('canvas').css('background-color', 'hsl('+Math.floor(Math.random()*360)+',50%,50%)');
 		
 		//alert(url);
 	}

@@ -3,8 +3,8 @@
 	require_once('php/connexion.php');
 	$periode = $_POST['periode'];
 	$annee = explode(",", $periode);
-	echo $annee[0]." et ";
-	echo $annee[1];
+	/*echo $annee[0]." et ";
+	echo $annee[1];*/
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,7 +22,7 @@
 		<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" /><link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" /><link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" /><meta name="msapplication-TileImage" content="mstile-144x144.png" /><meta name="msapplication-square70x70logo" content="mstile-70x70.png" /><meta name="msapplication-square150x150logo" content="mstile-150x150.png" /><meta name="msapplication-wide310x150logo" content="mstile-310x150.png" /><meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 		<!-- demo for this page only, you don't need this stuff -->
 		<script src="js/demo.js"></script>
-		<link rel="stylesheet" href="css/demo.css" />
+		<!-- <link rel="stylesheet" href="css/demo.css" /> -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script type="text/javascript">
 
@@ -48,7 +48,6 @@
 				return false;
 				});//fin toggle playlist
 
-
 			});
 
 		</script>
@@ -63,9 +62,8 @@
 					<hr id="entete">
 					<button class="info">i</button>
 				</header>
-				<section id="container_equalizer">
-					<div id="spectre"></div><!-- ce commentaire est nécessaire pour parer à un bug tout pourri
-					--><div id="contain_parametre">
+				<section id="container_equalizer"><!-- commentaire obligatoire pour supprimer le caractère invisible entre ces deux eléments
+					 --><div id="contain_parametre">
 						<h3 id="titre_parametre" class="titre_encart">Paramètres</h3>
 						<div id="parametre"></div>
 					</div>
@@ -177,7 +175,7 @@
 					</div>
 					<div class="sm2-inline-element sm2-button-element">
 						<div class="sm2-button-bd">
-							<a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+							<a href="#play" id="start_song" value="song/1.mp3" class="sm2-inline-button play-pause">Play / pause</a>
 						</div>
 					</div>
 					<div class="sm2-inline-element sm2-button-element">
@@ -201,5 +199,38 @@
 			</label>
 		</div>
 	</div>
+
+	<section id="signal" class="invisible">
+		<label><input type="checkbox" checked="checked" />Stabilize</label>
+		<label>Frequency #1: <input type="range" min="20" max="1000" value="440" /><span></span></label>
+		<label>Shape #1: <select>
+			<option value="sine">Sine</option>
+			<option value="square">Square</option>
+			<option value="triangle">Triangle</option>
+			<option value="sawtooth">Sawtooth</option>
+		</select></label>
+		<label>Frequency #2: </label>
+		<label>Shape #2: </label>
+	</section>
+
+	<input type="radio" name="mode" id="mode-local" value="local" class="invisible" /> 
+
+	<!-- C'est ici qu'on lance les fichiers audio -->
+	
+    <section id="local">
+		<button value="Rolling Stones-GimmeShelter.mp3" type="button" />The Rolling Stones, Gimme shelter</button>
+        <button value="Pink Floyd-Wish.mp3" type="button" />Pink Floyd, Wish you were here</button>
+	</section>
+    
+    <section id="player"></section>
+
+	<!-- script pour spectre -->
+	<script src="js/object.assign.js"></script>
+	<script src="js/performance.now.js"></script>
+	<script src="js/oscope.js"></script>
+	<script src="js/app_1_1.js"></script>
+
+	<script>App.init();</script>
+	<!-- fin script pour spectre -->
 </body>
 </html>
