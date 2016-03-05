@@ -3,6 +3,7 @@
 	require_once('php/connexion.php');
 	$periode = $_POST['periode'];
 	$annee = explode(",", $periode);
+	echo $periode;
 	/*echo $annee[0]." et ";
 	echo $annee[1];*/
 ?>
@@ -24,44 +25,17 @@
 		<script src="js/demo.js"></script>
 		<!-- <link rel="stylesheet" href="css/demo.css" /> -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript">
-
-			$(document).ready( function () {
-				// On cache les sous-menus :
-				$(".sm2-playlist-bd ul.subMenu").hide();
-				// On sélectionne tous les items de liste portant la classe "toggleSubMenu"
-				// On modifie l'évènement "click" sur les liens dans les items de liste
-				// qui portent la classe "toggleSubMenu" :
-				$(".sm2-playlist-bd li.toggleSubMenu > img").click( function () {
-				// Si le sous-menu était déjà ouvert, on le referme :
-				if ($(this).next("ul.subMenu:visible").length != 0) {
-					$(this).next("ul.subMenu").slideUp("normal");
-					$('.sm2-playlist-bd li.toggleSubMenu > .fleche_bottom').attr('src','img/fleche_bottom.png');
-				}
-				// Si le sous-menu est caché, on ferme les autres et on l'affiche :
-				else {
-					$(".sm2-playlist-bd ul.subMenu").slideUp("normal");
-					$(this).next("ul.subMenu").slideDown("normal");
-					$('.sm2-playlist-bd li.toggleSubMenu > .fleche_bottom').attr('src','img/fleche_top.png');
-				}
-				// On empêche le navigateur de suivre le lien :
-				return false;
-				});//fin toggle playlist
-
-			});
-
-		</script>
 	</head>
+
 	<body>
-		
 		<div id="super_container">
+			<header>
+				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
+				<h1 class="titre_page">Le lab</h1>
+				<hr id="entete">
+				<button class="info">i</button>
+			</header>
 			<div id="lab">
-				<header>
-					<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
-					<h1 class="titre_page">Le lab</h1>
-					<hr id="entete">
-					<button class="info">i</button>
-				</header>
 				<section id="container_equalizer"><!-- commentaire obligatoire pour supprimer le caractère invisible entre ces deux eléments
 					 --><div id="contain_parametre">
 						<h3 id="titre_parametre" class="titre_encart">Paramètres</h3>
@@ -97,6 +71,12 @@
 				</div>
 			</section>
 		</div>
+
+		<div id="page_map">
+			<form action="" method="">
+                <input class="range-slider" id="timelineMap" name="periode" type="hidden" value=<?php echo '"'.$periode.'"'; ?>/>
+            </form>
+		</div>
 	</div>
 	<div id="panel_right">
 		<h2 class="titre_playlist">Playlist</h2>
@@ -108,7 +88,7 @@
 				<div class="bd sm2-playlist-drawer sm2-element">
 					<!-- playlist content is mirrored here -->
 					<div class="sm2-playlist-wrapper">
-						<ul class="sm2-playlist-bd">
+						<ul class="sm2-playlist-bd" id="playlist_dynamique">
 							<!-- standard one-line items -->
 							
 							<?php
@@ -232,5 +212,87 @@
 
 	<script>App.init();</script>
 	<!-- fin script pour spectre -->
+
+	<script type="text/javascript">
+
+	$(document).ready( function () {
+		// On cache les sous-menus :
+		$(".sm2-playlist-bd ul.subMenu").hide();
+		// On sélectionne tous les items de liste portant la classe "toggleSubMenu"
+		// On modifie l'évènement "click" sur les liens dans les items de liste
+		// qui portent la classe "toggleSubMenu" :
+		$(".sm2-playlist-bd li.toggleSubMenu > img").click( function () {
+		// Si le sous-menu était déjà ouvert, on le referme :
+		if ($(this).next("ul.subMenu:visible").length != 0) {
+			$(this).next("ul.subMenu").slideUp("normal");
+			$('.sm2-playlist-bd li.toggleSubMenu > .fleche_bottom').attr('src','img/fleche_bottom.png');
+		}
+		// Si le sous-menu est caché, on ferme les autres et on l'affiche :
+		else {
+			$(".sm2-playlist-bd ul.subMenu").slideUp("normal");
+			$(this).next("ul.subMenu").slideDown("normal");
+			$('.sm2-playlist-bd li.toggleSubMenu > .fleche_bottom').attr('src','img/fleche_top.png');
+		}
+		// On empêche le navigateur de suivre le lien :
+		return false;
+		});//fin toggle playlist
+
+		//Initialisation de la timeline
+		$('.single-slider').jRange({
+                from: -2.0,
+                to: 2.0,
+                step: 0.5,
+                scale: [-2.0,-1.0,0.0,1.0,2.0],
+                format: '%s',
+                width: 300,
+                showLabels: true,
+                snap: true
+            });
+            $('.range-slider').jRange({
+                from: 1949,
+                to: 2009,
+                step: 1,
+                scale: [1949,2009],
+                format: '%s',
+                width: 600,
+                showLabels: true,
+                isRange : true
+            });
+        //fin initialisation de la timeline    
+	});
+
+	/*changement de map*/
+	function changementPage(){
+		var btnSwitch = $("#myonoffswitch");
+		if (btnSwitch.is(':checked')){
+			$("#lab").fadeOut(function(){
+				$("#page_map").fadeIn();
+			})
+		}else{
+			$("#page_map").fadeOut(function(){
+				$("#lab").fadeIn();
+			})
+		}
+	}
+
+	/*changement de page au changement d'etat du bouton*/
+	$("#myonoffswitch").change(function(){
+		changementPage();
+	})
+
+	$("#timelineMap").change(function(){
+       /* $.ajax({
+	    	//url : 'php/timelineRange.php', // La ressource ciblée
+			//type : 'POST' // Le type de la requête HTTP.
+			//data : {data:str},
+			//success : function(newplaylist){ // code_html contient le HTML renvoyé
+				//alert("dans sucess");
+				//$("#playlist_dynamique").html(newplaylist);
+       		}
+	    });*/
+    });
+
+	</script>
+	<script src="js/jquery.range.js"></script>
 </body>
 </html>

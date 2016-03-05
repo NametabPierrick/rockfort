@@ -295,12 +295,13 @@ body#home {
   HEADER + CONTENEUR
 ============================================================ */
 #super_container{
-  width: 1366px;
+  max-width: 1366px;
   margin: auto;
+  padding-left: 50px;
 }
 
 header{
-  margin-top: 40px;
+  padding: 40px 0 10px 0;
 }
 
 #logo{
@@ -354,8 +355,12 @@ header{
   PAGE LAB
 ============================================================ */
 #lab{
-  width: 1086px;
-  padding: 0 50px;
+  max-width: 980px;
+  display: none;
+}
+
+#page_map{
+  max-width: 980px;
 }
 
 h3.titre_encart{
@@ -370,7 +375,6 @@ h3.titre_encart{
 
 #container_equalizer{
   width: 1000px;
-  margin-top: 10px;
 }
 
 canvas:first-of-type{
