@@ -44,30 +44,21 @@
 			<section id="mots"></section>
 			<section id="suggestion">
 				<h3 class="titre_encart">Ecoute aussi ...</h3>
+				<?php
+					$reponse = $bdd->query("SELECT * FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND rf_genre_morceau.id_genre = rf_genre.id_genre AND rf_morceau.id_morceau = rf_genre_morceau.id_morceau ORDER BY RAND() LIMIT 3");
+					while ($donnees = $reponse->fetch()){
+				?>
 				<div class="sug">
 					<img src="img/pochette-bdd.jpg" alt="photo_artiste" class="pochette_sug"/><div class="contain_info_sug">
-						<div class="nom_artiste_sug">The Rolling Stone</div>
-						<div class="titre_sugg">Angie</div>
-						<div class="genre_sug">Genre</div>
+						<div class="nom_artiste_sug"><?php echo $donnees['nom']; ?></div>
+						<div class="titre_sugg"><?php echo $donnees['titre']; ?></div>
+						<div class="genre_sug"><?php echo $donnees['nom_genre']; ?></div>
 					</div>
 				</div>
-				
-				<div class="sug">
-					<img src="img/pochette-bdd.jpg" alt="photo_artiste" class="pochette_sug">
-					<div class="contain_info_sug">
-						<div class="nom_artiste_sug">The Rolling Stone</div>
-						<div class="titre_sugg">Angie</div>
-						<div class="genre_sug">Genre</div>
-					</div>
-				</div>
-				<div class="sug">
-					<img src="img/pochette-bdd.jpg" alt="photo_artiste" class="pochette_sug">
-					<div class="contain_info_sug">
-						<div class="nom_artiste_sug">The Rolling Stone</div>
-						<div class="titre_sugg">Angie</div>
-						<div class="genre_sug">Genre</div>
-					</div>
-				</div>
+				<?php
+					}
+					$reponse->closeCursor();
+				?>
 			</section>
 			<section id="signal" class="invisible">
 				<label><input type="checkbox" checked="checked" />Stabilize</label>

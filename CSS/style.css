@@ -430,6 +430,7 @@ canvas:first-of-type{
   display: inline-block;
   margin-left: 20px;
   position: relative;
+  font-size: 15px;
 }
 
 .sug:nth-of-type(1){
@@ -445,6 +446,7 @@ canvas:first-of-type{
   vertical-align: top;
   padding: 13px 13px 0 13px;
   color: white;
+  width: 170px;
 }
 
 .genre_sug{
