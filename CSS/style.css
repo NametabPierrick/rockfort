@@ -363,6 +363,11 @@ header{
   max-width: 980px;
 }
 
+#form_timelineMap{
+  width: 600px;
+  margin: auto;
+}
+
 h3.titre_encart{
   font-size: 18px;
   color: white;
