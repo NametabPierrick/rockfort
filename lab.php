@@ -121,9 +121,10 @@
 							
 							<ul class="subMenu">
 								<li>
-									<img style="float: left; margin-right: 10px; margin-bottom: 10px;"src="img/nirvana.png">
-									<p style="font-size: 20px; margin-top: 20px;"><?php echo $donnees['annee']; ?></p>
-									<p style="font-size: 20px; line-height: 57px;"><?php echo $donnees['id_morceau']; ?></p>
+									<img src="img/nirvana.png">
+									<p class="infoSong"><?php echo $donnees['annee']; ?></p>
+									<p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
+									<img id="medaille" src="img/medaille.png"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
 									<p>La chanson devient un hymne de la génération X et fait accéder le groupe à la célébrité internationale, une notoriété que ses membres, et Kurt Cobain en particulier, ont du mal à assumer.</p>
 								</li>
 							</ul>
