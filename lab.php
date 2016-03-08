@@ -274,15 +274,19 @@ function changementPage(){
 	var btnSwitch = $("#myonoffswitch");
 	if (btnSwitch.is(':checked')){
 		$("#lab").fadeOut(function(){
-			$("#page_map").fadeIn();
+			$("#tutoLab").fadeOut(function(){
+				$("#page_map").fadeIn();
+			});
 			$("#titre_conteneur").text("la map");
-			$("#tutoLab").fadeOut(10);
+
 		})
 	}else{
 		$("#page_map").fadeOut(function(){
-			$("#lab").fadeIn();
+			$("#tutoMap").fadeOut(function(){
+				$("#lab").fadeIn();
+			});
 			$("#titre_conteneur").text("le lab");
-			$("#tutoMap").fadeOut(10);
+
 		})
 	}
 }
