@@ -30,7 +30,7 @@
 		<div id="super_container">
 			<header>
 				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
-				<h1 class="titre_page">Le lab</h1>
+				<h1 class="titre_page" id="titre_conteneur">La map</h1>
 				<hr id="entete">
 				<button class="info">i</button>
 			</header>
@@ -87,8 +87,8 @@
 		<object type="image/svg+xml" data="map.svg">
 		Le navigateur ne peut lire cette map
 		</object>
-		<form id="form_timelineMap" action="lab.php" method="POST">
-			<input class="range-slider" id="timelineMap" name="periode" type="hidden" value=<?php echo '"'.$periode.'"'; ?>/>
+		<form id="form_timelineMap" action="php/timelineRange.php" method="POST">
+			<input class="range-slider" id="timelineMap" name="timelineMap" type="hidden" value=<?php echo '"'.$periode.'"'; ?>/>
 		</form>
 	</div>
 </div>
@@ -251,10 +251,12 @@ function changementPage(){
 	if (btnSwitch.is(':checked')){
 		$("#lab").fadeOut(function(){
 			$("#page_map").fadeIn();
+			$("#titre_conteneur").text("la map");
 		})
 	}else{
 		$("#page_map").fadeOut(function(){
 			$("#lab").fadeIn();
+			$("#titre_conteneur").text("le lab");
 		})
 	}
 }
@@ -262,13 +264,22 @@ function changementPage(){
 $("#myonoffswitch").change(function(){
 	changementPage();
 })
-$("#form_timelineMap").mouseup(function(e){
-	e.preventDefault();
-/*$.ajax({
-	
-	});*/
 
+$("#form_timelineMap").mouseup(function(e){
+	//e.preventDefault();
+
+	$.ajax({
+		url: 'php/timelineRange.php',
+		type:'POST',
+		data: 'new_periode='+$("#timelineMap").val(),
+		dataType : 'html',
+		success: function(code_html){
+			$('#playlist_dynamique').html(code_html);
+		}
+	});
 });
+
+
 </script>
 <script src="js/jquery.range.js"></script>
 </body>
