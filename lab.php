@@ -130,7 +130,7 @@
 									<img src=<?php echo "artistes/".$donnees['id_morceau'].".png"; ?>>
 									<p class="infoSong"><?php echo $donnees['annee']; ?></p>
 									<p class="infoSong">nom du studio</p>
-									<p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
+									<img src="img/medaille.png" id="medaille"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
 									<p>La chanson devient un hymne de la génération X et fait accéder le groupe à la célébrité internationale, une notoriété que ses membres, et Kurt Cobain en particulier, ont du mal à assumer.</p>
 								</li>
 							</ul>

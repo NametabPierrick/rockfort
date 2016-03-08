@@ -536,7 +536,7 @@ width: 0.9333em;
 .playing .play-pause {
  background-image: none, url(../img/pause.png);
  /*background-size: 57.6%;*/
- background-position: 50% 53%;
+ background-position: 40% 53%;
 }
 
 .sm2-volume-control {

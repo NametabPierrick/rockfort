@@ -589,6 +589,11 @@ canvas:first-of-type{
   margin-right: 10px;
 }
 
+.subMenu #medaille{
+  width: 10px;
+  margin-right: 5px;
+}
+
 /* ============================================================
   END CONTENT LAB
 ============================================================ */
