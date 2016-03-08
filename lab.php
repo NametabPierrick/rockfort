@@ -11,7 +11,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Rockfort - Lab</title>
+		<title>Rockfort | Map & Lab</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="js/jquery.range.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,300,300italic,700italic,400italic,600,800,800italic' rel='stylesheet' type='text/css'>
@@ -28,13 +28,14 @@
 	</head>
 	<body>
 		<div id="super_container">
-			<header>
-				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
-				<h1 class="titre_page">Le lab</h1>
-				<hr id="entete">
-				<button class="info">i</button>
-			</header>
+
 			<div id="lab">
+				<header>
+					<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
+					<h1 class="titre_page">Le lab</h1>
+					<hr class="hr hrLab">
+					<button class="info">i</button>
+				</header>
 				<section id="container_equalizer"><!-- commentaire obligatoire pour supprimer le caractère invisible entre ces deux eléments
 					--><div id="contain_parametre">
 						<h3 id="titre_parametre" class="titre_encart">Paramètres</h3>
@@ -83,7 +84,12 @@
 		<section id="player"></section>
 	</div>
 	<div id="page_map">
-		
+			<header>
+				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
+				<h1 class="titre_page">La map</h1>
+				<hr class="hr hrMap">
+				<button class="info">i</button>
+			</header>
 		<object type="image/svg+xml" data="map.svg">
 		Le navigateur ne peut lire cette map
 		</object>
