@@ -566,21 +566,29 @@ canvas:first-of-type{
 }
 
 .subMenu p {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 14px;
     text-align: left;
     color: #b6bacc;
 }
 
+.subMenu .infoSong {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
 .sm2-element .subMenu li {
     overflow: hidden;
-    /*background: #1C2030;*/
+    background: #1C2030;
     padding: 14px;
 }
 
-.selected .fleche_bottom{
-    top: 27px;
+.subMenu li img {
+  width: 70px;
+  float: left;
+  margin-right: 10px;
 }
+
 /* ============================================================
   END CONTENT LAB
 ============================================================ */
