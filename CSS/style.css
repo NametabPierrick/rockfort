@@ -322,11 +322,17 @@ header{
   margin: 15px 0px;
 }
 
-#entete{
+.hr{
   margin: 28px 0;
   display: inline-block;
   box-shadow: 0px 0px 10px #516bf0, 0px 0px 10px #516bf0;
-  width: 600px;
+}
+
+.hrLab{
+  width: 610px;
+}
+.hrMap{
+  width: 596px;
 }
 
 .info{
@@ -340,7 +346,7 @@ header{
   font-size: 18px;
   font-weight: bold;
   vertical-align: top;
-  margin: 20px 15px;
+  margin: 20px 0px 20px 15px;
 }
 
 .info:hover{
@@ -462,9 +468,10 @@ canvas:first-of-type{
   position: absolute;
   width: 280px;
   background-color: #262b40;
-  height: 100%;
+  height: 200%;
   right: 0;
   top: 0;
+  z-index: 3;
 }
 
 .titre_playlist{
@@ -560,21 +567,34 @@ canvas:first-of-type{
 }
 
 .subMenu p {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 14px;
     text-align: left;
     color: #b6bacc;
 }
 
+.subMenu .infoSong {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
 .sm2-element .subMenu li {
     overflow: hidden;
-    /*background: #1C2030;*/
+    background: #1C2030;
     padding: 14px;
 }
 
-.selected .fleche_bottom{
-    top: 27px;
+.subMenu li img {
+  width: 70px;
+  float: left;
+  margin-right: 10px;
 }
+
+.subMenu #medaille{
+  width: 10px;
+  margin-right: 5px;
+}
+
 /* ============================================================
   END CONTENT LAB
 ============================================================ */
@@ -584,10 +604,11 @@ canvas:first-of-type{
   OUPS
 ============================================================ */
 
-h1.oupsTxt {
+.titre_page.oupsTxt {
     font-size:15px;
     max-width:450px;
     padding: 0px 30px;
+    letter-spacing: 4px;
 }
 
 .media {
@@ -606,6 +627,9 @@ h1.oupsTxt {
 
     .media {
         display: block;
+    }
+    body {
+      overflow: hidden;
     }
 
 }

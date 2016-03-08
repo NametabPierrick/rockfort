@@ -536,7 +536,7 @@ width: 0.9333em;
 .playing .play-pause {
  background-image: none, url(../img/pause.png);
  /*background-size: 57.6%;*/
- background-position: 50% 53%;
+ background-position: 40% 53%;
 }
 
 .sm2-volume-control {
@@ -740,8 +740,7 @@ width: 0.9333em;
 
 .sm2-element ul li {
  margin: 0px;
- padding: 0px;
- margin-right: 10px;
+ overflow: hidden;
 }
 
 .sm2-element ul {
@@ -834,7 +833,7 @@ width: 0.9333em;
 
 .sm2-playlist-wrapper {
  position: relative;
- padding: 0.5em 0.5em 0.5em 0.25em;
+ padding-right: 0.5em;
  background-image: none, none;
 }
 
@@ -850,8 +849,9 @@ width: 0.9333em;
 
 .fleche_bottom{
   position: absolute;
-  top: 35%;
-  right:-1px;
+  top: 20px;
+  right:10px;
+  cursor: pointer;
 }
 
 /*.testbulle{
@@ -892,6 +892,13 @@ width: 0.9333em;
  background-image: url(../image/black-20.png);
  background-image: none, none;*/
  color: #6883ff;
+}
+
+.sm2-playlist-wrapper ul li a {
+ /*background-color: rgba(0,0,0,0.20);
+ background-image: url(../image/black-20.png);
+ background-image: none, none;*/
+padding-right: 25px;
 }
 
 
