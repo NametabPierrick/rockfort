@@ -29,11 +29,23 @@ function RoomEffectsSample(inputs) {
 
     // Load all of the needed impulse responses and the actual sample.
     var loader = new BufferLoader(context, [
-    "1.mp3",
-    "telephone.wav",
-    "muffler.wav",
-    "spring.wav",
-    "echo.wav"
+    "son/1.mp3",
+    "son/telephone.wav",
+    "son/muffler.wav",
+    "son/spring.wav",
+    "son/1.wav",
+    "sound-test/1.wav",
+    "sound-test/2.wav",
+    "sound-test/3.wav",
+    "sound-test/4.wav",
+    "sound-test/5.wav",
+    "sound-test/6.wav",
+    "sound-test/7.wav",
+    "sound-test/8.wav",
+    "sound-test/9.wav",
+    "sound-test/10.wav",
+    "sound-test/11.wav",
+    "sound-test/12.wav",
   ], onLoaded);
 
     function onLoaded(buffers) {
