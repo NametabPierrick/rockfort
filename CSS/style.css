@@ -468,9 +468,10 @@ canvas:first-of-type{
   position: absolute;
   width: 280px;
   background-color: #262b40;
-  height: 100%;
+  height: 200%;
   right: 0;
   top: 0;
+  z-index: 3;
 }
 
 .titre_playlist{
