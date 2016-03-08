@@ -297,26 +297,30 @@ $("#myonoffswitch").change(function(){
 $(function(){
 	$("#btnTutoMap").click(function(){
 
-		$("#page_map").fadeOut(10);
-			$("#tutoMap").fadeIn(10);
+		$("#page_map").fadeOut(function(){
+			$("#tutoMap").fadeIn();
+		});
      });	
 
 	$("#btnTutoLab").click(function(){
 
-		$("#lab").fadeOut(10);
-			$("#tutoLab").fadeIn(10);
+		$("#lab").fadeOut(function(){
+			$("#tutoLab").fadeIn();
+		});
      });
 
      $("#closeTutoLab").click(function(){
 
-		$("#tutoLab").fadeOut(10);
-			$("#lab").fadeIn(10);
+		$("#tutoLab").fadeOut(function(){
+			$("#lab").fadeIn();
+		});
      });	
 
      $("#closeTutoMap").click(function(){
 
-		$("#tutoMap").fadeOut(10);
-			$("#page_map").fadeIn(10);
+		$("#tutoMap").fadeOut(function(){
+			$("#page_map").fadeIn();
+		});
      });	
 });
 
