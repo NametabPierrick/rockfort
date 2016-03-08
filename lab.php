@@ -49,7 +49,7 @@
 					while ($donnees = $reponse->fetch()){
 				?>
 				<div class="sug">
-					<img src="img/pochette-bdd.jpg" alt="photo_artiste" class="pochette_sug"/><div class="contain_info_sug">
+					<img src="<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>" alt="photo_artiste" class="pochette_sug"/><div class="contain_info_sug">
 						<div class="nom_artiste_sug"><?php echo $donnees['nom']; ?></div>
 						<div class="titre_sugg"><?php echo $donnees['titre']; ?></div>
 						<div class="genre_sug"><?php echo $donnees['nom_genre']; ?></div>
