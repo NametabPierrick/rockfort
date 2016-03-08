@@ -590,10 +590,11 @@ canvas:first-of-type{
   OUPS
 ============================================================ */
 
-h1.oupsTxt {
+.titre_page.oupsTxt {
     font-size:15px;
     max-width:450px;
     padding: 0px 30px;
+    letter-spacing: 4px;
 }
 
 .media {
@@ -608,10 +609,13 @@ h1.oupsTxt {
     padding-top: 21px;
 }
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 1366px) {
 
     .media {
         display: block;
+    }
+    body {
+      overflow: hidden;
     }
 
 }

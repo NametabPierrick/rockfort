@@ -40,9 +40,15 @@
                     <button id="submit">Let's Rock</button>
                 </form>
             </div>
+
+            <div class="media">
+                <div class="logo-rockfort"></div>
+                    <h1 class="titre_page">Oups...</h1>
+                    <br/><h1 class="titre_page oupsTxt">Pour profiter pleinement de l'expérience rock, veuillez vous rendre sur une plus grande résolution d'écran.</h1>
+            </div>
+
         </div>
     </div>
-
    
 
     <script src="js/jquery.range.js"></script>
