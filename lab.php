@@ -28,13 +28,13 @@
 	</head>
 	<body>
 		<div id="super_container">
+			<div id="lab">
 			<header>
 				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
-				<h1 class="titre_page" id="titre_conteneur">La map</h1>
-				<hr id="entete">
+				<h1 class="titre_page" id="titre_conteneur">Le Lab</h1>
+				<hr class="hr hrLab">
 				<button class="info">i</button>
 			</header>
-			<div id="lab">
 				<section id="container_equalizer"><!-- commentaire obligatoire pour supprimer le caractère invisible entre ces deux eléments
 					--><div id="contain_parametre">
 						<h3 id="titre_parametre" class="titre_encart">Paramètres</h3>
@@ -83,7 +83,12 @@
 		<section id="player"></section>
 	</div>
 	<div id="page_map">
-		
+			<header>
+				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
+				<h1 class="titre_page" id="titre_conteneur">La map</h1>
+				<hr class="hr hrMap">
+				<button class="info">i</button>
+			</header>
 		<object type="image/svg+xml" data="map.svg">
 		Le navigateur ne peut lire cette map
 		</object>
