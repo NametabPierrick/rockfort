@@ -33,7 +33,7 @@
 				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
 				<h1 class="titre_page" id="titre_conteneur">Le Lab</h1>
 				<hr class="hr hrLab">
-				<button class="info">i</button>
+				<button class="info" id="btnTutoLab">i</button>
 			</header>
 				<section id="container_equalizer"><!-- commentaire obligatoire pour supprimer le caractère invisible entre ces deux eléments
 					--><div id="contain_parametre">
@@ -87,7 +87,7 @@
 				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
 				<h1 class="titre_page" id="titre_conteneur">La map</h1>
 				<hr class="hr hrMap">
-				<button class="info">i</button>
+				<button class="info" id="btnTutoMap">i</button>
 			</header>
 		<object type="image/svg+xml" data="map.svg">
 		Le navigateur ne peut lire cette map
@@ -95,6 +95,24 @@
 		<form id="form_timelineMap" action="php/timelineRange.php" method="POST">
 			<input class="range-slider" id="timelineMap" name="timelineMap" type="hidden" value=<?php echo '"'.$periode.'"'; ?>/>
 		</form>
+	</div>
+	<div id="tutoMap">
+			<header>
+				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
+				<h1 class="titre_page" id="titre_conteneur">Aide Map</h1>
+				<hr class="hr hrMap">
+				<button class="info" id="closeTutoMap">x</button>
+			</header>
+			<p>tuto map</p>
+	</div>
+	<div id="tutoLab">
+			<header>
+				<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
+				<h1 class="titre_page" id="titre_conteneur">Aide Lab</h1>
+				<hr class="hr hrMap">
+				<button class="info" id="closeTutoLab">x</button>
+			</header>
+			<p>tuto lab</p>
 	</div>
 </div>
 <div id="panel_right">
@@ -258,11 +276,13 @@ function changementPage(){
 		$("#lab").fadeOut(function(){
 			$("#page_map").fadeIn();
 			$("#titre_conteneur").text("la map");
+			$("#tutoLab").fadeOut(10);
 		})
 	}else{
 		$("#page_map").fadeOut(function(){
 			$("#lab").fadeIn();
 			$("#titre_conteneur").text("le lab");
+			$("#tutoMap").fadeOut(10);
 		})
 	}
 }
@@ -270,6 +290,36 @@ function changementPage(){
 $("#myonoffswitch").change(function(){
 	changementPage();
 })
+
+
+
+/*affichage tuto*/
+$(function(){
+	$("#btnTutoMap").click(function(){
+
+		$("#page_map").fadeOut(10);
+			$("#tutoMap").fadeIn(10);
+     });	
+
+	$("#btnTutoLab").click(function(){
+
+		$("#lab").fadeOut(10);
+			$("#tutoLab").fadeIn(10);
+     });
+
+     $("#closeTutoLab").click(function(){
+
+		$("#tutoLab").fadeOut(10);
+			$("#lab").fadeIn(10);
+     });	
+
+     $("#closeTutoMap").click(function(){
+
+		$("#tutoMap").fadeOut(10);
+			$("#page_map").fadeIn(10);
+     });	
+});
+
 
 $("#form_timelineMap").mouseup(function(e){
 	//e.preventDefault();

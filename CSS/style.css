@@ -445,6 +445,7 @@ canvas:first-of-type{
 
 .pochette_sug{
   display: inline-block;
+  width: 110px;
 }
 
 .contain_info_sug{
@@ -632,4 +633,14 @@ canvas:first-of-type{
       overflow: hidden;
     }
 
+}
+
+/*TUTO*/
+
+#tutoMap{
+  display: none;
+}
+
+#tutoLab{
+  display: none;
 }
