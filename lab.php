@@ -126,7 +126,7 @@
 							
 							<ul class="subMenu">
 								<li>
-									<img src="img/nirvana.png">
+									<img src=<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>>
 									<p class="infoSong"><?php echo $donnees['annee']; ?></p>
 									<p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
 									<img id="medaille" src="img/medaille.png"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
