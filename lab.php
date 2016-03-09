@@ -15,16 +15,13 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="js/jquery.range.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,300,300italic,700italic,400italic,600,800,800italic' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="js/soundmanager2.js"></script>
-		<script src="js/bar-ui.js"></script>
 		<link rel="stylesheet" href="css/bar-ui.css" />
 		<link rel="stylesheet" href="js/jquery.range.css">
-		<script src="js/jquery-1.12.0.min.js"></script>
+
 		<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" /><link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" /><link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" /><meta name="msapplication-TileImage" content="mstile-144x144.png" /><meta name="msapplication-square70x70logo" content="mstile-70x70.png" /><meta name="msapplication-square150x150logo" content="mstile-150x150.png" /><meta name="msapplication-wide310x150logo" content="mstile-310x150.png" /><meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-		<!-- demo for this page only, you don't need this stuff -->
-		<script src="js/demo.js"></script>
+		
 		<!-- <link rel="stylesheet" href="css/demo.css" /> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 	</head>
 	<body>
 		<div id="super_container">
@@ -75,10 +72,7 @@
 			<input type="radio" name="mode" id="mode-local" value="local" class="invisible" />
 			<!-- C'est ici qu'on lance les fichiers audio -->
 			
-			<section id="local">
-				<button value="song/1.mp3" type="button" />The Rolling Stones, Gimme shelter</button>
-				<button value="song/10.mp3" type="button" />Pink Floyd, Wish you were here</button>
-			</section>
+			
 			
 		<section id="player"></section>
 	</div>
@@ -217,6 +211,12 @@
 		</label>
 	</div>
 </div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/soundmanager2.js"></script>
+<script src="js/bar-ui.js"></script>
+<!-- demo for this page only, you don't need this stuff -->
+<script src="js/demo.js"></script>
+		
 <!-- script pour spectre -->
 <script src="js/object.assign.js"></script>
 <script src="js/performance.now.js"></script>
