@@ -76,8 +76,8 @@
 			<!-- C'est ici qu'on lance les fichiers audio -->
 			
 			<section id="local">
-				<button value="Rolling Stones-GimmeShelter.mp3" type="button" />The Rolling Stones, Gimme shelter</button>
-				<button value="Pink Floyd-Wish.mp3" type="button" />Pink Floyd, Wish you were here</button>
+				<button value="song/1.mp3" type="button" />The Rolling Stones, Gimme shelter</button>
+				<button value="song/10.mp3" type="button" />Pink Floyd, Wish you were here</button>
 			</section>
 			
 		<section id="player"></section>

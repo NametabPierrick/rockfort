@@ -6,8 +6,8 @@ var App = {
 	init: function() {
 		this._ctx = new AudioContext();
 
-		this._modes.math = new App.Math();
-		this._modes.signal = new App.Signal();
+		// this._modes.math = new App.Math();
+		// this._modes.signal = new App.Signal();
 		this._modes.local = new App.Local();
 
 		this._multiMode = "overlay";
@@ -133,6 +133,7 @@ Object.assign(App.Math.prototype, {
 });
 
 App.Signal = function() {
+
 	this._oscillators = [];
 	this._inputs = [];
 	
@@ -245,18 +246,21 @@ Object.assign(App.File.prototype, {
 
 App.Local = function() {
 	App.File.call(this);
-	document.querySelector("#local").addEventListener("click", this);
+	// document.querySelector("#local").addEventListener("click", this);
+	document.querySelector("#playlist_dynamique").addEventListener("click", this);
+
 }
 
 Object.assign(App.Local.prototype, App.File.prototype, {
 	handleEvent: function(e) {
 		this._clear();
 
-		var url = e.target.value;	
+		var url = e.target.href;
+		if(url == undefined)url = e.target.parentNode.href;
+
 		this._play(url, document.querySelector("#start_song"));
-		//$('canvas').css('background-color', 'hsl('+Math.floor(Math.random()*360)+',50%,50%)');
+		// this.stop(url, document.querySelector("#start_song"));
 		
-		//alert(url);
 	}
 });
 
