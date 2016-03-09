@@ -30,7 +30,7 @@ FilterSample.prototype.play = function () {
     source.buffer = this.buffer;
     // Create the filter.
     var filter = context.createBiquadFilter();
-    filter.type = filter.LOWPASS;
+    filter.type = filter.HIGHPASS;
     filter.frequency.value = 5000;
     // Connect source to filter, filter to destination.
     source.connect(filter);
