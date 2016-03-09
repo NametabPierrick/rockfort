@@ -89,7 +89,7 @@
 			<hr class="hr hrMap">
 			<button class="info" id="btnTutoMap">i</button>
 		</header>
-		<object type="image/svg+xml" data="map.svg">
+		<object type="image/svg+xml" data="map_genre.svg">
 		Le navigateur ne peut lire cette map
 		</object>
 		<form id="form_timelineMap" action="php/timelineRange.php" method="POST">
@@ -317,7 +317,9 @@ $("#closeTutoMap").click(function(){
 		});
 	});
 });
-$("#form_timelineMap").mouseup(function(e){
+//$("#form_timelineMap").mouseup(function(e){
+var timelineMapVal = $("#timelineMap").val();
+$("#form_timelineMap input").change(function(){
 	//e.preventDefault();
 	$.ajax({
 		url: 'php/timelineRange.php',
