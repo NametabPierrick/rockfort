@@ -83,7 +83,7 @@
 			<hr class="hr hrMap">
 			<button class="info" id="btnTutoMap">i</button>
 		</header>
-		<object type="image/svg+xml" data="map_genre.svg">
+		<object type="image/svg+xml" data="map_genre_vf.svg">
 		Le navigateur ne peut lire cette map
 		</object>
 		<form id="form_timelineMap" action="php/timelineRange.php" method="POST">
