@@ -635,7 +635,9 @@ canvas:first-of-type{
 
 }
 
-/*TUTO*/
+/* ============================================================
+  TUTO
+============================================================ */
 
 #tutoMap{
   display: none;
@@ -643,4 +645,72 @@ canvas:first-of-type{
 
 #tutoLab{
   display: none;
+}
+
+/* ============================================================
+  CREDITS
+============================================================ */
+
+#content_credit{
+  width: 1286px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#content_credit #logo {
+  float: left;
+}
+
+#titre_credit{
+  display: block;
+  margin-bottom: 60px;
+}
+
+#txt_credit{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#txt_credit p{
+  color: #ffffff;
+  font-size: 14.9px;
+  margin-bottom: 50px;
+}
+
+.team img{
+  width: 70px;
+}
+
+.team h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: #bfc4dc 0px 0px 20px;
+  margin-bottom: 0;
+}
+
+.team p{
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+.team{
+  width: 255px;
+  float: left;
+  color: #bfc4dc;
+}
+
+.people{
+  float: left;
+  margin: 0 10px;
+  width: 105px;
+}
+
+.team hr{
+  width: 190px;
+  box-shadow: 0px 0px 2px #bfc4dc, 0px 0px 15px #bfc4dc;
+  margin-bottom: 20px;
 }
