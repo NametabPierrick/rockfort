@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>map_genre_svg</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script> 
+    <style>
+        /*.link_circle_1{
+            display: none;
+        }*/
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg class="squiggle-animated" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px"
+         height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+        <g id="lignes">
+
+            <!--
+            Pour convertir une ligne (line) en un tracé (path) :
+            -   directement dans Illustrator, il faut faire 'Clic droit sur le tracé (la ligne) > Joindre'
+            -   A la main : remplacer les coordonnées des pts en les séparant par des virgules (x1="440" y1="204" -> M440,204) et en les espacant les uns des autres, le tout précédé par l'attribut "d=" (cf exemple juste en dessous) -->
+
+
+            <!--<line id="ligne2" fill="none" stroke="#FF7BAC" stroke-width="4" stroke-miterlimit="10" x1="440" y1="204" x2="244" y2="474"/>-->
+            <path id="ligne2" fill="none" stroke="#FF7BAC" stroke-width="4" stroke-miterlimit="10" d="M440,204 244,474"/>
+
+            <!--<line id="ligne1" fill="none" stroke="#FF7BAC" stroke-width="4" stroke-miterlimit="10" x1="140" y1="136" x2="244" y2="474"/>-->
+            <path id="ligne1" fill="none" stroke="#FF7BAC" stroke-width="4" stroke-miterlimit="10" d="M140,136 244,474"/>
+            
+        </g>
+        <g id="cercles">
+            <circle id="cercle3" fill="#FFFFFF" stroke="#F7931E" stroke-width="4" stroke-miterlimit="10" cx="244" cy="474" r="56"/>
+            <circle id="cercle2" fill="#FFFFFF" stroke="#F7931E" stroke-width="4" stroke-miterlimit="10" cx="440" cy="204" r="56"/>
+            <circle id="cercle1" fill="#FFFFFF" stroke="#F7931E" stroke-width="4" stroke-miterlimit="10" cx="140" cy="136" r="56"/>
+        </g>
+        <g id="dessin">
+            <path stroke="#F7931E" stroke-width="4" stroke-miterlimit="10" d="M318,136c-4-28-1-29,16-40s32-28,50-16
+        s23,18,0,30s-24-2.113-34-4.057S339,125,342,140s18,63-19,58s-35,17-47-34s-27-58.226-32-88.113S228,66,277,48"/>
+        </g>
+    </svg>
+    <script>
+        $('document').ready(function(){
+            function simulatePathDrawing(path) {
+              // var path = document.querySelector('.squiggle-animated path');
+              var length = path.getTotalLength();
+              // Clear any previous transition
+              path.style.transition = path.style.WebkitTransition =
+              'none';
+              // Set up the starting positions
+              path.style.strokeDasharray = length + ' ' + length;
+              path.style.strokeDashoffset = length;
+              // Trigger a layout so styles are calculated & the browser
+              // picks up the starting position before animating
+              path.getBoundingClientRect();
+              // Define our transition
+              path.style.transition = path.style.WebkitTransition =
+              'stroke-dashoffset 1.5s ease-in-out';
+              // Go!
+              path.style.strokeDashoffset = '0';
+              path.style.strokeWidth = '3px';
+            }
+
+            $(".squiggle-animated path").click(function(){
+              simulatePathDrawing(this);
+            });
+        })
+    </script>
+
+</body>
+</html>
