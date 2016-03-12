@@ -10,7 +10,7 @@
 	while ($donnees = $reponse->fetch()){
 ?>
 <li class="toggleSubMenu">
-	<a href=<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>>
+	<a <?php $morceauActuel = $donnees['id_morceau']; echo "onclick='songSelected(".$donnees['id_morceau'].")'";?> href=<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>>
 		<span class="nomArtiste"><?php echo $donnees['titre']; ?></span> - <?php echo $donnees['nom']; ?><!--<span class="label">Essai Label</span>-->
 	</a>
 	<img src="img/fleche_bottom.png" class="fleche_bottom">

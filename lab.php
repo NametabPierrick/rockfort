@@ -3,6 +3,8 @@
 	require_once('php/connexion.php');
 	$periode = $_POST['periode'];
 	$annee = explode(",", $periode);
+	if(isset($_POST['id_morceau']))
+	$morceauActuel = $_POST['id_morceau'];
 	/*echo $periode;*/
 	/*echo $annee[0]." et ";
 	echo $annee[1];*/
@@ -40,34 +42,44 @@
 				</section>
 			<section id="mots"></section>
 			<section id="suggestion">
-				<h3 class="titre_encart">Ecoute aussi ...</h3>
-				<?php
-					$reponse = $bdd->query("SELECT * FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND rf_genre_morceau.id_genre = rf_genre.id_genre AND rf_morceau.id_morceau = rf_genre_morceau.id_morceau ORDER BY RAND() LIMIT 3");
-					while ($donnees = $reponse->fetch()){
-				?>
-				<div class="sug">
-					<img src="<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>" alt="photo_artiste" class="pochette_sug"/><div class="contain_info_sug">
-						<div class="nom_artiste_sug"><?php echo $donnees['nom']; ?></div>
-						<div class="titre_sugg"><?php echo $donnees['titre']; ?></div>
-						<div class="genre_sug"><?php echo $donnees['nom_genre']; ?></div>
-					</div>
-				</div>
-				<?php
+				<div id="divsug">
+					<h3 class="titre_encart">Ecoute aussi ...</h3>
+					<?php
+
+					
+
+					if(is_null($morceauActuel))
+					{
+						
+						$query = "SELECT * FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND rf_genre_morceau.id_genre = rf_genre.id_genre AND rf_morceau.id_morceau = rf_genre_morceau.id_morceau ORDER BY RAND() LIMIT 3";
+						
 					}
-					$reponse->closeCursor();
-				?>
-			</section>
-			<section id="signal" class="invisible">
-				<label><input type="checkbox" checked="checked" />Stabilize</label>
-				<label>Frequency #1: <input type="range" min="20" max="1000" value="440" /><span></span></label>
-				<label>Shape #1: <select>
-					<option value="sine">Sine</option>
-					<option value="square">Square</option>
-					<option value="triangle">Triangle</option>
-					<option value="sawtooth">Sawtooth</option>
-				</select></label>
-				<label>Frequency #2: </label>
-				<label>Shape #2: </label>
+					else
+					{
+						$query = "SELECT  rf_artiste.id_artiste,rf_artiste.nom,rf_morceau.titre,rf_genre.nom_genre from rf_morceau join rf_genre_morceau on rf_genre_morceau.id_morceau = rf_morceau.id_morceau join rf_genre on rf_genre_morceau.id_genre = rf_genre.id_genre join rf_artiste on rf_morceau.id_artiste = rf_artiste.id_artiste where rf_morceau.id_morceau !=".$morceauActuel." and rf_genre.id_genre in (select rf_genre_morceau.id_genre from rf_genre_morceau where rf_genre_morceau.id_morceau =".$morceauActuel." )LIMIT 3";	
+					
+						//$query = "SELECT Distinct rf_artiste.id_artiste,  rf_artiste.nom,  rf_morceau.titre,  rf_genre.nom_genre FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre WHERE rf_morceau.id_morceau != ".$morceauActuel." AND rf_genre.id_genre IN (Select rf_genre_morceau.id_genre from rf_genre_morceau where rf_genre_morceau.id_morceau = ".$morceauActuel.") AND rf_artiste.id_artiste in (Select rf_morceau.id_artiste from rf_morceau where rf_morceau.id_morceau =".$morceauActuel.") LIMIT 3";
+					}
+						$reponse = $bdd->query($query);
+						while ($donnees = $reponse->fetch()){
+
+							?>
+							<script>
+	   						 console.log(<? echo json_encode($donnees); ?>);
+							</script>
+					
+					<div class="sug">
+						<img src="<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>" alt="photo_artiste" class="pochette_sug"/><div class="contain_info_sug">
+							<div class="nom_artiste_sug"><?php echo $donnees['nom']; ?></div>
+							<div class="titre_sugg"><?php echo $donnees['titre']; ?></div>
+							<div class="genre_sug"><?php echo $donnees['nom_genre']; ?></div>
+						</div>
+					</div>
+					<?php
+						}
+						$reponse->closeCursor();
+					?>
+				</div>
 			</section>
 			<input type="radio" name="mode" id="mode-local" value="local" class="invisible" />
 			<!-- C'est ici qu'on lance les fichiers audio -->
@@ -1626,7 +1638,7 @@
 						?>
 						
 						<li class="toggleSubMenu">
-							<a href=<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>>
+							<a <?php $morceauActuel = $donnees['id_morceau']; echo "onclick='songSelected(".$donnees['id_morceau'].")'";?> href=<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>>
 								<span class="nomArtiste"><?php echo $donnees['titre']; ?></span> - <?php echo $donnees['nom']; ?><!--<span class="label">Essai Label</span>-->
 							</a>
 							<img src="img/fleche_bottom.png" class="fleche_bottom">

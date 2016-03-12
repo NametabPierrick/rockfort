@@ -164,3 +164,37 @@ function selectGenre(){
 		territoireGenre.fadeIn();
 	})	
 }
+
+// Suggestion 
+var refreshsuggestion;
+function songSelected(idsong){
+	
+	//$('#divsug').load(document.URL+'?id_morceau='+idsong +  ' #divsug');
+	//alert(document.url);
+	// var xhttp = new XMLHttpRequest();
+ //    xhttp.onreadystatechange = function() {
+ //    if (xhttp.readyState == 4 && xhttp.status == 200) {
+ //    	//alert("okajax");
+    	
+ //    	document.getElementById("#divsug").innerHTML = $().text(xhttp.responseText).html().getElementById("#divsug").innerHTML;
+
+
+
+ //  };
+ //  //alert("id_morceau="+idsong+"&periode="+<? echo $annee[1].",".$annee[1];?>);
+ //  xhttp.open("POST", window.location.pathname, true);
+ //  xhttp.overrideMimeType('text/xml');
+ //  xhttp.send("id_morceau="+idsong+"&periode="+<? echo implode(",", $annee);?>);
+console.log(window.location.pathname);
+var periode = '<?php echo implode(",", $annee);?>';
+console.log(periode);
+$.post(window.location.pathname, {"id_morceau":idsong,"periode":periode}, function(result){
+		var div = $(result).find("#divsug");
+          $('#divsug').html(div);
+    });
+ 
+	
+// }
+
+    
+}
