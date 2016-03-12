@@ -45,6 +45,7 @@ $(document).ready( function () {
 		});
 
 	cacheList();
+	selectGenre();
 
 });
 
@@ -96,12 +97,39 @@ function changementPage(){
 		})
 	}
 }
-/*changement de page au changement d'etat du bouton*/
+
+/*************************************************
+Changement de page au clic sur bouton switch
+*************************************************/
 $("#myonoffswitch").change(function(){
 	changementPage();
 })
 
-//$("#form_timelineMap").mouseup(function(e){
+/*************************************************/
+function simulatePathDrawing(path) {
+/*************************************************/
+	// var path = document.querySelector('.squiggle-animated path');
+	var length = path.getTotalLength();
+	// Clear any previous transition
+	path.style.transition = path.style.WebkitTransition =
+	'none';
+	// Set up the starting positions
+	path.style.strokeDasharray = length + ' ' + length;
+	path.style.strokeDashoffset = length;
+	// Trigger a layout so styles are calculated & the browser
+	// picks up the starting position before animating
+	path.getBoundingClientRect();
+	// Define our transition
+	path.style.transition = path.style.WebkitTransition =
+	'stroke-dashoffset 1.5s ease-in-out';
+	// Go!
+	path.style.strokeDashoffset = '0';
+	path.style.strokeWidth = '3px';
+}
+
+/**************************************************
+Rechargement dynamique de la playlist et de la taille des genre en fonction de la nouvelle periode
+**************************************************/
 var timelineMapVal = $("#timelineMap").val();
 $("#form_timelineMap input").change(function(){
 	//e.preventDefault();
@@ -115,4 +143,24 @@ $("#form_timelineMap input").change(function(){
 			cacheList();
 		}
 	});
+
+	$.ajax({
+		url: 'php/timelineGenre.php',
+		type: 'POST',
+		data: 'new_periode='+$("#timelineMap").val(),
+		dataType: 'html',
+		success: function(test){
+			
+		}
+	})
 });
+
+/***********************************************/
+function selectGenre(){
+/***********************************************/
+	$(".genre").click(function(){
+		var idGenre = $(this).attr("id");
+		var territoireGenre = $("."+idGenre+"territoire");
+		territoireGenre.fadeIn();
+	})	
+}
