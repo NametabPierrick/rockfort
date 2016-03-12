@@ -3,8 +3,9 @@
 	require_once('php/connexion.php');
 	$periode = $_POST['periode'];
 	$annee = explode(",", $periode);
-	if(isset($_POST['id_morceau']))
-	$morceauActuel = $_POST['id_morceau'];
+	if(isset($_POST['id_morceau'])){
+		$morceauActuel = $_POST['id_morceau'];
+	}
 	/*echo $periode;*/
 	/*echo $annee[0]." et ";
 	echo $annee[1];*/
@@ -48,7 +49,7 @@
 
 					
 
-					if(is_null($morceauActuel))
+					if(empty($morceauActuel))
 					{
 						
 						$query = "SELECT * FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND rf_genre_morceau.id_genre = rf_genre.id_genre AND rf_morceau.id_morceau = rf_genre_morceau.id_morceau ORDER BY RAND() LIMIT 3";
