@@ -122,17 +122,17 @@
 					c3.4-1.3,6.2-5.2,12-0.7c5.7,4.5,8.6,4.5,12.2,4.7c3.5,0.2,6.7,13.8,8.9,17.3c2.2,3.5,2.7,0.7,7.8,1.8c5.1,1.2,6.9,2.2,10,5.4
 					c3,3.2,25.5,8.5,28.2,9c2.7,0.5,4.5,1.9,5.2,3.6c0.8,1.8-1.5,9.1-1.9,10.9c-0.3,1.2-1.2,4.1-1.7,5.9c2.2,1.3,0.5,4.2,6,3.2
 					c5.6-1,19-8.8,28.4-12.9c9.4-4,15.7-10.8,24.3-14.6c8.6-3.8,9.4-5.8,13.2-9.1C819.4,233.2,827.3,227.9,825.5,226.6z"/>
-				<path id="Londres" class="st0 territoire" d="M967.4,390.4c0,0-22.9,3.9-20.3-20.9c0,0-22.7-1.1-24.2-2c-5.9-3.3-12.4,15-65.4,32.7
+				<path id="Londres" class="st0 territoire glamrockterritoire bluesrockterritoire punkrockterritoire powerpopterritoire popterritoire synthpopterritoire synthrockterritoire" d="M967.4,390.4c0,0-22.9,3.9-20.3-20.9c0,0-22.7-1.1-24.2-2c-5.9-3.3-12.4,15-65.4,32.7
 					c0,0,0,34.7-6.5,35.3c0,0,45.8,36.6,46.4,39.2c0.7,2.6,2.6-8.5,32,15c0,0,11.7-7.8,16.7-9.9c3.4-2.1,6.9,1.1,9.4,3.5
 					c1.9,1.7,3.6,3.7,5.3,5.5c0,0,0.1,0.1,0.1,0.1c1.3,1.3,2.8,2.9,4.4,4.6c0,0,14.4-13.1,16.3-20.3v-28.8l14.4-12.4v-12.4l21.6-13.1
 					C1017.7,406.7,1004.6,362.9,967.4,390.4z"/>
-				<path id="Birmingham" class="st0 territoire" d="M984.5,255.5c-2.1-2.1-4.9,4.9-13.3,2.8c-8.4-2.1-10.5-13.3-15.4-19l2.8-4.2l-4.9-0.7
+				<path id="Birmingham" class="st0 territoire hardrockterritoire heavymetalterritoire" d="M984.5,255.5c-2.1-2.1-4.9,4.9-13.3,2.8c-8.4-2.1-10.5-13.3-15.4-19l2.8-4.2l-4.9-0.7
 					c0,0-7.7-9.8-11.2-7.7c0,0-0.7-0.7-8.1,4.2c0,0-6,0-7.7-2.5c0,0-24.2,4.6-20.7,9.5c3.5,4.9,5.6,2.1,0.7,10.5
 					c-3.2,5.5,1.1,11,3.4,13.4c0.1,0,0.2,0,0.3,0c0.2-1.1,12.5,2.5,18.8,0.7c7-2.1,5.6,2.8,9.1,5.6c3.5,2.8,10.5-2.1,14.7-0.7
 					c4.2,1.4,7,13.3,14,9.8c7-3.5,23.9,0,28.1-13.3C995.1,263.9,986.7,257.6,984.5,255.5z"/>
 				<path id="Liverpool" class="st0 territoire folkrockterritoire merseybeatterritoire poprockterritoire" d="M858.6,78.6c0,0-2,36.5,13,28.5c0,0,2.5-3,17.5,7.5c0,0,4.5,2.5,8-5l5,0.5c0,0,12,17,13.5,12.5
 					c1.5-4.5,0,16.5,0,16.5s-19,2-15.5,16c0,0-11,11.5-27-3c-16-14.5-26.5-46.5-26.5-46.5S841.5,97.6,858.6,78.6z"/>
-				<path id="Washington" class="st0 territoire" d="M122.6,132.2c0.3-1.1,4.2-21.7,5.2-26.8c-49.4-10.3-81-19.3-81-19.3c0.7,0.6,1.5,0,1.8,1
+				<path id="Washington" class="st0 territoire grungeterritoire garagerockterritoire" d="M122.6,132.2c0.3-1.1,4.2-21.7,5.2-26.8c-49.4-10.3-81-19.3-81-19.3c0.7,0.6,1.5,0,1.8,1
 					c0.3,1,0,2.3,0.9,3.2c0.9,0.9,1.7,1,1.9,1.7c0.3,0.7,0.6,0.8,0.4,2.1c-0.1,1.3-0.6,2-0.8,2.4c-0.3,0.4-0.5,0.8-0.5,1.5
 					c0.1,0.7,0.1,0.6-0.7,0.6c-0.8,0-1.8-0.1-0.9,0.8c0.9,0.8,0.9,1.2,1.3,1.8c0.4,0.6,1.4,0.6,1.2,1.5c-0.3,1-0.9,0.8-0.8,1.9
 					c0.1,1,0.6,1.8,0.9,2.3c0.3,0.5,0.3,1.8-0.2,2.7c-0.4,0.9-0.6,1.3-1.3,1.9c-0.8,0.6-1.2,1.3-1.8,2c-0.6,0.7-1,0.9-0.6,2.1
@@ -152,7 +152,7 @@
 					c0.8,0.8,3.2-0.1,4-0.6c0.8-0.5,2.8,0.1,4,1.5c1.1,1.4,4.2,0.6,4.9,0.1c0.6-0.5,3.5-0.5,6.9-0.3c3.5,0.3,1.4-0.1,2-0.8
 					c0.6-0.6,2.7,0,3.8,0.4c1.2,0.4,4,0.4,5-0.1c1-0.5,8.3,1.4,10.9,2.7c2.6,1.3,18.7,3.4,18.7,3.4l0.7,0.2c-0.2-1.2-0.2-2.2-0.1-2.6
 					c0.1-0.9,0.9-2.8,0.4-3.7c-0.5-0.9-0.6-7.4,0.3-8.8C118.7,151.7,122.3,133.5,122.6,132.2z"/>
-				<path id="tennessee" class="st0 territoire" d="M513.8,360.5c1.1-1,0.4-2.5,0.1-4.1c-0.3-1.6,1-0.1,3.7-2.3c2.8-2.2,4.1,0.4,5.7-1.1
+				<path id="tennessee" class="st0 territoire rockabillyterritoire countryrockterritoire countryterritoire" d="M513.8,360.5c1.1-1,0.4-2.5,0.1-4.1c-0.3-1.6,1-0.1,3.7-2.3c2.8-2.2,4.1,0.4,5.7-1.1
 					c1.5-1.5,5.2-6.2,7.2-6.3c1.9-0.1,2.1-2.3,2.1-3.4c0-1.1,2.3-0.7,3.2-1.8c0.8-1.1-0.3-2.2,1-2.2c1.2,0,0.1,2.2,2.6,1.9
 					c2.5-0.3,0.7-3,2.8-5.1c2.1-2.1,4.1,0,4.3,1c0.1,1,2.5-2.2,3.3-4.4c0.8-2.2,1.5-1,2.6-3.2c0.7-1.3,0.5-3.7,0.3-5.3
 					c-1.8,0.1-4.8,0.6-7.5,1.1c-3.6,0.7-65.5,9.6-99,11.1c0,0-2.1,0.7-2.5,1.5s-1.5-0.1-2.5-0.8c-1-0.7-4.1-0.8-4.1,0.3
@@ -160,7 +160,7 @@
 					c-1.2,0.9,0,3-0.9,3.8c-0.9,0.8-0.2,1.2,0.2,2.6c0.4,1.3-1.2,5.6-2.8,6c-1.5,0.4,0.2,1.9-0.5,2.7c-0.7,0.8-0.9,0.1-1.1,1.2
 					c-0.2,1.1-0.2,2.1-1.6,2.7c-1.3,0.6-1,1.3-1,2.5c0,1.1,2.1,0.5,2.5,2.9c0.4,2.4-0.6,1.8-1.9,2.7c-1.2,0.9-1.9,2.3-1.9,2.3
 					c28.7-1.3,80-7.1,109.3-10.5c0.1-2.2,0.1-4.7,0.1-5.3C509.5,361.1,512.7,361.5,513.8,360.5z"/>
-				<path id="Oklahoma" class="st0 territoire" d="M294.4,340.5c-2.4-9.7-2.6-17.6-2.6-17.6c-30.5,0.4-57.6-0.4-81-1.8l-0.1,6.3l29,1.5
+				<path id="Oklahoma" class="st0 territoire honkytonkterritoire" d="M294.4,340.5c-2.4-9.7-2.6-17.6-2.6-17.6c-30.5,0.4-57.6-0.4-81-1.8l-0.1,6.3l29,1.5
 					c0,0-0.4,22.9,0.5,23.4c0.9,0.5,1,1.5,2,2.3c1,0.8,1-0.1,2.1,0.2c1.1,0.3,0.7-0.7,1.2-0.9c0.6-0.2,0.9,0.5,1.2,1.2
 					c0.3,0.7,0,1.6,0.9,1.9c0.9,0.2,1.1,0.5,2.2,0.4c1.1-0.1,1.4,0.7,1.4,0.7c0.7,0.6,1.5-0.2,2.4-0.1c0.9,0.1,0.8,0.4,0.9,1
 					c0.1,0.7,1,0.3,1.2-0.5c0.2-0.8,0.8-0.1,0.9-0.4c0.1-0.4,0.7-0.1,1.5-0.1c0.7,0,0.5,0.5,0.5,1.1c0,0.6,0.2,0.4,0.7,0.7
@@ -170,7 +170,7 @@
 					c0.7,0.5,1.2-0.2,1.7-0.9c0.5-0.7,1.3-1.2,2.2-1.5c0.9-0.3,0.5,0.2,1.2,0.7c0.7,0.5,1.1-0.1,1.2-0.9c0.1-0.7,1.2-0.7,1.8-0.7
 					c0.5,0,0.4,0.4,1.2,1.1c0.8,0.7,1.2-0.1,1.5-0.4c0.3-0.4,0.6-0.9,1.2-1c0.6-0.1,1.1,0.4,2.2,1.6c1.1,1.2,1.8,1,2.1,1.3
 					c0.3,0.3,0.8,0.8,1.7,0.8c0.7,0,0.7-0.3,1.1-0.3L294.4,340.5z"/>
-				<path id="Missouri" class="st0 territoire" d="M185.4,316.5c-0.2-0.2-1.6,0.4-2-0.6c-0.4-1-1.6-1.7-1.2-2.2c0.4-0.5,1-0.2,0.6-1.1
+				<path id="Missouri" class="st0 territoire jazzterritoire" d="M185.4,316.5c-0.2-0.2-1.6,0.4-2-0.6c-0.4-1-1.6-1.7-1.2-2.2c0.4-0.5,1-0.2,0.6-1.1
 					c-0.4-0.9-1.1-1.7-1-2.4c0-0.6-0.8-0.2-1.3-0.9c-0.5-0.7-1.6-0.6-2-1.3c-0.4-0.7-5-2.9-3.8-5c1.2-2,1.9-4.1,1.2-4.7
 					c-0.7-0.6-1.3-0.9-1.3-0.6s-0.5,0.4-0.6,0.1c-0.1-0.3-0.4-0.4-0.9-0.2c-0.5,0.3-0.8,0.7-1.1-0.2c-0.4-0.9-0.4-2.7-0.9-2.8
 					c-0.4-0.2-2.5-1.1-2.6-2c-0.1-1-2.9-2.9-3.1-4.1c-0.2-1.1-0.3-3.7,0.1-4.4c-0.7-0.7-1.7-1.7-2-2.1c-0.4-0.6-0.6-0.4-0.6-0.4
@@ -181,14 +181,14 @@
 					c-0.4,1.5-1.1,1.8-1.5,2.4c-0.4,0.7-0.4,1.1,0.7,0.9c0.7-0.1,2.8-0.3,4.1-0.4c0-0.1,0-0.1,0-0.2c-0.2-0.6-0.5-0.8-0.1-1.1
 					c0.4-0.4-0.1-1.2,0.4-1.6c0.5-0.4,0.4-0.8,0.5-1.2c0.2-0.4-1-1.8-0.1-1.6c0.9,0.2,1.2,0.2,1.2-0.1c0-0.3,0.4-0.6,0.7-0.5
 					c0.3,0.1,0.3,0.4,0.6-0.5c0.3-1-0.4-1.4,0.4-1.5C186.1,318.5,185.5,316.7,185.4,316.5z"/>
-				<path id="New_Jersey" class="st0 territoire" d="M692.1,310.2c-6.2,1.1-3.5,0-3.5-2c0-2,1-4.3,2-3.7c0,0,0,0,0,0c0.3-0.9,0.7-2.2,0.8-2.8
+				<path id="New_Jersey" class="st0 territoire heartlandrockterritoire" d="M692.1,310.2c-6.2,1.1-3.5,0-3.5-2c0-2,1-4.3,2-3.7c0,0,0,0,0,0c0.3-0.9,0.7-2.2,0.8-2.8
 					c0.2-0.9,1.3-4.3,0.9-5.2c-0.4-0.8-1.2-1.5-2.5-1.7c-1.3-0.2-11.9-2.8-13.4-4.3c-0.6-0.6-1.1-1-1.6-1.4c-0.9,0.8-3.2,3.2-3.1,3.9
 					c0.1,0.9,0.5,3.2-0.5,3.9c-1,0.7-4.7,5.2-2.6,6.1c2.1,0.9,2.2,0,2.2,1.3c0,1.3-0.2,1.9-1.2,2.7c-1,0.8-1.4,2.8-0.6,3.4
 					c0.7,0.6,11.2,9.2,11.4,9.6c0.2,0.3-2,3.3-2.9,4.3c-0.9,1-1.3,3.4-1.8,4.9c-0.6,1.4-1.3,2-2.8,2.5c-1.5,0.5-4.2,2.8-3.7,5.4
 					c0.4,2,0.9,4.5,2.3,6.7c0.8-0.4,0-1.3,1.5,0.4c1.6,1.8-1.3,1.4,2.8,2.9c4.1,1.4,4,1,5.2,0.6c1.2-0.4,1.8-1.4,1.9,0.4
 					c0.1,1.8,2.7-0.1,1.6,2.2c-1.1,2.3-2.1,3.2-0.1,3.1c1.9-0.1,2.5-0.4,3-1.7c0.6-1.3,1.8-1.8,2.3-3.8c0.5-2-0.6-3.7,0.7-5.5
 					c1.4-1.8,1.7-2.6,2.2-4.8c0.6-2.2-0.4-3.3,1.4-4.1c1.8-0.8,2.3-12.4,1.8-15.3C695.3,315.4,698.3,309.1,692.1,310.2z"/>
-				<path id="Georgie" class="st0 territoire" d="M675.6,446.1c-2-1.1,0.6-4.4-0.5-5c-1.1-0.6-2.2-3-3.3-4.5c-1.1-1.6-2.4-1.4-3.6-2.4
+				<path id="Georgie" class="st0 territoire countryrapterritoire talkingbluesterritoire rocksudisteterritoire rockalternatifterritoire" d="M675.6,446.1c-2-1.1,0.6-4.4-0.5-5c-1.1-0.6-2.2-3-3.3-4.5c-1.1-1.6-2.4-1.4-3.6-2.4
 					c-1.3-0.9-0.6-3.1-0.8-4.4c-0.2-1.3-2.8-4.7-4.4-5.8c-1.6-1.1-2.8-1.9-5.7-4.2c-2.8-2.4-2.8-3.8-3.9-5.3c-1.1-1.6-2.5-2-4.4-2.7
 					c-1.9-0.6-3.2-1.3-4.9-3.6c-1.7-2.3-2.5-2.7-5.4-3.8c-2.8-1.1-6-6-7.6-8.6c-1.6-2.7-2.2-4.4-3.5-4.4c-1.3,0-2.4,1.3-3.3,0
 					c-0.9-1.3-4.1-3.1-5-3.8c-0.9-0.6-0.6-2.8-0.5-4.5c0.2-1.7,3.2-3.3,3.6-3.8c0.1-0.2,0.2-0.5,0.2-1c-0.6,0.1-1.2,0.2-1.9,0.2
@@ -201,7 +201,7 @@
 					c0.4-1.3,0-1.6-0.9-1.6c-0.9,0-2,0.2-1.1-0.5c0.9-0.7,2.1-0.5,2.8-1.3c0.7-0.8,1.8-1.6,0.2-2.2c-1.6-0.5-2.7-0.5-1.9-0.9
 					c0.8-0.5,2-0.9,2.8-0.7c0.8,0.2,1.7,0.4,1.2-0.4c-0.5-0.8-1.1-1.6-0.2-1.6c0.9,0,2,0.1,1.5-0.4c-0.4-0.4,2.3-0.6,1.7-1.4
 					c-0.5-0.6-1.3-0.7-1.6-1C681.3,447.1,677.2,447,675.6,446.1z"/>
-				<path id="Californie" class="st0 territoire" d="M85.2,263.4c-25.6-6.2-44.9-11.6-53.5-14c0.2,1.2-1.2,1.2-1.2,1.2s-2,1-1,2.6
+				<path id="Californie" class="st0 territoire rootsrockterritoire dancerockterritoire californiasoundterritoire poppsychedeliqueterritoire" d="M85.2,263.4c-25.6-6.2-44.9-11.6-53.5-14c0.2,1.2-1.2,1.2-1.2,1.2s-2,1-1,2.6
 					c1,1.6,2.2,1.6,1.6,2.9c-0.5,1.3-1,1.2-1.2,2.6c-0.2,1.4,0.4,1.4-0.3,2.1c-0.8,0.7-1.8,1.3-2,2.4c-0.2,1.1,0.4,1.5-0.2,2.8
 					c-0.7,1.3-0.8,0.8-1.2,2c-0.4,1.2-0.2,1.6-0.9,2.3c-0.7,0.7-2.4,2.2-3,3c-0.5,0.9-1.6,0.5-1.6,2.6c0,2.1-1,2.2,0.2,4
 					c1.2,1.9,1.4,1,2,2.9c0.5,2,1.1,1.6,1.5,3.9c0.4,2.3,0.3,2.2,0.2,4c-0.1,1.9,0.9,2.6-0.3,3.6c-1.2,1-1.9,0.8-1.3,2.3
@@ -221,7 +221,7 @@
 					c-0.2-1.5-0.2-1.7-1.2-2.2c-1-0.5-2,0.1-1.9-1c0.1-1.1,0.5-0.2,0.7-1.7c0.2-1.5-1.2-2-0.6-3.1c0.7-1.1,2.1-0.8,2.5-1.6
 					c0.5-0.8,2.4-3.3,2.7-5.1c0.3-1.8-0.9-3,0.7-3.9c1.6-0.9,2.3-2.4,3.7-3.2c1.4-0.8,1.9-0.5,2.4-1.3c0.5-0.8,0.2-2.3-0.7-2.8
 					c-0.9-0.5-1.7-3-1.9-4c-0.2-1-0.6-1.6-1.2-2.9c-0.7-1.3-1.7-1.2-1.3-3c0.1-0.7,0.2-1.2,0.2-1.6l-61.5-88L85.2,263.4z"/>
-				<path id="Illinois" class="st0 territoire" d="M244.1,219.9c2.2,1.8,4-0.6,4.3-2.2c0.4-1.6-1-2-1.8-5.5c-0.8-3.5,7.5-3.6,8.5-4.1
+				<path id="Illinois" class="st0 territoire houseterritoire chicagobluesterritoire techhouseterritoire chicagosoulterritoire" d="M244.1,219.9c2.2,1.8,4-0.6,4.3-2.2c0.4-1.6-1-2-1.8-5.5c-0.8-3.5,7.5-3.6,8.5-4.1
 					c1.1-0.5-0.2-1.7-1.4-2.9c-1.2-1.2,0.4-2,1.2-3.2c0.8-1.2-0.4-2.5-0.5-4.4c-0.1-1.9,0-3,0.7-4.1c0.7-1.1,0.8-2.6,0.7-3.3
 					c-0.1-0.7-0.8-3.1,0.6-3.6c1.4-0.5,4.6-6.5,4.6-7.5c0-1.1,0.8-2.4,2.3-3.2c1.4-0.8,0.5-3.8-0.4-4.3c-0.8-0.5-0.8-1.8-1-4.7
 					c-0.1-2.9-1.2-1.6-2.2-3.2c-1-1.7,0.1-3.8,0.8-4.8c0.7-1,1-5.7,1-5.7l-5.7-58.7c-0.9-0.6-1.6-1.4-1.9-2.5c-1-2.6-1.1-5.1-2.9-7.5
@@ -233,7 +233,7 @@
 					c0-0.8,1.7,0,3.6,1.7c1.9,1.7,0,7.3-3.2,12.8c-3.2,5.5,9.3,11.5,10.2,13.4c1,1.9,4.1,1.7,5.4,3.5c1.3,1.8,3.6,0.7,3.5,2.4
 					c-0.1,1.7,1.7,3.8,2.8,6.3c1.1,2.5-0.5,1.7-1.6,3c-1.1,1.3,2,3.2,3.1,5.9c1.1,2.6,4.8,1.1,5.3,1.6
 					C233.9,216.3,242,218.1,244.1,219.9z"/>
-				<path id="Mississipi" class="st0 territoire" d="M506.5,463.2c0-0.4,0.4-0.9-0.5-1.6c-0.3-0.2-0.6-0.6-0.8-1.1c-9.2,0.9-17.9,1.5-24.6,1.9
+				<path id="Mississipi" class="st0 territoire bluesterritoire" d="M506.5,463.2c0-0.4,0.4-0.9-0.5-1.6c-0.3-0.2-0.6-0.6-0.8-1.1c-9.2,0.9-17.9,1.5-24.6,1.9
 					c0,0-0.6,0.3-0.6,1.4c0,1.1-0.1,0.9-0.7,1c-0.5,0.1-1.2,0-1.3,1.1c-0.1,1.1-0.3,2.9-0.8,3.3c-0.5,0.4-0.6,1.2-0.6,2.1
 					c0,0.9-0.2,1.4-1.1,1.7c-0.9,0.3-2.3,0.9-2.2,1.8c0.1,0.9,0.4,1.1,0,1.5c-0.4,0.4-0.3,0.7-0.1,1c0.3,0.3,0.1,0.9-0.7,0.9
 					c-0.7,0-1.4-0.1-1.3,0.9c0.1,1,0.9,2.1,0.1,2.6c-0.9,0.5-0.9,1.5-0.9,2c0,0.5,0.5,1.7,0.1,2.1c-0.5,0.4-0.3,1.1,0.4,2.1
@@ -245,7 +245,7 @@
 					c-0.5,0.5-2.5,2.2-1.1,4c1.3,1.8,2,1.7,2.3,2.9c0.3,1.2,2.4,3.9,2.5,4.1c0.2-0.1,0.4-0.2,0.6-0.5c0.8-0.9,1-1.3,1.7-2
 					c0.7-0.7,1.6-0.1,2.4-0.5c0.8-0.4,1.8-1.7,3-1.3c1.2,0.4,2.6,0.8,3.4,0.3c0.8-0.5,1.2,0.8,2,0.1c0.1-0.1,0.3-0.2,0.4-0.3l-2.7-21
 					C506,508.8,506.5,463.6,506.5,463.2z"/>
-				<path id="Texas" class="st0 territoire" d="M253.1,469.2c-0.2-0.1-0.4-0.2-0.3-0.5c0.1-0.3,0.3-0.5,0.7-0.8c0.4-0.3,0.2-0.8,0.4-1.1
+				<path id="Texas" class="st0 territoire rockpsychedeliqueterritoire" d="M253.1,469.2c-0.2-0.1-0.4-0.2-0.3-0.5c0.1-0.3,0.3-0.5,0.7-0.8c0.4-0.3,0.2-0.8,0.4-1.1
 					c0.2-0.3,0.4-0.2,0.4-0.5c0-0.3,0.1-0.7-0.1-1.1c-0.2-0.4-0.4-0.6-0.4-0.9c0.1-0.3,0.2-0.8,0.4-0.8c0.2,0,0.2-0.3,0-0.6
 					c-0.1-0.3-0.8-0.1-0.3-0.6c0.5-0.5,0.6-0.3,0.9-1c0.3-0.7,0.4-1.2,0.3-1.5c0-0.3-0.1-0.7,0-1.1c0.1-0.4,0-1.1-0.3-1.6
 					c-0.3-0.6-0.8-0.1-0.7-0.9c0-0.8-0.3-1.2-0.6-1.4c-0.3-0.3-0.6-0.2-0.5-0.7c0.1-0.4,0.3-0.5,0.1-1.1c-0.2-0.6-0.7-0.9-1-1.3
@@ -287,7 +287,7 @@
 					c-0.3,0.1-0.4,0.5-0.3,0.6c0.1,0.1-0.4,0.1-0.2,0.4c0.1,0.3,0,0.3,0.5,0.3c0.5,0,0.7,0,0.4,0.1c-0.3,0.1-0.9,0.9-1,1.2
 					c-0.1,0.3-0.4,0.6-0.7,0.8c-0.3,0.2-0.9,0.4-0.9,0.7c0,0.2-0.3,0.6,0.4,0.2c0.6-0.3,1.3-0.8,1.4-1.1c0.1-0.3,0.4-1,1.4-1.4
 					c0.9-0.4,1.4-1,2.1-1.1c0.6-0.1,2.6-1,3.1-1.1c0.1,0,0.1,0,0.2,0l0-0.1C253.4,469.5,253.3,469.3,253.1,469.2z"/>
-				<path id="Michigan" class="st0 territoire" d="M359.8,208.5c1.1,1.5,20.7-3.6,28.9-5.7c0-0.2,0.2-0.5,0.4-0.9c1.3-2.2,2.2-4.6,3.5-5.4
+				<path id="Michigan" class="st0 territoire gospelterritoire soulterritoire" d="M359.8,208.5c1.1,1.5,20.7-3.6,28.9-5.7c0-0.2,0.2-0.5,0.4-0.9c1.3-2.2,2.2-4.6,3.5-5.4
 					c1.1-0.7,1.6-2.6,2.9-3.2c-0.6-1.8-1-3.5-1.3-4.4c-0.4-1.1,2-3.9,4.7-6.6c0-0.2-0.1-0.6-0.2-1.4c-0.4-2.2-1.4-2.4-0.4-4.1
 					c1-1.7-0.3-3.4,2.4-2.9c2.6,0.4,5.1,0.6,5.3,1.5c0.3-0.7-0.2-1-0.2-1c-0.2-2.5,0.2-7.2,0.8-12c-0.1,0.3,0,0.4-0.5-1
 					c-0.7-2.1-0.9-0.9-2-4c-1.1-3.1-2.9-8.7-4-10.9c-1.2-2.1-2.7-6.3-3-8.4c-0.3-2.1-4.7-4.8-7-4.6c-2.2,0.2-6.1,2.8-6.8,4.3
@@ -302,7 +302,7 @@
 					c-0.8,0.1-3.3,1.1-2.5,2.8c0.8,1.7,2,2.6,1.3,3.9c-0.6,1.3,1.1,6.2,0,7.5c-1.1,1.2-2.3,3.5-3.3,4.8c-1,1.3-3,2.8-1.6,4.1
 					c1.4,1.3,2.2,2,2.1,4.2c-0.2,2.1,0.8,4.2-0.2,5.1c-1,0.9-0.3,4.9,0.6,6.2c0.9,1.3,2,2.7,3.5,5.2c1.5,2.6,7.4,17.5,4,26.6
 					c-3.4,9.1-2.9,11.4-3.6,12.6c-0.7,1.2-2.9,5.5-5,7.5c-0.2,0.2-0.3,0.3-0.5,0.5l42.2-5C357.1,206.9,358.4,206.6,359.8,208.5z"/>
-				<path id="Louisiane" class="st0 territoire" d="M301.6,438c0,0,1.8,0.9,2.8,2.3c1,1.4,2.8,2.4,3.6,4.6c0.8,2.2-0.1,2.4-0.4,4
+				<path id="Louisiane" class="st0 territoire rhythmandbluesterritoire funkterritoire" d="M301.6,438c0,0,1.8,0.9,2.8,2.3c1,1.4,2.8,2.4,3.6,4.6c0.8,2.2-0.1,2.4-0.4,4
 					c-0.3,1.5,0.8,1.4,1.8,2.3c1,0.9,2.1,2.3,1.9,5c-0.1,2.7,1.5,1.3,2.6,3.2c1,1.9,1.3,4.1,0.9,5.6c-0.4,1.5-0.1,2.7,0,3.8
 					c0.1,1.2-0.1,2.9-1.2,5.3c-1,2.3-1.3,1.7-3,3.3c-1.7,1.7,0.5,1.2,1,2.2c0.5,1,0.5,2.2-0.1,2.2c-0.6,0-1,1.8-1.3,2.7
 					c-0.3,0.9,0.5,1.8,1.3,3.1c0.8,1.3,0.5,2.7,0.5,3.7c0,1-0.6,0.8-1.4,1.7c-0.8,0.9-0.3,2.6-1.5,3.7c-1.3,1.2-1.9,1.9-2.4,2.9
@@ -329,7 +329,7 @@
 					c0.8-0.3,0-1.3-0.1-2.6c-0.1-1.3,1.4-0.9,1.9-1c0.5-0.1,0.8-0.9,0.4-2.7c-0.4-1.8,1.2-1.4,1.9-1.9c0.8-0.5,2.8-4.5,3.2-5.9
 					c0.4-1.4-0.6-1-3.3-2.4c-2.7-1.4,4-2.4,5.3-2.8c1.3-0.4,0.3-1.5-1.9-2.6c-2.2-1-1-1.1-0.6-2.4c0.4-1.3-0.6-2.4-0.6-2.4
 					c-2.8,0.3-1.2-3.8-2.2-4.9c-1-1,1.5-2.9,1.2-4.1c-0.4-1.1-1.1-0.9-1.7-3.3l-68.7,2.1L301.6,438z"/>
-				<path id="Southampton" class="st0 territoire" d="M741,467l-1.3-1.7c0,0-1.5,0.3-1.9,0.7c-0.5,0.5,0.2-2.5,0.2-2.5s0.6-0.6,1,0.1
+				<path id="Southampton" class="st0 territoire newwaveterritoire" d="M741,467l-1.3-1.7c0,0-1.5,0.3-1.9,0.7c-0.5,0.5,0.2-2.5,0.2-2.5s0.6-0.6,1,0.1
 					c0.5,0.6,1.5,1.9,4.3-2.2l0.5-3c0,0,0.9-0.1,1.1,0.5l0.2,2.3c0,0,1.2,3,1.7,3c0.5,0,0.6-1.3,1-1.4c0.4-0.1,2,1.3,2.3,0.7
 					c0.3-0.6,1.3-1.4,2.4-0.9c1.1,0.5,3.5,1.2,4.9,0.8c0,0,0.4-2.2,2-2.6c0,0,2.7,0.8,3-1.1l1-1.6c0,0,2.1,1.9,3,2.2
 					c0.8,0.3,1.2,0,1.2,0l2.4,1.9c0,0,0.8,0,1.8,1.4c0.9,1.4,2.1,1.6,2.1,1.6s6.7-0.1,7.9,0.3l1.6-1.5h1.1c0,0,0.9-0.2,0.8,1.4l0.1,0.8
@@ -343,7 +343,7 @@
 					l-1.4-2.3l-0.1,2.9l-0.8,0l-0.2-2.3l-2.6-2.6l-4.5-2.4l-7.3-3.7c0,0-2.4-1.3-3.8,3l-2.3,0c0,0-9-5.5-9-10.6l-2.4-3.4
 					c0,0,3,0,4.2-1.2c0,0,0.2-1.5-0.8-2.2l-0.1-1l2.7,0.3v-0.7l-1.8-1.5c0,0-1.9-0.8,1.1-2.2v-0.8l-2.4-0.3c0,0,1.6-2.4,1.9-2.2
 					c0.4,0.2,2.4-2.7,2.4-2.7L741,467z"/>
-				<path id="Ohio" class="st0 territoire" d="M482.8,118c-0.2-1-0.4-2-0.5-2.6c-0.1-0.4,0.5-0.4,1-0.4L479,92.5c-3.4,1.9-8.4,5.3-9.3,6.6
+				<path id="Ohio" class="st0 territoire rocknrollterritoire" d="M482.8,118c-0.2-1-0.4-2-0.5-2.6c-0.1-0.4,0.5-0.4,1-0.4L479,92.5c-3.4,1.9-8.4,5.3-9.3,6.6
 					c-1.1,1.6-3.6,4.4-4.8,4.4c-1.3,0-3.6,0-4.3,0.8c-0.8,0.8-4.3,2.2-5,1.6c-0.7-0.6-2.2-0.7-2.3-0.5c0,0.3-1.2,0.5-1.8,0.7
 					c-0.6,0.3-1-0.6-0.5-0.8c0.5-0.2,1.9-0.1,1.7-0.6c-0.2-0.6-0.5-0.9-1.3-0.5c-0.8,0.4-0.6,1-1.2,0.3c-0.6-0.7-0.7-0.5-2.1-1
 					c-1.5-0.5-1.4-0.3-2.5-0.9c-0.9-0.5-1.9-0.2-1.8-0.8c-4.6,1.2-15.7,4.1-16.3,3.2c0,0-0.1-0.1-0.1-0.1l5.3,43.1
@@ -355,7 +355,7 @@
 					c-0.1-1,0.8-2.3,1.2-2.8c0.5-0.5,1.5,0.8,2.3,1.3c0.8,0.5,0.2-3.5-0.2-4.7c-0.3-1.2,1.4-1.4,2.2-1.8c0.8-0.4,0.7-1.4,0.9-2.6
 					c0.2-1.1,1.1-0.3,2,0.3c0.9,0.6,1.1,0.1,2.1-0.2c1-0.2,2.2-2.7,2.9-3.7c0.8-1,0.5-3.1,0.3-5.2c-0.2-2.1,0.9-1.4,1.4-1.8
 					c0.5-0.5-0.1-3.3-0.1-4.7c-0.1-1.4,0.1-0.9,0.7-1.1C483.7,120.4,483,119.1,482.8,118z"/>
-				<path id="Maryland" class="st0 territoire" d="M403.8,300.1c-0.7-1.2-1.7-2-0.4-2.9c1.3-0.9,0.6-0.9,2.3-2.6c1.2-1.3,1.5-2.1,1.6-3.1
+				<path id="Maryland" class="st0 territoire doowopterritoire" d="M403.8,300.1c-0.7-1.2-1.7-2-0.4-2.9c1.3-0.9,0.6-0.9,2.3-2.6c1.2-1.3,1.5-2.1,1.6-3.1
 					c-2.2-0.7-5.3-0.9-8.1-1.3c-4-0.6-6.5-0.6-6.9-1.3c-0.4-0.7-2.2-9.9-2.3-12.4c-0.2-2.5-2.4-9.3-3.8-12.5c-1-2.3-1.4-4.1-1.4-5.1
 					l-71.8,13.6l2.1,13.1l6.8-7.7c0,0,2.3-1,2.5-0.1c0.2,0.9,0.7-0.1,1-0.7c0.3-0.6,1.7-5.4,2.3-4.6c0.6,0.8,0.6,1.7,2.8,1.9
 					c2.2,0.2,2.3-1.9,3.5-2.5c1.2-0.5,2.5-0.9,3.1-1.5c0.6-0.6,2-1.5,3-1c1,0.5,2.3,0.5,3.8,0.5c1.5,0,2.6,1,3,2.2
@@ -371,7 +371,7 @@
 					c-0.5,1.9-0.9,1.3,0.3,2.1c1.2,0.8,1.9,0.8,2.5,0.5c0.5-0.2,0.9,0.5,1,2c0.1,1.5-1.7,5.4-1.8,7.1c-0.1,1.7-0.7,3.3-0.5,6
 					c0.2,2.7-0.5,3.7,0.8,5c1.3,1.3,2,1.9,2.1-1c0.1-2.9-0.5-5.1,0.3-6c0.8-0.9,1.1-0.8,1.1-2.2c0-1.4,2.8,1.1,2.4-1.4
 					c-0.4-2.5-0.6-4.7,0.3-6.3c0.9-1.5,0.1-2.8,2.1-3.6c2-0.8,2.7-1.2,2.6-2C405.6,300.3,404.5,301.3,403.8,300.1z"/>
-				<path id="Caroline_du_nord" class="st0 territoire" d="M819,351.4c-0.6-0.6-0.9-1-1.4-1.8c-0.5-0.8-1.2-2.3-1.6-2.8c-0.4-0.5-0.5-1.2-1.2-2.3
+				<path id="Caroline_du_nord" class="st0 territoire rockinstrumentalterritoire" d="M819,351.4c-0.6-0.6-0.9-1-1.4-1.8c-0.5-0.8-1.2-2.3-1.6-2.8c-0.4-0.5-0.5-1.2-1.2-2.3
 					c-0.2-0.3-0.3-0.5-0.4-0.6c-4.1,1-28.9,6.9-50.5,9.7c0,0-1.8,0.4-2.4,0.2c-0.1-0.1-0.4-0.1-0.7-0.1c0.1,0.8,0.2,2-0.2,2.7
 					c-0.6,1.1-0.9,0.5-1.3,1.6c-0.4,1.1-1.6,2.7-1.7,2.2c-0.1-0.5-1.1-1.5-2.2-0.5c-1,1-0.1,2.4-1.4,2.6c-1.3,0.1-0.7-1-1.3-1
 					c-0.6,0-0.1,0.6-0.5,1.1c-0.4,0.6-1.6,0.3-1.6,0.9c0,0.6-0.1,1.7-1,1.7c-1,0.1-2.9,2.4-3.6,3.2c-0.8,0.8-1.5-0.6-2.9,0.6
@@ -449,82 +449,82 @@
 				<circle id="chicagoblues" class="st1 genre" cx="253.3" cy="122.2" r="21"/>
 			</g>
 			<g id="nom_x5F_genre">
-				<text id="grungenom" transform="matrix(1 0 0 1 16.4165 170.9165)" class="st2 st3 st4">GRUNGE</text>
-				<text id="rootsrocknom" transform="matrix(1 0 0 1 15.5147 311.7969)" class="st2 st3 st4">ROOTS ROCK</text>
-				<text id="dancerocknom" transform="matrix(1 0 0 1 7.3794 388.7031)" class="st2 st3 st4">DANCE ROCK</text>
-				<text id="jazznom" transform="matrix(1 0 0 1 150.3794 337.7031)" class="st2 st3 st4">JAZZ</text>
-				<text id="californiasoundnom" transform="matrix(1 0 0 1 61.4209 405.6616)" class="st2 st3 st4">CALIFORNIA SOUND</text>
-				<text id="poppsychedeliquenom" transform="matrix(1 0 0 1 43.2778 476.6616)" class="st2 st3 st4">POP PSYCHÉDÉLIQUE</text>
-				<text id="rockpsychedeliquenom" transform="matrix(1 0 0 1 169.7778 485.9116)" class="st2 st3 st4">ROCK PSYCHÉDÉLIQUE</text>
-				<text id="soulpsychedelique" transform="matrix(1 0 0 1 436.8472 260.2163)" class="st2 st3 st4">SOUL PSYCHÉDÉLIQUE</text>
-				<text id="rhythmandbluesnom" transform="matrix(1 0 0 1 289.0278 468.2314)" class="st2 st3 st4">RHYTHM AND BLUES</text>
-				<text id="rockabillynom" transform="matrix(1 0 0 1 386.082 396.5732)" class="st2 st3 st4">ROCKABILLY</text>
-				<text id="countryrocknom" transform="matrix(1 0 0 1 442.9155 384.7397)" class="st2 st3 st4">COUNTRY ROCK</text>
-				<text id="countrynom" transform="matrix(1 0 0 1 510.5024 367.2397)" class="st2 st3 st4">COUNTRY</text>
-				<text id="countryrapnom" transform="matrix(1 0 0 1 573.8359 405.6611)" class="st2 st3 st4">COUNTRY RAP</text>
-				<text id="funknom" transform="matrix(1 0 0 1 375.0181 523.6982)" class="st2 st3 st4">FUNK</text>
-				<text id="bluesnom" transform="matrix(1 0 0 1 476.0063 524.6982)" class="st2 st3 st4">BLUES</text>
-				<text id="talkingbluesnom" transform="matrix(1 0 0 1 549.4438 472.3442)" class="st2 st3 st4">TALKING BLUES</text>
-				<text id="rocksudistenom" transform="matrix(1 0 0 1 610.1104 524.6978)" class="st2 st3 st4">ROCK SUDISTE</text>
-				<text id="newwavenom" transform="matrix(1 0 0 1 746.9438 521.0615)" class="st2 st3 st4">NEW WAVE</text>
-				<text id="rockalternatifnom" transform="matrix(1 0 0 1 622.6104 455.6978)" class="st2 st3 st4">ROCK ALTERNATIF</text>
-				<text id="heartlandrocknom" transform="matrix(1 0 0 1 643.0269 350.2246)" class="st2 st3 st4">HEARTLAND ROCK</text>
-				<text id="rockinstrumentalnom" transform="matrix(1 0 0 1 739.3691 393.8042)" class="st2 st3 st4">ROCK INSTRUMENTAL</text>
-				<text id="honkytonknom" transform="matrix(1 0 0 1 237.9912 373.8984)" class="st2 st3 st4">HONKY-TONK</text>
-				<text id="doowopnom" transform="matrix(1 0 0 1 346.8247 307.5654)" class="st2 st3 st4">DOO-WOP</text>
-				<text id="garagerocknom" transform="matrix(1 0 0 1 71.625 145.875)" class="st2 st3 st4">GARAGE ROCK</text>
-				<text id="housenom" transform="matrix(1 0 0 1 175.5 132.5)" class="st2 st3 st4">HOUSE</text>
-				<text id="chicagobluesnom" transform="matrix(1 0 0 1 218.5 158.125)" class="st2 st3 st4">CHICAGO BLUES</text>
-				<text id="techhousenom" transform="matrix(1 0 0 1 160.001 199.4795)" class="st2 st3 st4">TECH HOUSE</text>
-				<text id="chicagosoulnom" transform="matrix(1 0 0 1 213.417 235.8125)" class="st2 st3 st4">CHICAGO SOUL</text>
-				<text id="soulnom" transform="matrix(1 0 0 1 363.5 208.3125)" class="st2 st3 st4">SOUL</text>
-				<text id="gospelnom" transform="matrix(1 0 0 1 313.834 137.646)" class="st2 st3 st4">GOSPEL</text>
-				<text id="rocknrollnom" transform="matrix(1 0 0 1 427.3623 153.396)" class="st2 st3 st4">ROCK’N’ROLL</text>
-				<text id="post-disconom" transform="matrix(1 0 0 1 510.5024 198.146)" class="st2 st3 st4">POST-DISCO</text>
-				<text id="breakbeatnom" transform="matrix(1 0 0 1 573.3359 165.6455)" class="st2 st3 st4">BREAK BEAT</text>
-				<text id="folknom" transform="matrix(1 0 0 1 631.3359 83.9941)" class="st2 st3 st4">FOLK</text>
-				<text id="disconom" transform="matrix(1 0 0 1 698.5859 107.2441)" class="st2 st3 st4">DISCO</text>
-				<text id="raprocknom" transform="matrix(1 0 0 1 665.0859 220.4941)" class="st2 st3 st4">RAP ROCK</text>
-				<text id="electronom" transform="matrix(1 0 0 1 725.0864 251.7441)" class="st2 st3 st4">ELECTRO</text>
-				<text id="blueeyessoulnom" transform="matrix(1 0 0 1 765.3364 268.6191)" class="st2 st3 st4">BLUE-EYED SOUL</text>
-				<text id="poprocknom" transform="matrix(1 0 0 1 833.6958 196.3042)" class="st2 st3 st4">POP ROCK</text>
-				<text id="hardrocknom" transform="matrix(1 0 0 1 886.4688 276.7671)" class="st2 st3 st4">HARD ROCK</text>
-				<text id="heavymetalnom" transform="matrix(1 0 0 1 941.0522 303.5)" class="st2 st3 st4">HEAVY METAL</text>
-				<text id="glamrocknom" transform="matrix(1 0 0 1 843.479 430.4111)" class="st2 st3 st4">GLAM ROCK</text>
-				<text id="bluesrocknom" transform="matrix(1 0 0 1 903.332 420.5151)" class="st2 st3 st4">BLUES ROCK</text>
-				<text id="punkrocknom" transform="matrix(1 0 0 1 966.957 401.5776)" class="st2 st3 st4">PUNK ROCK</text>
-				<text id="powerpopnom" transform="matrix(1 0 0 1 846.3945 499.5776)" class="st2 st3 st4">POWER POP</text>
-				<text id="popnom" transform="matrix(1 0 0 1 917.3525 490.1606)" class="st2 st3 st4">POP</text>
-				<text id="sunthrocknom" transform="matrix(1 0 0 1 990.5479 467.606)" class="st2 st3 st4">SYNTHROCK</text>
-				<text id="synthpopnom" transform="matrix(1 0 0 1 944.7144 535.606)" class="st2 st3 st4">SYNTHPOP</text>
-				<text id="folkrocknom" transform="matrix(1 0 0 1 830.5933 124.3042)" class="st2 st3 st4">FOLK ROCK</text>
-				<text id="merseybeatnom" transform="matrix(1 0 0 1 881.7183 140.6001)" class="st2 st3 st4">MERSEY BEAT</text>
-				<text id="hiphopnom" transform="matrix(1 0 0 1 725.0859 174.4941)" class="st2 st3 st4">HIP-HOP</text>
-				<text id="popbaroquenom" transform="matrix(1 0 0 1 631.1479 148.3726)" class="st2 st3 st4">POP BAROQUE</text>
-				<text id="softrocknom" transform="matrix(1 0 0 1 547.3359 264.6455)" class="st2 st3 st4">SOFT ROCK</text>
-				<text id="rnbnom" transform="matrix(1 0 0 1 618.5029 235.1455)" class="st2 st3 st4">R’N’B</text>
+				<text id="grungenom" transform="matrix(1 0 0 1 16.4165 170.9165)" class="st2 st3 st4 genrenom">GRUNGE</text>
+				<text id="rootsrocknom" transform="matrix(1 0 0 1 15.5147 311.7969)" class="st2 st3 st4 genrenom">ROOTS ROCK</text>
+				<text id="dancerocknom" transform="matrix(1 0 0 1 7.3794 388.7031)" class="st2 st3 st4 genrenom">DANCE ROCK</text>
+				<text id="jazznom" transform="matrix(1 0 0 1 150.3794 337.7031)" class="st2 st3 st4 genrenom">JAZZ</text>
+				<text id="californiasoundnom" transform="matrix(1 0 0 1 61.4209 405.6616)" class="st2 st3 st4 genrenom">CALIFORNIA SOUND</text>
+				<text id="poppsychedeliquenom" transform="matrix(1 0 0 1 43.2778 476.6616)" class="st2 st3 st4 genrenom">POP PSYCHÉDÉLIQUE</text>
+				<text id="rockpsychedeliquenom" transform="matrix(1 0 0 1 169.7778 485.9116)" class="st2 st3 st4 genrenom">ROCK PSYCHÉDÉLIQUE</text>
+				<text id="soulpsychedelique" transform="matrix(1 0 0 1 436.8472 260.2163)" class="st2 st3 st4 genrenom">SOUL PSYCHÉDÉLIQUE</text>
+				<text id="rhythmandbluesnom" transform="matrix(1 0 0 1 289.0278 468.2314)" class="st2 st3 st4 genrenom">RHYTHM AND BLUES</text>
+				<text id="rockabillynom" transform="matrix(1 0 0 1 386.082 396.5732)" class="st2 st3 st4 genrenom">ROCKABILLY</text>
+				<text id="countryrocknom" transform="matrix(1 0 0 1 442.9155 384.7397)" class="st2 st3 st4 genrenom">COUNTRY ROCK</text>
+				<text id="countrynom" transform="matrix(1 0 0 1 510.5024 367.2397)" class="st2 st3 st4 genrenom">COUNTRY</text>
+				<text id="countryrapnom" transform="matrix(1 0 0 1 573.8359 405.6611)" class="st2 st3 st4 genrenom">COUNTRY RAP</text>
+				<text id="funknom" transform="matrix(1 0 0 1 375.0181 523.6982)" class="st2 st3 st4 genrenom">FUNK</text>
+				<text id="bluesnom" transform="matrix(1 0 0 1 476.0063 524.6982)" class="st2 st3 st4 genrenom">BLUES</text>
+				<text id="talkingbluesnom" transform="matrix(1 0 0 1 549.4438 472.3442)" class="st2 st3 st4 genrenom">TALKING BLUES</text>
+				<text id="rocksudistenom" transform="matrix(1 0 0 1 610.1104 524.6978)" class="st2 st3 st4 genrenom">ROCK SUDISTE</text>
+				<text id="newwavenom" transform="matrix(1 0 0 1 746.9438 521.0615)" class="st2 st3 st4 genrenom">NEW WAVE</text>
+				<text id="rockalternatifnom" transform="matrix(1 0 0 1 622.6104 455.6978)" class="st2 st3 st4 genrenom">ROCK ALTERNATIF</text>
+				<text id="heartlandrocknom" transform="matrix(1 0 0 1 643.0269 350.2246)" class="st2 st3 st4 genrenom">HEARTLAND ROCK</text>
+				<text id="rockinstrumentalnom" transform="matrix(1 0 0 1 739.3691 393.8042)" class="st2 st3 st4 genrenom">ROCK INSTRUMENTAL</text>
+				<text id="honkytonknom" transform="matrix(1 0 0 1 237.9912 373.8984)" class="st2 st3 st4 genrenom">HONKY-TONK</text>
+				<text id="doowopnom" transform="matrix(1 0 0 1 346.8247 307.5654)" class="st2 st3 st4 genrenom">DOO-WOP</text>
+				<text id="garagerocknom" transform="matrix(1 0 0 1 71.625 145.875)" class="st2 st3 st4 genrenom">GARAGE ROCK</text>
+				<text id="housenom" transform="matrix(1 0 0 1 175.5 132.5)" class="st2 st3 st4 genrenom">HOUSE</text>
+				<text id="chicagobluesnom" transform="matrix(1 0 0 1 218.5 158.125)" class="st2 st3 st4 genrenom">CHICAGO BLUES</text>
+				<text id="techhousenom" transform="matrix(1 0 0 1 160.001 199.4795)" class="st2 st3 st4 genrenom">TECH HOUSE</text>
+				<text id="chicagosoulnom" transform="matrix(1 0 0 1 213.417 235.8125)" class="st2 st3 st4 genrenom">CHICAGO SOUL</text>
+				<text id="soulnom" transform="matrix(1 0 0 1 363.5 208.3125)" class="st2 st3 st4 genrenom">SOUL</text>
+				<text id="gospelnom" transform="matrix(1 0 0 1 313.834 137.646)" class="st2 st3 st4 genrenom">GOSPEL</text>
+				<text id="rocknrollnom" transform="matrix(1 0 0 1 427.3623 153.396)" class="st2 st3 st4 genrenom">ROCK’N’ROLL</text>
+				<text id="post-disconom" transform="matrix(1 0 0 1 510.5024 198.146)" class="st2 st3 st4 genrenom">POST-DISCO</text>
+				<text id="breakbeatnom" transform="matrix(1 0 0 1 573.3359 165.6455)" class="st2 st3 st4 genrenom">BREAK BEAT</text>
+				<text id="folknom" transform="matrix(1 0 0 1 631.3359 83.9941)" class="st2 st3 st4 genrenom">FOLK</text>
+				<text id="disconom" transform="matrix(1 0 0 1 698.5859 107.2441)" class="st2 st3 st4 genrenom">DISCO</text>
+				<text id="raprocknom" transform="matrix(1 0 0 1 665.0859 220.4941)" class="st2 st3 st4 genrenom">RAP ROCK</text>
+				<text id="electronom" transform="matrix(1 0 0 1 725.0864 251.7441)" class="st2 st3 st4 genrenom">ELECTRO</text>
+				<text id="blueeyessoulnom" transform="matrix(1 0 0 1 765.3364 268.6191)" class="st2 st3 st4 genrenom">BLUE-EYED SOUL</text>
+				<text id="poprocknom" transform="matrix(1 0 0 1 833.6958 196.3042)" class="st2 st3 st4 genrenom">POP ROCK</text>
+				<text id="hardrocknom" transform="matrix(1 0 0 1 886.4688 276.7671)" class="st2 st3 st4 genrenom">HARD ROCK</text>
+				<text id="heavymetalnom" transform="matrix(1 0 0 1 941.0522 303.5)" class="st2 st3 st4 genrenom">HEAVY METAL</text>
+				<text id="glamrocknom" transform="matrix(1 0 0 1 843.479 430.4111)" class="st2 st3 st4 genrenom">GLAM ROCK</text>
+				<text id="bluesrocknom" transform="matrix(1 0 0 1 903.332 420.5151)" class="st2 st3 st4 genrenom">BLUES ROCK</text>
+				<text id="punkrocknom" transform="matrix(1 0 0 1 966.957 401.5776)" class="st2 st3 st4 genrenom">PUNK ROCK</text>
+				<text id="powerpopnom" transform="matrix(1 0 0 1 846.3945 499.5776)" class="st2 st3 st4 genrenom">POWER POP</text>
+				<text id="popnom" transform="matrix(1 0 0 1 917.3525 490.1606)" class="st2 st3 st4 genrenom">POP</text>
+				<text id="sunthrocknom" transform="matrix(1 0 0 1 990.5479 467.606)" class="st2 st3 st4 genrenom">SYNTHROCK</text>
+				<text id="synthpopnom" transform="matrix(1 0 0 1 944.7144 535.606)" class="st2 st3 st4 genrenom">SYNTHPOP</text>
+				<text id="folkrocknom" transform="matrix(1 0 0 1 830.5933 124.3042)" class="st2 st3 st4 genrenom">FOLK ROCK</text>
+				<text id="merseybeatnom" transform="matrix(1 0 0 1 881.7183 140.6001)" class="st2 st3 st4 genrenom">MERSEY BEAT</text>
+				<text id="hiphopnom" transform="matrix(1 0 0 1 725.0859 174.4941)" class="st2 st3 st4 genrenom">HIP-HOP</text>
+				<text id="popbaroquenom" transform="matrix(1 0 0 1 631.1479 148.3726)" class="st2 st3 st4 genrenom">POP BAROQUE</text>
+				<text id="softrocknom" transform="matrix(1 0 0 1 547.3359 264.6455)" class="st2 st3 st4 genrenom">SOFT ROCK</text>
+				<text id="rnbnom" transform="matrix(1 0 0 1 618.5029 235.1455)" class="st2 st3 st4 genrenom">R’N’B</text>
 			</g>
 			<g id="nom_x5F_etat">
-				<text id="XMLID_4_" transform="matrix(1 0 0 1 28 75.3276)" class="st5 st6 st7">WASHINGTON</text>
-				<text id="XMLID_324_" transform="matrix(1 0 0 1 196.8335 60.8271)" class="st5 st6 st7">ILLINOIS</text>
-				<text id="XMLID_325_" transform="matrix(1 0 0 1 323 67.9941)" class="st5 st6 st7">MICHIGAN</text>
-				<text id="XMLID_326_" transform="matrix(1 0 0 1 449.3335 83.9941)" class="st5 st6 st7">OHIO</text>
-				<text id="XMLID_327_" transform="matrix(1 0 0 1 528.75 94.5625)" class="st5 st6 st7">NEW-YORK</text>
-				<text id="XMLID_328_" transform="matrix(1 0 0 1 854.1841 51.7368)" class="st5 st6 st7">LIVERPOOL</text>
-				<text id="XMLID_329_" transform="matrix(1 0 0 1 911.0591 206.0425)" class="st5 st6 st7">BIRMINGHAM</text>
-				<text id="XMLID_330_" transform="matrix(1 0 0 1 900.0195 348.7251)" class="st5 st6 st7">LONDRES</text>
-				<text id="XMLID_482_" transform="matrix(1 0 0 1 727.0195 448.7012)" class="st5 st6 st7">SOUTHAMPTON</text>
-				<text id="XMLID_331_" transform="matrix(1 0 0 1 733.6499 322.5586)" class="st5 st6 st7">CAROLINE DU NORD</text>
-				<text id="XMLID_332_" transform="matrix(1 0 0 1 647.8164 275.8921)" class="st5 st6 st7">NEW JERSEY</text>
-				<text id="XMLID_333_" transform="matrix(1 0 0 1 572.1499 334.0352)" class="st5 st6 st7">GEORGIE</text>
-				<text id="XMLID_334_" transform="matrix(1 0 0 1 462.1499 448.7017)" class="st5 st6 st7">MISSISSIPI</text>
-				<text id="XMLID_335_" transform="matrix(1 0 0 1 429.521 313.5464)" class="st5 st6 st7">TENNESSEE</text>
-				<text id="XMLID_336_" transform="matrix(1 0 0 1 328.646 238.2339)" class="st5 st6 st7">MARYLAND</text>
-				<text id="XMLID_337_" transform="matrix(1 0 0 1 303.3247 395.0542)" class="st5 st6 st7">LOUISIANE</text>
-				<text id="XMLID_338_" transform="matrix(1 0 0 1 228.3247 304.4531)" class="st5 st6 st7">OKLAHOMA</text>
-				<text id="XMLID_341_" transform="matrix(1 0 0 1 199.1577 400.9531)" class="st5 st6 st7">TEXAS</text>
-				<text id="XMLID_339_" transform="matrix(1 0 0 1 129.2603 266.4531)" class="st5 st6 st7">MISSOURI</text>
-				<text id="XMLID_340_" transform="matrix(1 0 0 1 19.3496 238.2339)" class="st5 st6 st7">CALIFORNIE</text>
+				<text id="XMLID_4_" transform="matrix(1 0 0 1 28 75.3276)" class="st5 st6 st7 territoirenom">WASHINGTON</text>
+				<text id="XMLID_324_" transform="matrix(1 0 0 1 196.8335 60.8271)" class="st5 st6 st7 territoirenom">ILLINOIS</text>
+				<text id="XMLID_325_" transform="matrix(1 0 0 1 323 67.9941)" class="st5 st6 st7 territoirenom">MICHIGAN</text>
+				<text id="XMLID_326_" transform="matrix(1 0 0 1 449.3335 83.9941)" class="st5 st6 st7 territoirenom">OHIO</text>
+				<text id="XMLID_327_" transform="matrix(1 0 0 1 528.75 94.5625)" class="st5 st6 st7 territoirenom">NEW-YORK</text>
+				<text id="XMLID_328_" transform="matrix(1 0 0 1 854.1841 51.7368)" class="st5 st6 st7 territoirenom">LIVERPOOL</text>
+				<text id="XMLID_329_" transform="matrix(1 0 0 1 911.0591 206.0425)" class="st5 st6 st7 territoirenom">BIRMINGHAM</text>
+				<text id="XMLID_330_" transform="matrix(1 0 0 1 900.0195 348.7251)" class="st5 st6 st7 territoirenom">LONDRES</text>
+				<text id="XMLID_482_" transform="matrix(1 0 0 1 727.0195 448.7012)" class="st5 st6 st7 territoirenom">SOUTHAMPTON</text>
+				<text id="XMLID_331_" transform="matrix(1 0 0 1 733.6499 322.5586)" class="st5 st6 st7 territoirenom">CAROLINE DU NORD</text>
+				<text id="XMLID_332_" transform="matrix(1 0 0 1 647.8164 275.8921)" class="st5 st6 st7 territoirenom">NEW JERSEY</text>
+				<text id="XMLID_333_" transform="matrix(1 0 0 1 572.1499 334.0352)" class="st5 st6 st7 territoirenom">GEORGIE</text>
+				<text id="XMLID_334_" transform="matrix(1 0 0 1 462.1499 448.7017)" class="st5 st6 st7 territoirenom">MISSISSIPI</text>
+				<text id="XMLID_335_" transform="matrix(1 0 0 1 429.521 313.5464)" class="st5 st6 st7 territoirenom">TENNESSEE</text>
+				<text id="XMLID_336_" transform="matrix(1 0 0 1 328.646 238.2339)" class="st5 st6 st7 territoirenom">MARYLAND</text>
+				<text id="XMLID_337_" transform="matrix(1 0 0 1 303.3247 395.0542)" class="st5 st6 st7 territoirenom">LOUISIANE</text>
+				<text id="XMLID_338_" transform="matrix(1 0 0 1 228.3247 304.4531)" class="st5 st6 st7 territoirenom">OKLAHOMA</text>
+				<text id="XMLID_341_" transform="matrix(1 0 0 1 199.1577 400.9531)" class="st5 st6 st7 territoirenom">TEXAS</text>
+				<text id="XMLID_339_" transform="matrix(1 0 0 1 129.2603 266.4531)" class="st5 st6 st7 territoirenom">MISSOURI</text>
+				<text id="XMLID_340_" transform="matrix(1 0 0 1 19.3496 238.2339)" class="st5 st6 st7 territoirenom">CALIFORNIE</text>
 			</g>
 			<g id="lien">
 				<g id="XMLID_1_" class="link">

@@ -734,10 +734,18 @@ SVG
   transition: 0.5s ease;
 }
 
+.genrenom{
+  display: none;
+}
+
 .link{
   display: none;
 }
 
 .territoire{
+  display: none;
+}
+
+.territoirenom{
   display: none;
 }

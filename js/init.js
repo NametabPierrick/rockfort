@@ -45,6 +45,7 @@ $(document).ready( function () {
 		});
 
 	cacheList();
+	hoverGenre();
 	selectGenre();
 
 });
@@ -161,8 +162,19 @@ function selectGenre(){
 	$(".genre").click(function(){
 		var idGenre = $(this).attr("id");
 		var territoireGenre = $("."+idGenre+"territoire");
-		territoireGenre.fadeIn();
+		$(".territoire").hide(function(){
+			territoireGenre.fadeIn();
+		})
 	})	
+}
+
+/***********************************************/
+function hoverGenre(){
+/***********************************************/
+	$(".genre").hover(function(){
+		var idGenre = $(this).attr("id");
+		var nomGenre = $("#"+idGenre+"nom");
+	}
 }
 
 // Suggestion 
