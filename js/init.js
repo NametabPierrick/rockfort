@@ -171,10 +171,10 @@ function selectGenre(){
 /***********************************************/
 function hoverGenre(){
 /***********************************************/
-	$(".genre").hover(function(){
+	/*$(".genre").hover(function(){
 		var idGenre = $(this).attr("id");
 		var nomGenre = $("#"+idGenre+"nom");
-	}
+	}*/
 }
 
 // Suggestion 
