@@ -393,60 +393,60 @@
 					c0.7,0.4,0.9,0.3,1.2,1.3c0.3,0.9,0.8,1.3,1.1,1.8c0.3,0.5,0.5,1,1.1,2c0.6,1,1,1.6,1.4,2C818.8,351.7,819.5,352,819,351.4z"/>
 			</g>
 			<g id="genre">
-				<circle id="grunge" class="st1 genre" cx="34.7" cy="136.7" r="21"/>
-				<circle id="garagerock" class="st1 genre" cx="101.7" cy="112.1" r="21"/>
-				<circle id="house" class="st1 genre" cx="190.8" cy="96.3" r="21"/>
-				<circle id="techhouse" class="st1 genre" cx="188.2" cy="163.3" r="21"/>
+				<circle id="grunge" class="st1 genre punkrockassoc" cx="34.7" cy="136.7" r="21"/>
+				<circle id="garagerock" class="st1 genre discoassoc hardrockassoc punkrockassoc rockalternatifassoc powerpopassoc merseybeatassoc" cx="101.7" cy="112.1" r="21"/>
+				<circle id="house" class="st1 genre electroassoc synthpopassoc techhouseassoc" cx="190.8" cy="96.3" r="21"/>
+				<circle id="techhouse" class="st1 genre discoassoc" cx="188.2" cy="163.3" r="21"/>
 				<circle id="chicagosoul" class="st1 genre" cx="245.3" cy="200.6" r="21"/>
-				<circle id="gospel" class="st1 genre" cx="330.9" cy="102.2" r="21"/>
-				<circle id="soul" class="st1 genre" cx="375" cy="171.7" r="21"/>
-				<circle id="rocknroll" class="st1 genre" cx="455" cy="118.7" r="21"/>
+				<circle id="gospel" class="st1 genre rhythmandbluesassoc rocksudisteassoc blueeyedsoulassoc doowopassoc" cx="330.9" cy="102.2" r="21"/>
+				<circle id="soul" class="st1 genre rhythmandbluesassoc rnbassoc popassoc gospelassoc blueeyedsoulassoc funkassoc garagerockassoc" cx="375" cy="171.7" r="21"/>
+				<circle id="rocknroll" class="st1 genre jazzassoc chicagosoulassoc rockabillyassoc rocksudisteassoc heartlandrockassoc softrockassoc raprockassoc californiasoundassoc rockinstrumentalassoc" cx="455" cy="118.7" r="21"/>
 				<circle id="soulpsychedelique" class="st1 genre" cx="483.4" cy="225.2" r="21"/>
 				<circle id="postdisco" class="st1 genre" cx="536.1" cy="163.3" r="21"/>
-				<circle id="softrock" class="st1 genre" cx="570.8" cy="230.9" r="21"/>
-				<circle id="rnb" class="st1 genre" cx="628.6" cy="200.6" r="21"/>
+				<circle id="softrock" class="st1 genre poprockassoc" cx="570.8" cy="230.9" r="21"/>
+				<circle id="rnb" class="st1 genre bluesassoc soulassoc blueeyedsoulassoc" cx="628.6" cy="200.6" r="21"/>
 				<circle id="breakbeat" class="st1 genre" cx="598.4" cy="130.3" r="21"/>
-				<circle id="popbaroque" class="st1 genre" cx="661.4" cy="114.1" r="21"/>
-				<circle id="folk" class="st1 genre" cx="642.6" cy="50.1" r="21"/>
-				<circle id="disco" class="st1 genre" cx="711.6" cy="72.7" r="21"/>
-				<circle id="hiphop" class="st1 genre" cx="742.6" cy="139.7" r="21"/>
-				<circle id="raprock" class="st1 genre" cx="685.4" cy="185.3" r="21"/>
-				<circle id="electro" class="st1 genre" cx="742.6" cy="217.3" r="21"/>
+				<circle id="popbaroque" class="st1 genre popassoc poprockassoc" cx="661.4" cy="114.1" r="21"/>
+				<circle id="folk" class="st1 genre rootsrockassoc funkassoc poppsychedeliqueassoc talkingbluesassoc" cx="642.6" cy="50.1" r="21"/>
+				<circle id="disco" class="st1 genre soulassoc blueeyedsoulassoc electroassoc postdiscoassoc dancerockassoc soulpsychedeliqueassoc hiphopassoc houseassoc" cx="711.6" cy="72.7" r="21"/>
+				<circle id="hiphop" class="st1 genre rnbassoc funkassoc synthrockassoc countryrapassoc raprockassoc breakbeatassoc" cx="742.6" cy="139.7" r="21"/>
+				<circle id="raprock" class="st1 genre hardrockassoc" cx="685.4" cy="185.3" r="21"/>
+				<circle id="electro" class="st1 genre postdiscoassoc synthpopassoc houseassoc" cx="742.6" cy="217.3" r="21"/>
 				<circle id="blueeyedsoul" class="st1 genre" cx="801.3" cy="235.6" r="21"/>
-				<circle id="poprock" class="st1 genre" cx="855.9" cy="160.7" r="21"/>
-				<circle id="folkrock" class="st1 genre" cx="854.2" cy="88.7" r="21"/>
+				<circle id="poprock" class="st1 genre popassoc grungeassoc softrockassoc rockalternatifassoc popbaroqueassoc" cx="855.9" cy="160.7" r="21"/>
+				<circle id="folkrock" class="st1 genre countryrockassoc rootsrockassoc folkassoc heartlandrockassoc rockpsychedeliqueassoc softrockassoc californiasoundassoc" cx="854.2" cy="88.7" r="21"/>
 				<circle id="merseybeat" class="st1 genre" cx="911.7" cy="105.7" r="21"/>
-				<circle id="hardrock" class="st1 genre" cx="910.7" cy="243.5" r="21"/>
-				<circle id="heavymetal" class="st1 genre" cx="969.9" cy="268.1" r="21"/>
-				<circle id="punkrock" class="st1 genre" cx="990.9" cy="365.8" r="21"/>
-				<circle id="synthrock" class="st1 genre" cx="990.9" cy="433.6" r="21"/>
-				<circle id="synthpop" class="st1 genre" cx="967.7" cy="497.6" r="21"/>
-				<circle id="pop" class="st1 genre" cx="926.4" cy="453.1" r="21"/>
+				<circle id="hardrock" class="st1 genre grungeassoc rockpsychedeliqueassoc bluesrockassoc heavymetalassoc" cx="910.7" cy="243.5" r="21"/>
+				<circle id="heavymetal" class="st1 genre rockpsychedeliqueassoc garagerockassoc bluesrockassoc glamrockassoc breakbeatassoc" cx="969.9" cy="268.1" r="21"/>
+				<circle id="punkrock" class="st1 genre rockabillyassoc grungeassoc newwaveassoc powerpopassoc glamrockassoc" cx="990.9" cy="365.8" r="21"/>
+				<circle id="synthrock" class="st1 genre synthpopassoc" cx="990.9" cy="433.6" r="21"/>
+				<circle id="synthpop" class="st1 genre synthrockassoc" cx="967.7" cy="497.6" r="21"/>
+				<circle id="pop" class="st1 genre countryassoc jazzassoc rnbassoc poppsychedeliqueassoc poprockassoc chicagosoulassoc" cx="926.4" cy="453.1" r="21"/>
 				<circle id="bluesrock" class="st1 genre" cx="930" cy="385.6" r="21"/>
 				<circle id="glamrock" class="st1 genre" cx="868.1" cy="395.3" r="21"/>
 				<circle id="powerpop" class="st1 genre" cx="871.7" cy="463.6" r="21"/>
 				<circle id="rockinstrumental" class="st1 genre" cx="784.6" cy="358.6" r="21"/>
-				<circle id="newwave" class="st1 genre" cx="769.4" cy="484.5" r="21"/>
-				<circle id="heartlandrock" class="st1 genre" cx="679.9" cy="314.6" r="21"/>
-				<circle id="rockalternatif" class="st1 genre" cx="658.9" cy="419.9" r="21"/>
-				<circle id="rocksudiste" class="st1 genre" cx="640.4" cy="488.1" r="21"/>
+				<circle id="newwave" class="st1 genre dancerockassoc rockalternatifassoc powerpopassoc" cx="769.4" cy="484.5" r="21"/>
+				<circle id="heartlandrock" class="st1 genre folkrockassoc" cx="679.9" cy="314.6" r="21"/>
+				<circle id="rockalternatif" class="st1 genre newwaveassoc" cx="658.9" cy="419.9" r="21"/>
+				<circle id="rocksudiste" class="st1 genre countryassoc countryrockassoc rootsrockassoc" cx="640.4" cy="488.1" r="21"/>
 				<circle id="talkingblues" class="st1 genre" cx="582" cy="436.4" r="21"/>
-				<circle id="countryrap" class="st1 genre" cx="603" cy="368.7" r="21"/>
-				<circle id="country" class="st1 genre" cx="531" cy="334" r="21"/>
-				<circle id="countryrock" class="st1 genre" cx="476" cy="350.7" r="21"/>
-				<circle id="rockabilly" class="st1 genre" cx="411.5" cy="362.6" r="21"/>
-				<circle id="doowop" class="st1 genre" cx="368.6" cy="273.4" r="21"/>
+				<circle id="countryrap" class="st1 genre hiphopassoc" cx="603" cy="368.7" r="21"/>
+				<circle id="country" class="st1 genre rocknrollassoc popassoc rockabillyassoc countryrapassoc honkytonkassoc merseybeatassoc talkingbluesassoc" cx="531" cy="334" r="21"/>
+				<circle id="countryrock" class="st1 genre countryassoc rootsrockassoc folkrockassoc heartlandrockassoc" cx="476" cy="350.7" r="21"/>
+				<circle id="rockabilly" class="st1 genre countryassoc countryrockassoc garagerockassoc punkrockassoc" cx="411.5" cy="362.6" r="21"/>
+				<circle id="doowop" class="st1 genre californiasoundassoc" cx="368.6" cy="273.4" r="21"/>
 				<circle id="honkytonk" class="st1 genre" cx="266.2" cy="339.7" r="21"/>
-				<circle id="jazz" class="st1 genre" cx="158.6" cy="303.5" r="21"/>
-				<circle id="rootsrock" class="st1 genre" cx="43.1" cy="276.5" r="21"/>
+				<circle id="jazz" class="st1 genre bluesassoc rhythmandbluesassoc popassoc" cx="158.6" cy="303.5" r="21"/>
+				<circle id="rootsrock" class="st1 genre countryassoc" cx="43.1" cy="276.5" r="21"/>
 				<circle id="dancerock" class="st1 genre" cx="34.7" cy="351.1" r="21"/>
 				<circle id="californiasound" class="st1 genre" cx="103.7" cy="371.3" r="21"/>
-				<circle id="poppsychedelique" class="st1 genre" cx="88.7" cy="440.9" r="21"/>
-				<circle id="rockpsychedelique" class="st1 genre" cx="217.7" cy="448.2" r="21"/>
-				<circle id="rhythmandblues" class="st1 genre" cx="331.9" cy="434.4" r="21"/>
-				<circle id="funk" class="st1 genre" cx="386.9" cy="488.1" r="21"/>
-				<circle id="blues" class="st1 genre" cx="489.5" cy="489.1" r="21"/>
-				<circle id="chicagoblues" class="st1 genre" cx="253.3" cy="122.2" r="21"/>
+				<circle id="poppsychedelique" class="st1 genre popassoc rockpsychedeliqueassoc popbaroqueassoc" cx="88.7" cy="440.9" r="21"/>
+				<circle id="rockpsychedelique" class="st1 genre jazzassoc folkrockassoc funkassoc hardrockassoc poppsychedeliqueassoc soulpsychedeliqueassoc bluesrockassoc merseybeatassoc heavymetalassoc" cx="217.7" cy="448.2" r="21"/>
+				<circle id="rhythmandblues" class="st1 genre rocknrollassoc jazzassoc rnbassoc chicagosoulassoc rockabillyassoc rocksudisteassoc gospelassoc doowopassoc rockinstrumentalassoc" cx="331.9" cy="434.4" r="21"/>
+				<circle id="funk" class="st1 genre soulassoc blueeyedsoulassoc discoassoc electroassoc dancerockassoc soulpsychedeliqueassoc newwaveassoc hiphopassoc" cx="386.9" cy="488.1" r="21"/>
+				<circle id="blues" class="st1 genre rocknrollassoc rhythmandbluesassoc chicagobluesassoc popassoc gospelassoc blueeyedsoulassoc doowopassoc" cx="489.5" cy="489.1" r="21"/>
+				<circle id="chicagoblues" class="st1 genre bluesassoc" cx="253.3" cy="122.2" r="21"/>
 			</g>
 			<g id="nom_x5F_genre">
 				<text id="grungenom" transform="matrix(1 0 0 1 16.4165 170.9165)" class="st2 st3 st4 genrenom">GRUNGE</text>
@@ -456,7 +456,7 @@
 				<text id="californiasoundnom" transform="matrix(1 0 0 1 61.4209 405.6616)" class="st2 st3 st4 genrenom">CALIFORNIA SOUND</text>
 				<text id="poppsychedeliquenom" transform="matrix(1 0 0 1 43.2778 476.6616)" class="st2 st3 st4 genrenom">POP PSYCHÉDÉLIQUE</text>
 				<text id="rockpsychedeliquenom" transform="matrix(1 0 0 1 169.7778 485.9116)" class="st2 st3 st4 genrenom">ROCK PSYCHÉDÉLIQUE</text>
-				<text id="soulpsychedelique" transform="matrix(1 0 0 1 436.8472 260.2163)" class="st2 st3 st4 genrenom">SOUL PSYCHÉDÉLIQUE</text>
+				<text id="soulpsychedeliquenom" transform="matrix(1 0 0 1 436.8472 260.2163)" class="st2 st3 st4 genrenom">SOUL PSYCHÉDÉLIQUE</text>
 				<text id="rhythmandbluesnom" transform="matrix(1 0 0 1 289.0278 468.2314)" class="st2 st3 st4 genrenom">RHYTHM AND BLUES</text>
 				<text id="rockabillynom" transform="matrix(1 0 0 1 386.082 396.5732)" class="st2 st3 st4 genrenom">ROCKABILLY</text>
 				<text id="countryrocknom" transform="matrix(1 0 0 1 442.9155 384.7397)" class="st2 st3 st4 genrenom">COUNTRY ROCK</text>
@@ -480,13 +480,13 @@
 				<text id="soulnom" transform="matrix(1 0 0 1 363.5 208.3125)" class="st2 st3 st4 genrenom">SOUL</text>
 				<text id="gospelnom" transform="matrix(1 0 0 1 313.834 137.646)" class="st2 st3 st4 genrenom">GOSPEL</text>
 				<text id="rocknrollnom" transform="matrix(1 0 0 1 427.3623 153.396)" class="st2 st3 st4 genrenom">ROCK’N’ROLL</text>
-				<text id="post-disconom" transform="matrix(1 0 0 1 510.5024 198.146)" class="st2 st3 st4 genrenom">POST-DISCO</text>
+				<text id="postdisconom" transform="matrix(1 0 0 1 510.5024 198.146)" class="st2 st3 st4 genrenom">POST-DISCO</text>
 				<text id="breakbeatnom" transform="matrix(1 0 0 1 573.3359 165.6455)" class="st2 st3 st4 genrenom">BREAK BEAT</text>
 				<text id="folknom" transform="matrix(1 0 0 1 631.3359 83.9941)" class="st2 st3 st4 genrenom">FOLK</text>
 				<text id="disconom" transform="matrix(1 0 0 1 698.5859 107.2441)" class="st2 st3 st4 genrenom">DISCO</text>
 				<text id="raprocknom" transform="matrix(1 0 0 1 665.0859 220.4941)" class="st2 st3 st4 genrenom">RAP ROCK</text>
 				<text id="electronom" transform="matrix(1 0 0 1 725.0864 251.7441)" class="st2 st3 st4 genrenom">ELECTRO</text>
-				<text id="blueeyessoulnom" transform="matrix(1 0 0 1 765.3364 268.6191)" class="st2 st3 st4 genrenom">BLUE-EYED SOUL</text>
+				<text id="blueeyedsoulnom" transform="matrix(1 0 0 1 765.3364 268.6191)" class="st2 st3 st4 genrenom">BLUE-EYED SOUL</text>
 				<text id="poprocknom" transform="matrix(1 0 0 1 833.6958 196.3042)" class="st2 st3 st4 genrenom">POP ROCK</text>
 				<text id="hardrocknom" transform="matrix(1 0 0 1 886.4688 276.7671)" class="st2 st3 st4 genrenom">HARD ROCK</text>
 				<text id="heavymetalnom" transform="matrix(1 0 0 1 941.0522 303.5)" class="st2 st3 st4 genrenom">HEAVY METAL</text>
@@ -495,7 +495,7 @@
 				<text id="punkrocknom" transform="matrix(1 0 0 1 966.957 401.5776)" class="st2 st3 st4 genrenom">PUNK ROCK</text>
 				<text id="powerpopnom" transform="matrix(1 0 0 1 846.3945 499.5776)" class="st2 st3 st4 genrenom">POWER POP</text>
 				<text id="popnom" transform="matrix(1 0 0 1 917.3525 490.1606)" class="st2 st3 st4 genrenom">POP</text>
-				<text id="sunthrocknom" transform="matrix(1 0 0 1 990.5479 467.606)" class="st2 st3 st4 genrenom">SYNTHROCK</text>
+				<text id="synthrocknom" transform="matrix(1 0 0 1 990.5479 467.606)" class="st2 st3 st4 genrenom">SYNTHROCK</text>
 				<text id="synthpopnom" transform="matrix(1 0 0 1 944.7144 535.606)" class="st2 st3 st4 genrenom">SYNTHPOP</text>
 				<text id="folkrocknom" transform="matrix(1 0 0 1 830.5933 124.3042)" class="st2 st3 st4 genrenom">FOLK ROCK</text>
 				<text id="merseybeatnom" transform="matrix(1 0 0 1 881.7183 140.6001)" class="st2 st3 st4 genrenom">MERSEY BEAT</text>
@@ -505,26 +505,26 @@
 				<text id="rnbnom" transform="matrix(1 0 0 1 618.5029 235.1455)" class="st2 st3 st4 genrenom">R’N’B</text>
 			</g>
 			<g id="nom_x5F_etat">
-				<text id="XMLID_4_" transform="matrix(1 0 0 1 28 75.3276)" class="st5 st6 st7 territoirenom">WASHINGTON</text>
-				<text id="XMLID_324_" transform="matrix(1 0 0 1 196.8335 60.8271)" class="st5 st6 st7 territoirenom">ILLINOIS</text>
-				<text id="XMLID_325_" transform="matrix(1 0 0 1 323 67.9941)" class="st5 st6 st7 territoirenom">MICHIGAN</text>
-				<text id="XMLID_326_" transform="matrix(1 0 0 1 449.3335 83.9941)" class="st5 st6 st7 territoirenom">OHIO</text>
-				<text id="XMLID_327_" transform="matrix(1 0 0 1 528.75 94.5625)" class="st5 st6 st7 territoirenom">NEW-YORK</text>
-				<text id="XMLID_328_" transform="matrix(1 0 0 1 854.1841 51.7368)" class="st5 st6 st7 territoirenom">LIVERPOOL</text>
-				<text id="XMLID_329_" transform="matrix(1 0 0 1 911.0591 206.0425)" class="st5 st6 st7 territoirenom">BIRMINGHAM</text>
-				<text id="XMLID_330_" transform="matrix(1 0 0 1 900.0195 348.7251)" class="st5 st6 st7 territoirenom">LONDRES</text>
-				<text id="XMLID_482_" transform="matrix(1 0 0 1 727.0195 448.7012)" class="st5 st6 st7 territoirenom">SOUTHAMPTON</text>
-				<text id="XMLID_331_" transform="matrix(1 0 0 1 733.6499 322.5586)" class="st5 st6 st7 territoirenom">CAROLINE DU NORD</text>
-				<text id="XMLID_332_" transform="matrix(1 0 0 1 647.8164 275.8921)" class="st5 st6 st7 territoirenom">NEW JERSEY</text>
-				<text id="XMLID_333_" transform="matrix(1 0 0 1 572.1499 334.0352)" class="st5 st6 st7 territoirenom">GEORGIE</text>
-				<text id="XMLID_334_" transform="matrix(1 0 0 1 462.1499 448.7017)" class="st5 st6 st7 territoirenom">MISSISSIPI</text>
-				<text id="XMLID_335_" transform="matrix(1 0 0 1 429.521 313.5464)" class="st5 st6 st7 territoirenom">TENNESSEE</text>
-				<text id="XMLID_336_" transform="matrix(1 0 0 1 328.646 238.2339)" class="st5 st6 st7 territoirenom">MARYLAND</text>
-				<text id="XMLID_337_" transform="matrix(1 0 0 1 303.3247 395.0542)" class="st5 st6 st7 territoirenom">LOUISIANE</text>
-				<text id="XMLID_338_" transform="matrix(1 0 0 1 228.3247 304.4531)" class="st5 st6 st7 territoirenom">OKLAHOMA</text>
-				<text id="XMLID_341_" transform="matrix(1 0 0 1 199.1577 400.9531)" class="st5 st6 st7 territoirenom">TEXAS</text>
-				<text id="XMLID_339_" transform="matrix(1 0 0 1 129.2603 266.4531)" class="st5 st6 st7 territoirenom">MISSOURI</text>
-				<text id="XMLID_340_" transform="matrix(1 0 0 1 19.3496 238.2339)" class="st5 st6 st7 territoirenom">CALIFORNIE</text>
+				<text id="XMLID_4_" transform="matrix(1 0 0 1 28 75.3276)" class="st5 st6 st7 territoirenom grungeterritoirenom garagerockterritoirenom">WASHINGTON</text>
+				<text id="XMLID_324_" transform="matrix(1 0 0 1 196.8335 60.8271)" class="st5 st6 st7 territoirenom houseterritoirenom chicagobluesterritoirenom techhouseterritoirenom chicagosoulterritoirenom">ILLINOIS</text>
+				<text id="XMLID_325_" transform="matrix(1 0 0 1 323 67.9941)" class="st5 st6 st7 territoirenom gospelterritoirenom soulterritoirenom">MICHIGAN</text>
+				<text id="XMLID_326_" transform="matrix(1 0 0 1 449.3335 83.9941)" class="st5 st6 st7 territoirenom rocknrollterritoirenom">OHIO</text>
+				<text id="XMLID_327_" transform="matrix(1 0 0 1 528.75 94.5625)" class="st5 st6 st7 territoirenom folkterritoirenom discoterritoirenom breakbeatterritoirenom popbaroqueterritoirenom hiphopterritoirenom postdiscoterritoirenom soulpsychedeliqueterritoirenom softrockterritoirenom rnbterritoirenom raprockterritoirenom electroterritoirenom blueeyedsoulterritoirenom">NEW-YORK</text>
+				<text id="XMLID_328_" transform="matrix(1 0 0 1 854.1841 51.7368)" class="st5 st6 st7 territoirenom folkrockterritoirenom merseybeatterritoirenom poprockterritoirenom">LIVERPOOL</text>
+				<text id="XMLID_329_" transform="matrix(1 0 0 1 911.0591 206.0425)" class="st5 st6 st7 territoirenom hardrockterritoirenom heavymetalterritoirenom">BIRMINGHAM</text>
+				<text id="XMLID_330_" transform="matrix(1 0 0 1 900.0195 348.7251)" class="st5 st6 st7 territoirenom glamrockterritoirenom bluesrockterritoirenom punkrockterritoirenom powerpopterritoirenom popterritoirenom synthpopterritoirenom synthrockterritoirenom">LONDRES</text>
+				<text id="XMLID_482_" transform="matrix(1 0 0 1 727.0195 448.7012)" class="st5 st6 st7 territoirenom newwaveterritoirenom">SOUTHAMPTON</text>
+				<text id="XMLID_331_" transform="matrix(1 0 0 1 733.6499 322.5586)" class="st5 st6 st7 territoirenom rockinstrumentalterritoirenom">CAROLINE DU NORD</text>
+				<text id="XMLID_332_" transform="matrix(1 0 0 1 647.8164 275.8921)" class="st5 st6 st7 territoirenom heartlandrockterritoirenom">NEW JERSEY</text>
+				<text id="XMLID_333_" transform="matrix(1 0 0 1 572.1499 334.0352)" class="st5 st6 st7 territoirenom countryrapterritoirenom talkingbluesterritoirenom rocksudisteterritoirenom rockalternatifterritoirenom">GEORGIE</text>
+				<text id="XMLID_334_" transform="matrix(1 0 0 1 462.1499 448.7017)" class="st5 st6 st7 territoirenom bluesterritoirenom">MISSISSIPI</text>
+				<text id="XMLID_335_" transform="matrix(1 0 0 1 429.521 313.5464)" class="st5 st6 st7 territoirenom rockabillyterritoirenom countryrockterritoirenom countryterritoirenom">TENNESSEE</text>
+				<text id="XMLID_336_" transform="matrix(1 0 0 1 328.646 238.2339)" class="st5 st6 st7 territoirenom doowopterritoirenom">MARYLAND</text>
+				<text id="XMLID_337_" transform="matrix(1 0 0 1 303.3247 395.0542)" class="st5 st6 st7 territoirenom rhythmandbluesterritoirenom funkterritoirenom">LOUISIANE</text>
+				<text id="XMLID_338_" transform="matrix(1 0 0 1 228.3247 304.4531)" class="st5 st6 st7 territoirenom honkytonkterritoirenom">OKLAHOMA</text>
+				<text id="XMLID_341_" transform="matrix(1 0 0 1 199.1577 400.9531)" class="st5 st6 st7 territoirenom rockpsychedeliqueterritoirenom">TEXAS</text>
+				<text id="XMLID_339_" transform="matrix(1 0 0 1 129.2603 266.4531)" class="st5 st6 st7 territoirenom jazzterritoirenom">MISSOURI</text>
+				<text id="XMLID_340_" transform="matrix(1 0 0 1 19.3496 238.2339)" class="st5 st6 st7 territoirenom rootsrockterritoirenom dancerockterritoirenom californiasoundterritoirenom poppsychedeliqueterritoirenom">CALIFORNIE</text>
 			</g>
 			<g id="lien">
 				<g id="XMLID_1_" class="link">
