@@ -162,19 +162,51 @@ function selectGenre(){
 	$(".genre").click(function(){
 		var idGenre = $(this).attr("id");
 		var territoireGenre = $("."+idGenre+"territoire");
-		$(".territoire").hide(function(){
-			territoireGenre.fadeIn();
-		})
+		var territoireGenreNom = $("."+idGenre+"territoirenom");
+		var nomGenre = $("#"+idGenre+"nom");
+		var genreAssoc = $("."+idGenre+"assoc");
+		
+		$(".genre").removeClass("selected");
+		$(this).addClass("selected");
+		$(".territoire").hide();
+		$(".territoirenom").hide();
+		$(".genre").removeClass("selectedassoc");
+		territoireGenre.fadeIn();
+		territoireGenreNom.fadeIn();
+		genreAssoc.addClass("selectedassoc");
+		$('.genrenom').hide().removeClass("active");
+		nomGenre.fadeIn().addClass("active");
 	})	
 }
 
 /***********************************************/
 function hoverGenre(){
 /***********************************************/
-	/*$(".genre").hover(function(){
+	$(".genre")
+	.mouseout(function() {
 		var idGenre = $(this).attr("id");
 		var nomGenre = $("#"+idGenre+"nom");
-	}*/
+
+		if(nomGenre.hasClass("active")){
+	    	return false;
+		}else{
+			nomGenre.fadeOut();
+		}
+  	})
+	.mouseover(function() {
+    	var idGenre = $(this).attr("id");
+		var nomGenre = $("#"+idGenre+"nom");
+
+		nomGenre.fadeIn();
+	});
+
+
+	/*hover(function(){
+		var idGenre = $(this).attr("id");
+		var nomGenre = $("#"+idGenre+"nom");
+
+		nomGenre.fadeIn();
+	})*/
 }
 
 // Suggestion 
