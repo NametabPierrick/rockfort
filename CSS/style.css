@@ -661,6 +661,36 @@ canvas:first-of-type{
   CREDITS
 ============================================================ */
 
+#close{    
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 40px;
+    padding: 10px 0;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 10;
+    text-decoration: none;
+}
+
+#close:hover{
+    color: #e2e6fd;
+    border-color: #e2e6fd;
+    box-shadow: 0px 0px 20px #516bf0, 0px 0px 20px #516bf0 inset;
+    text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;
+}
+
 #content_credit{
   width: 1286px;
   margin-right: auto;

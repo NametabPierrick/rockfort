@@ -25,7 +25,7 @@
 
 <body class="background">
     
-    <a href="credits.html" id="credit">&Agrave; propos</a>
+    <a href="a-propos.html" id="credit">&Agrave; propos</a>
 
     <div id="table">
         <div id="table-cell">
