@@ -10,6 +10,8 @@
 <head>
     <title>Rockfort</title>
     <meta charset="utf-8">
+    <meta name="description" content="Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ?"/>       
+    <meta name="keywords" content="Rockfort, rock, rolling stones"/>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="js/jquery.range.css">
@@ -24,7 +26,7 @@
 </head>
 
 <body class="background">
-    
+    <audio autoplay><source src="song/neon.mp3"></audio>
     <a href="a-propos.html" id="credit">&Agrave; propos</a>
 
     <div id="table">
@@ -44,7 +46,6 @@
                     <h1 class="titre_page">Oups...</h1>
                     <br/><h1 class="titre_page oupsTxt">Pour profiter pleinement de l'expérience rock, veuillez vous rendre sur une plus grande résolution d'écran.</h1>
             </div>
-
         </div>
     </div>
    

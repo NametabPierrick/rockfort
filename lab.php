@@ -15,13 +15,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Rockfort | Map & Lab</title>
+		<meta name="description" content="Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ?"/>       
+    	<meta name="keywords" content="Rockfort, rock, rolling stones"/>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="js/jquery.range.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,300,300italic,700italic,400italic,600,800,800italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bar-ui.css" />
 		<link rel="stylesheet" href="js/jquery.range.css">
-		<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
-
 		<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" /><link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" /><link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" /><meta name="msapplication-TileImage" content="mstile-144x144.png" /><meta name="msapplication-square70x70logo" content="mstile-70x70.png" /><meta name="msapplication-square150x150logo" content="mstile-150x150.png" /><meta name="msapplication-wide310x150logo" content="mstile-310x150.png" /><meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 		
 		<!-- <link rel="stylesheet" href="css/demo.css" /> -->
@@ -87,9 +87,10 @@
 			<!-- C'est ici qu'on lance les fichiers audio -->
 			
 			
-			
 		<section id="player"></section>
 	</div>
+
+
 	<div id="page_map">
 		<header>
 			<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
@@ -1830,53 +1831,61 @@
 			<hr class="hr hrAideMap">
 			<button class="info" id="closeTutoMap">x</button>
 		</header>
-			<div class="sp-slideshow">
-			
-				<input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
-				<label for="button-1" class="button-label-1"></label>
-				
-				<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
-				<label for="button-2" class="button-label-2"></label>
-				
-				<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
-				<label for="button-3" class="button-label-3"></label>
-				
-				<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
-				<label for="button-4" class="button-label-4"></label>
-				
-				<input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
-				<label for="button-5" class="button-label-5"></label>
 
-				<input id="button-6" type="radio" name="radio-set" class="sp-selector-6" />
-				<label for="button-6" class="button-label-6"></label>
+		<ul class="slides">
+    		<input type="radio" name="radio-btn" id="img-1" checked />
+    		<li class="slide-container">
+				<div class="slide">
+					<img src="img/tuto/tuto_etape1.jpg" />
+        		</div>
+				<div class="nav">
+					<label for="img-6" class="prev">&#x2039;</label>
+					<label for="img-2" class="aft">&#x203a;</label>
+				</div>
+    		</li>
 
-				<input id="button-7" type="radio" name="radio-set" class="sp-selector-7" />
-				<label for="button-7" class="button-label-7"></label>
+    		<input type="radio" name="radio-btn" id="img-2" />
+    		<li class="slide-container">
+        		<div class="slide">
+          			<img src="img/tuto/tuto_etape2.jpg" />
+        		</div>
+				<div class="nav">
+					<label for="img-1" class="prev">&#x2039;</label>
+					<label for="img-3" class="aft">&#x203a;</label>
+				</div>
+    		</li>
 
-				<input id="button-8" type="radio" name="radio-set" class="sp-selector-8" />
-				<label for="button-8" class="button-label-8"></label>
-				
-				<label for="button-1" class="sp-arrow sp-a1"></label>
-				<label for="button-2" class="sp-arrow sp-a2"></label>
-				<label for="button-3" class="sp-arrow sp-a3"></label>
-				<label for="button-4" class="sp-arrow sp-a4"></label>
-				<label for="button-5" class="sp-arrow sp-a5"></label>
-				
-				<div class="sp-content">
-					<div class="sp-parallax-bg"></div>
-					<ul class="sp-slider clearfix">
-						<li><img src="img/tuto/tuto-etape1.jpg" alt="image01" /></li>
-						<li><img src="img/tuto/tuto-etape2.jpg" alt="image02" /></li>
-						<li><img src="img/tuto/tuto-etape3.jpg" alt="image03" /></li>
-						<li><img src="img/tuto/tuto-etape4.jpg" alt="image04" /></li>
-						<li><img src="img/tuto/tuto-etape5.jpg" alt="image05" /></li>
-						<li><img src="img/tuto/tuto-etape6.jpg" alt="image06" /></li>
-						<li><img src="img/tuto/tuto-etape7.jpg" alt="image07" /></li>
-						<li><img src="img/tuto/tuto-etape8.jpg" alt="image08" /></li>
-					</ul>
-				</div><!-- sp-content -->
-				
-			</div><!-- sp-slideshow -->
+    		<input type="radio" name="radio-btn" id="img-3" />
+    		<li class="slide-container">
+		        <div class="slide">
+		          <img src="img/tuto/tuto_etape3.jpg" />
+		        </div>
+				<div class="nav">
+					<label for="img-2" class="prev">&#x2039;</label>
+					<label for="img-4" class="aft">&#x203a;</label>
+				</div>
+    		</li>
+
+		    <input type="radio" name="radio-btn" id="img-4" />
+		    <li class="slide-container">
+		        <div class="slide">
+		          <img src="img/tuto/tuto_etape4.jpg" />
+		        </div>
+				<div class="nav">
+					<label for="img-3" class="prev">&#x2039;</label>
+					<label for="img-1" class="aft">&#x203a;</label>
+				</div>
+		    </li>
+
+		    
+
+		    <li class="nav-dots">
+		      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+		      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+		      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+		      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+		    </li>
+		</ul>
 	</div>
 	<div id="tutoLab">
 		<header>
@@ -1888,6 +1897,13 @@
 		<p>tuto lab</p>
 	</div>
 </div>
+
+	<div class="media">
+        <div class="logo-rockfort"></div>
+            <h1 class="titre_page">Oups...</h1>
+            <br/><h1 class="titre_page oupsTxt">Pour profiter pleinement de l'expérience rock, veuillez vous rendre sur une plus grande résolution d'écran.</h1>
+    </div>
+
 <div id="panel_right">
 	<h2 class="titre_playlist">Playlist</h2>
 	<img src="img/icones/casque.png" id="icocasque" alt="icone casque">
