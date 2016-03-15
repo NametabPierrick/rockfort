@@ -10,6 +10,8 @@
 <head>
     <title>Rockfort</title>
     <meta charset="utf-8">
+    <meta name="description" content="Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ?"/>       
+    <meta name="keywords" content="Rockfort, rock, rolling stones"/>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="js/jquery.range.css">

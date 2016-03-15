@@ -15,6 +15,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Rockfort | Map & Lab</title>
+		<meta name="description" content="Toi, petit amateur de la musique, tu as forcément déjà entendu les grands noms de la musique rock, mais les connais-tu vraiment ?"/>       
+    	<meta name="keywords" content="Rockfort, rock, rolling stones"/>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="js/jquery.range.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,300,300italic,700italic,400italic,600,800,800italic' rel='stylesheet' type='text/css'>
