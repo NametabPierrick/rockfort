@@ -23,11 +23,9 @@
     </style>
 </head>
 
-<body id="home">
+<body class="background">
     
-    <div id="overlay"></div>
-    
-    <button id="credit">Crédits</button>
+    <a href="credits.html" id="credit">Crédits</a>
 
     <div id="table">
         <div id="table-cell">
