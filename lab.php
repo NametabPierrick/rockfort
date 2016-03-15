@@ -1823,6 +1823,9 @@
 		<form id="form_timelineMap" action="php/timelineRange.php" method="POST">
 			<input class="range-slider" id="timelineMap" name="timelineMap" type="hidden" value=<?php echo '"'.$periode.'"'; ?>/>
 		</form>
+
+		<div id="test">ICI LE TABLEAU</div>
+
 	</div>
 	<div id="tutoMap">
 		<header>

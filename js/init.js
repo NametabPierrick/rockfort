@@ -130,33 +130,22 @@ $("#form_timelineMap input").change(function(){
 		data: 'new_periode='+$("#timelineMap").val(),
 		dataType: 'html',
 		success: function(test){
-			
+			$('#test').html(test);
+
 		}
 	})
-});
 
-/*************************************************/
-function simulatePathDrawing(path) {
-/*************************************************/
-	// var path = document.querySelector('.squiggle-animated path');
-	var length = path.getTotalLength();
-	// Clear any previous transition
-	path.style.transition = path.style.WebkitTransition =
-	'none';
-	// Set up the starting positions
-	path.style.strokeDasharray = length + ' ' + length;
-	path.style.strokeDashoffset = length;
-	// Trigger a layout so styles are calculated & the browser
-	// picks up the starting position before animating
-	path.getBoundingClientRect();
-	// Define our transition
-	/*path.style.transition = path.style.WebkitTransition =
-	'stroke-dashoffset 1.5s ease-in-out';*/
-	$("."+idGenre+"link").fadeIn('slow');
-	// Go!
-	path.style.strokeDashoffset = '0';
-	path.style.strokeWidth = '3px';
-}
+	$.ajax({
+		url: 'php/nbmax.php',
+		type: 'POST',
+		data: 'new_periode='+$("#timelineMap").val(),
+		dataType: 'html',
+		success: function(nbmaximum){
+			var nbmax = nbmaximum;
+
+		}
+	})	
+});
 
 /***********************************************/
 function selectGenre(){
@@ -169,6 +158,7 @@ function selectGenre(){
 		var genreAssoc = $("."+idGenre+"assoc");
 		var path = $("."+idGenre+"link g path")[0];
 		
+		$(".link").hide();
 		$(".genre").removeClass("selected");
 		$(this).addClass("selected");
 		$(".territoire").hide();
@@ -180,9 +170,25 @@ function selectGenre(){
 		$('.genrenom').hide().removeClass("active");
 		nomGenre.fadeIn().addClass("active");
 
-		alert(test);
-		simulatePathDrawing(path);
-	})	
+		// var path = document.querySelector('.squiggle-animated path');
+		var length = path.getTotalLength();
+		// Clear any previous transition
+		path.style.transition = path.style.WebkitTransition =
+		'none';
+		// Set up the starting positions
+		path.style.strokeDasharray = length + ' ' + length;
+		path.style.strokeDashoffset = length;
+		// Trigger a layout so styles are calculated & the browser
+		// picks up the starting position before animating
+		path.getBoundingClientRect();
+		// Define our transition
+		$("."+idGenre+"link").fadeIn('slow');
+		path.style.transition = path.style.WebkitTransition =
+		'stroke-dashoffset 1.5s ease-in-out';
+		// Go!
+		path.style.strokeDashoffset = '0';
+		path.style.strokeWidth = '1px';
+	})
 }
 
 /***********************************************/
