@@ -719,6 +719,11 @@ canvas:first-of-type{
   width: 105px;
 }
 
+.people a{
+  text-decoration: none;
+  color: #bfc4dc;
+}
+
 .team hr{
   width: 190px;
   box-shadow: 0px 0px 2px #bfc4dc, 0px 0px 15px #bfc4dc;
