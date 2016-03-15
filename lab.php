@@ -1954,12 +1954,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="sm2-inline-element sm2-button-element sm2-menu">
-					<div class="sm2-button-bd">
-						<a href="#menu" class="sm2-inline-button menu">menu</a>
-					</div>
-				</div>
-				<div class="sm2-inline-element sm2-button-element">
+				<div class="sm2-inline-element sm2-button-element sm2-left">
 					<div class="sm2-button-bd">
 						<a href="#prev" title="Previous" class="sm2-inline-button previous">&lt; previous</a>
 					</div>
@@ -1972,11 +1967,6 @@
 				<div class="sm2-inline-element sm2-button-element">
 					<div class="sm2-button-bd">
 						<a href="#next" title="Next" class="sm2-inline-button next">&gt; next</a>
-					</div>
-				</div>
-				<div class="sm2-inline-element sm2-button-element">
-					<div class="sm2-button-bd">
-						<a href="#repeat" title="Repeat playlist" class="sm2-inline-button repeat">&infin; repeat</a>
 					</div>
 				</div>
 			</div>
