@@ -14,7 +14,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Rockfort - Lab</title>
+		<title>Rockfort | Map & Lab</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="js/jquery.range.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,300,300italic,700italic,400italic,600,800,800italic' rel='stylesheet' type='text/css'>
