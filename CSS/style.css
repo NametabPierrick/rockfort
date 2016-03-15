@@ -629,7 +629,7 @@ canvas:first-of-type{
     width: 100%;
     top: 0;
     background-color: #141722;
-    z-index: 3;
+    z-index: 20;
     text-align: center;
     padding-top: 21px;
 }

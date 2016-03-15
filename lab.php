@@ -87,9 +87,10 @@
 			<!-- C'est ici qu'on lance les fichiers audio -->
 			
 			
-			
 		<section id="player"></section>
 	</div>
+
+
 	<div id="page_map">
 		<header>
 			<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
@@ -1888,6 +1889,13 @@
 		<p>tuto lab</p>
 	</div>
 </div>
+
+	<div class="media">
+        <div class="logo-rockfort"></div>
+            <h1 class="titre_page">Oups...</h1>
+            <br/><h1 class="titre_page oupsTxt">Pour profiter pleinement de l'expérience rock, veuillez vous rendre sur une plus grande résolution d'écran.</h1>
+    </div>
+
 <div id="panel_right">
 	<h2 class="titre_playlist">Playlist</h2>
 	<img src="img/icones/casque.png" id="icocasque" alt="icone casque">
