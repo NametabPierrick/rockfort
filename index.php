@@ -24,7 +24,7 @@
 </head>
 
 <body class="background">
-    
+    <audio autoplay><source src="song/neon.mp3"></audio>
     <a href="a-propos.html" id="credit">&Agrave; propos</a>
 
     <div id="table">
