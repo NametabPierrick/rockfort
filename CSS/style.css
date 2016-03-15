@@ -805,6 +805,10 @@ SVG
   display: none;
 }
 
+#tableau_association, #nbmax{
+  display: none;
+}
+
 
 /************************************************
 Slide

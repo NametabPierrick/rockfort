@@ -27,8 +27,6 @@
 </li>
 
 <?php
-}
-?>
-<?php
-$reponse->closeCursor(); // Termine le traitement de la requête
+	}
+	$reponse->closeCursor(); // Termine le traitement de la requête
 ?>

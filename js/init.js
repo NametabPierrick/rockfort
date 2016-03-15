@@ -47,6 +47,7 @@ $(document).ready( function () {
 	cacheList();
 	hoverGenre();
 	selectGenre();
+	filtre();
 
 });
 
@@ -107,11 +108,44 @@ $("#myonoffswitch").change(function(){
 })
 
 
+function getTimelineGenre(nbmax){
+	$.ajax({
+		url: 'php/timelineGenre.php',
+		type: 'POST',
+		data: 'new_periode='+$("#timelineMap").val(),
+		dataType: 'html',
+		success: function(data){
+			
+			$('#tableau_association').html(data);
+			$(".genre").hide();
+			$(".genreassociation").each(function(){
+				var iddugenre = $(this).find(".iddugenre");
+				var currentGenre = $("#"+iddugenre.text());
+				var compteurdugenre = $(this).find(".compteurdugenre");
+				//console.log(currentGenre);
+				var rayon = compteurdugenre.text();
+				if(rayon > 0 && rayon <= nbmax/3){
+					rayon = 14;	
+				}else if(rayon > nbmax/3 && rayon <= nbmax/3*2){
+					rayon=21;
+				}
+				else{
+					rayon=26;
+				}
+				currentGenre.show().attr("r", rayon);
+			})
+		}
+	})
+}
+
 /**************************************************
 Rechargement dynamique de la playlist et de la taille des genre en fonction de la nouvelle periode
 **************************************************/
 var timelineMapVal = $("#timelineMap").val();
-$("#form_timelineMap input").change(function(){
+$("#form_timelineMap input").change(filtre);
+/******************************************/
+function filtre(){
+/******************************************/
 	//e.preventDefault();
 	$.ajax({
 		url: 'php/timelineRange.php',
@@ -125,32 +159,22 @@ $("#form_timelineMap input").change(function(){
 	});
 
 	$.ajax({
-		url: 'php/timelineGenre.php',
-		type: 'POST',
-		data: 'new_periode='+$("#timelineMap").val(),
-		dataType: 'html',
-		success: function(test){
-			$('#test').html(test);
-
-		}
-	})
-
-	$.ajax({
 		url: 'php/nbmax.php',
 		type: 'POST',
 		data: 'new_periode='+$("#timelineMap").val(),
 		dataType: 'html',
 		success: function(nbmaximum){
 			var nbmax = nbmaximum;
-
+			getTimelineGenre(nbmax);
 		}
 	})	
-});
+}
 
 /***********************************************/
 function selectGenre(){
 /***********************************************/
 	$(".genre").click(function(){
+		reloadPlaylist();
 		var idGenre = $(this).attr("id");
 		var territoireGenre = $("."+idGenre+"territoire");
 		var territoireGenreNom = $("."+idGenre+"territoirenom");
@@ -188,6 +212,22 @@ function selectGenre(){
 		// Go!
 		path.style.strokeDashoffset = '0';
 		path.style.strokeWidth = '1px';
+
+	})
+}
+
+/***********************************************/
+function reloadPlaylist(){
+/***********************************************/
+	var idSelected = $(this).attr('id');
+	$.ajax({
+		url: 'php/reloadPlaylist.php',
+		type: 'POST',
+		data: 'new_periode='+$("#timelineMap").val()+'&idselected='+idSelected,
+		dataType: 'html',
+		success: function(filtregenre){
+			$('#playlist_dynamique').html(filtregenre);
+		}
 	})
 }
 
@@ -211,14 +251,6 @@ function hoverGenre(){
 
 		nomGenre.fadeIn();
 	});
-
-
-	/*hover(function(){
-		var idGenre = $(this).attr("id");
-		var nomGenre = $("#"+idGenre+"nom");
-
-		nomGenre.fadeIn();
-	})*/
 }
 
 // Suggestion 

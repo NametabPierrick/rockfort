@@ -1824,7 +1824,8 @@
 			<input class="range-slider" id="timelineMap" name="timelineMap" type="hidden" value=<?php echo '"'.$periode.'"'; ?>/>
 		</form>
 
-		<div id="test">ICI LE TABLEAU</div>
+		<div id="tableau_association"></div>
+		<div id="nbmax"></div>
 
 	</div>
 	<div id="tutoMap">
