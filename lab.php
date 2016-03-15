@@ -20,6 +20,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,300,300italic,700italic,400italic,600,800,800italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bar-ui.css" />
 		<link rel="stylesheet" href="js/jquery.range.css">
+		<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
 
 		<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" /><link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" /><link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" /><meta name="msapplication-TileImage" content="mstile-144x144.png" /><meta name="msapplication-square70x70logo" content="mstile-70x70.png" /><meta name="msapplication-square150x150logo" content="mstile-150x150.png" /><meta name="msapplication-wide310x150logo" content="mstile-310x150.png" /><meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 		
@@ -1826,16 +1827,62 @@
 		<header>
 			<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
 			<h1 class="titre_page" id="titre_conteneur">Aide Map</h1>
-			<hr class="hr hrMap">
+			<hr class="hr hrAideMap">
 			<button class="info" id="closeTutoMap">x</button>
 		</header>
-		<p>tuto map</p>
+			<div class="sp-slideshow">
+			
+				<input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+				<label for="button-1" class="button-label-1"></label>
+				
+				<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+				<label for="button-2" class="button-label-2"></label>
+				
+				<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+				<label for="button-3" class="button-label-3"></label>
+				
+				<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+				<label for="button-4" class="button-label-4"></label>
+				
+				<input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+				<label for="button-5" class="button-label-5"></label>
+
+				<input id="button-6" type="radio" name="radio-set" class="sp-selector-6" />
+				<label for="button-6" class="button-label-6"></label>
+
+				<input id="button-7" type="radio" name="radio-set" class="sp-selector-7" />
+				<label for="button-7" class="button-label-7"></label>
+
+				<input id="button-8" type="radio" name="radio-set" class="sp-selector-8" />
+				<label for="button-8" class="button-label-8"></label>
+				
+				<label for="button-1" class="sp-arrow sp-a1"></label>
+				<label for="button-2" class="sp-arrow sp-a2"></label>
+				<label for="button-3" class="sp-arrow sp-a3"></label>
+				<label for="button-4" class="sp-arrow sp-a4"></label>
+				<label for="button-5" class="sp-arrow sp-a5"></label>
+				
+				<div class="sp-content">
+					<div class="sp-parallax-bg"></div>
+					<ul class="sp-slider clearfix">
+						<li><img src="img/tuto/tuto-etape1.jpg" alt="image01" /></li>
+						<li><img src="img/tuto/tuto-etape2.jpg" alt="image02" /></li>
+						<li><img src="img/tuto/tuto-etape3.jpg" alt="image03" /></li>
+						<li><img src="img/tuto/tuto-etape4.jpg" alt="image04" /></li>
+						<li><img src="img/tuto/tuto-etape5.jpg" alt="image05" /></li>
+						<li><img src="img/tuto/tuto-etape6.jpg" alt="image06" /></li>
+						<li><img src="img/tuto/tuto-etape7.jpg" alt="image07" /></li>
+						<li><img src="img/tuto/tuto-etape8.jpg" alt="image08" /></li>
+					</ul>
+				</div><!-- sp-content -->
+				
+			</div><!-- sp-slideshow -->
 	</div>
 	<div id="tutoLab">
 		<header>
 			<a href="index.php"><img src="img/logo/logo_rock_2.png" alt="logo rockfort" id="logo"></a>
 			<h1 class="titre_page" id="titre_conteneur">Aide Lab</h1>
-			<hr class="hr hrMap">
+			<hr class="hr hrAideLab">
 			<button class="info" id="closeTutoLab">x</button>
 		</header>
 		<p>tuto lab</p>
