@@ -12,6 +12,18 @@
 	$nbmax = $result['nb'];
 	echo($nbmax);
 
-//	$req2 = $bdd->query("SELECT COUNT(*) AS qte FROM rf_genre_morceau, rf_morceau, rf_genre WHERE rf_genre.id_genre = rf_genre_morceau.id_genre, rf_morceau.id_morceau = rf_genre_morceau.id_morceau");
+	//filtre tableau genre_morceau par date
+	$req2 = $bdd->query("DROP VIEW IF EXISTS `fourchette`;
+		CREATE VIEW fourchette AS 
+		SELECT rf_genre_morceau.id_genre, rf_genre_morceau.id_morceau, rf_genre.nom_genre
+		FROM `rf_genre_morceau`, rf_morceau, rf_genre 
+		WHERE rf_genre_morceau.id_morceau = rf_morceau.id_morceau
+		AND rf_genre_morceau.id_genre = rf_genre.id_genre 
+		AND rf_morceau.annee BETWEEN '.$new_annee[0].' and '.$new_annee[1].';
+		SELECT nom_genre, id_genre, COUNT(id_morceau) 
+		FROM `fourchette` 
+		GROUP BY id_genre");
+
+
 
  ?>
