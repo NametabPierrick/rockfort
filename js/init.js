@@ -45,6 +45,8 @@ $(document).ready( function () {
 		});
 
 	cacheList();
+	hoverGenre();
+	selectGenre();
 
 });
 
@@ -96,12 +98,18 @@ function changementPage(){
 		})
 	}
 }
-/*changement de page au changement d'etat du bouton*/
+
+/*************************************************
+Changement de page au clic sur bouton switch
+*************************************************/
 $("#myonoffswitch").change(function(){
 	changementPage();
 })
 
-//$("#form_timelineMap").mouseup(function(e){
+
+/**************************************************
+Rechargement dynamique de la playlist et de la taille des genre en fonction de la nouvelle periode
+**************************************************/
 var timelineMapVal = $("#timelineMap").val();
 $("#form_timelineMap input").change(function(){
 	//e.preventDefault();
@@ -115,4 +123,128 @@ $("#form_timelineMap input").change(function(){
 			cacheList();
 		}
 	});
+
+	$.ajax({
+		url: 'php/timelineGenre.php',
+		type: 'POST',
+		data: 'new_periode='+$("#timelineMap").val(),
+		dataType: 'html',
+		success: function(test){
+			
+		}
+	})
 });
+
+/*************************************************/
+function simulatePathDrawing(path) {
+/*************************************************/
+	// var path = document.querySelector('.squiggle-animated path');
+	var length = path.getTotalLength();
+	// Clear any previous transition
+	path.style.transition = path.style.WebkitTransition =
+	'none';
+	// Set up the starting positions
+	path.style.strokeDasharray = length + ' ' + length;
+	path.style.strokeDashoffset = length;
+	// Trigger a layout so styles are calculated & the browser
+	// picks up the starting position before animating
+	path.getBoundingClientRect();
+	// Define our transition
+	/*path.style.transition = path.style.WebkitTransition =
+	'stroke-dashoffset 1.5s ease-in-out';*/
+	$("."+idGenre+"link").fadeIn('slow');
+	// Go!
+	path.style.strokeDashoffset = '0';
+	path.style.strokeWidth = '3px';
+}
+
+/***********************************************/
+function selectGenre(){
+/***********************************************/
+	$(".genre").click(function(){
+		var idGenre = $(this).attr("id");
+		var territoireGenre = $("."+idGenre+"territoire");
+		var territoireGenreNom = $("."+idGenre+"territoirenom");
+		var nomGenre = $("#"+idGenre+"nom");
+		var genreAssoc = $("."+idGenre+"assoc");
+		var path = $("."+idGenre+"link g path")[0];
+		
+		$(".genre").removeClass("selected");
+		$(this).addClass("selected");
+		$(".territoire").hide();
+		$(".territoirenom").hide();
+		$(".genre").removeClass("selectedassoc");
+		territoireGenre.fadeIn();
+		territoireGenreNom.fadeIn();
+		genreAssoc.addClass("selectedassoc");
+		$('.genrenom').hide().removeClass("active");
+		nomGenre.fadeIn().addClass("active");
+
+		alert(test);
+		simulatePathDrawing(path);
+	})	
+}
+
+/***********************************************/
+function hoverGenre(){
+/***********************************************/
+	$(".genre")
+	.mouseout(function() {
+		var idGenre = $(this).attr("id");
+		var nomGenre = $("#"+idGenre+"nom");
+
+		if(nomGenre.hasClass("active")){
+	    	return false;
+		}else{
+			nomGenre.fadeOut();
+		}
+  	})
+	.mouseover(function() {
+    	var idGenre = $(this).attr("id");
+		var nomGenre = $("#"+idGenre+"nom");
+
+		nomGenre.fadeIn();
+	});
+
+
+	/*hover(function(){
+		var idGenre = $(this).attr("id");
+		var nomGenre = $("#"+idGenre+"nom");
+
+		nomGenre.fadeIn();
+	})*/
+}
+
+// Suggestion 
+var refreshsuggestion;
+function songSelected(idsong){
+	
+	//$('#divsug').load(document.URL+'?id_morceau='+idsong +  ' #divsug');
+	//alert(document.url);
+	// var xhttp = new XMLHttpRequest();
+ //    xhttp.onreadystatechange = function() {
+ //    if (xhttp.readyState == 4 && xhttp.status == 200) {
+ //    	//alert("okajax");
+    	
+ //    	document.getElementById("#divsug").innerHTML = $().text(xhttp.responseText).html().getElementById("#divsug").innerHTML;
+
+
+
+ //  };
+ //  //alert("id_morceau="+idsong+"&periode="+<? echo $annee[1].",".$annee[1];?>);
+ //  xhttp.open("POST", window.location.pathname, true);
+ //  xhttp.overrideMimeType('text/xml');
+ //  xhttp.send("id_morceau="+idsong+"&periode="+<? echo implode(",", $annee);?>);
+console.log(window.location.pathname);
+var periode = '<?php echo implode(",", $annee);?>';
+console.log(periode);
+$.post(window.location.pathname, {"id_morceau":idsong,"periode":periode}, function(result){
+		var div = $(result).find("#divsug");
+          $('#divsug').html(div);
+    });
+ 
+	
+// }
+
+    
+}
