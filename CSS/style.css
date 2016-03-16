@@ -919,3 +919,32 @@ input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,{
   background: rgb(255, 255, 255);
 }
+
+
+/* Modifs J */
+#playlist{
+  max-height: 300px;
+  overflow: auto;
+}
+  #local ul {
+    margin: 0;
+    padding: 0;
+  }
+  .track{
+    list-style-type: none;
+    color: #b6bacc;
+    padding: 10px 30px;
+    border-top: 1px solid #343b58;
+    position: relative;
+  }
+
+  .track .playlistTitle{
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .track .playlistNom{
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+
