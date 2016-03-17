@@ -146,11 +146,18 @@ $("#form_timelineMap input").change(filtre);
 /******************************************/
 function filtre(){
 /******************************************/
-	//e.preventDefault();
+	if($(".genre").closest(".selected").attr('id')){
+		var partGenreSel = ($(".genre").closest(".selected").attr('id'));
+		var genreselectionner = $('#'+partGenreSel+'nom').text();
+	}else{
+		var genreselectionner = "";
+	}
+	//var genreselectionner = "funk";
+
 	$.ajax({
 		url: 'php/timelineRange.php',
 		type:'POST',
-		data: 'new_periode='+$("#timelineMap").val(),
+		data: 'new_periode='+$("#timelineMap").val()+'&genreselectionner='+genreselectionner,
 		dataType : 'html',
 		success: function(code_html){
 			$('#playlist_dynamique').html(code_html);
@@ -174,14 +181,16 @@ function filtre(){
 function selectGenre(){
 /***********************************************/
 	$(".genre").click(function(){
-		reloadPlaylist();
+		//var idSelected = $(this).attr('id');
 		var idGenre = $(this).attr("id");
 		var territoireGenre = $("."+idGenre+"territoire");
 		var territoireGenreNom = $("."+idGenre+"territoirenom");
 		var nomGenre = $("#"+idGenre+"nom");
 		var genreAssoc = $("."+idGenre+"assoc");
 		var path = $("."+idGenre+"link g path")[0];
-		
+		var nomgenresel = nomGenre.text();
+		reloadPlaylist(nomgenresel);
+
 		$(".link").hide();
 		$(".genre").removeClass("selected");
 		$(this).addClass("selected");
@@ -217,16 +226,18 @@ function selectGenre(){
 }
 
 /***********************************************/
-function reloadPlaylist(){
+function reloadPlaylist(nomgenresel){
 /***********************************************/
-	var idSelected = $(this).attr('id');
 	$.ajax({
 		url: 'php/reloadPlaylist.php',
 		type: 'POST',
-		data: 'new_periode='+$("#timelineMap").val()+'&idselected='+idSelected,
+		data: 'new_periode='+$("#timelineMap").val()+'&nomgenresel='+nomgenresel,
 		dataType: 'html',
 		success: function(filtregenre){
 			$('#playlist_dynamique').html(filtregenre);
+			cacheList();
+
+			//alert(filtregenre);
 		}
 	})
 }

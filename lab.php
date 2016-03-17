@@ -481,7 +481,7 @@
 				<text id="chicagosoulnom" transform="matrix(1 0 0 1 213.417 235.8125)" class="st2 st3 st4 genrenom">CHICAGO SOUL</text>
 				<text id="soulnom" transform="matrix(1 0 0 1 363.5 208.3125)" class="st2 st3 st4 genrenom">SOUL</text>
 				<text id="gospelnom" transform="matrix(1 0 0 1 313.834 137.646)" class="st2 st3 st4 genrenom">GOSPEL</text>
-				<text id="rocknrollnom" transform="matrix(1 0 0 1 427.3623 153.396)" class="st2 st3 st4 genrenom">ROCK’N’ROLL</text>
+				<text id="rocknrollnom" transform="matrix(1 0 0 1 427.3623 153.396)" class="st2 st3 st4 genrenom">ROCK N ROLL</text>
 				<text id="postdisconom" transform="matrix(1 0 0 1 510.5024 198.146)" class="st2 st3 st4 genrenom">POST-DISCO</text>
 				<text id="breakbeatnom" transform="matrix(1 0 0 1 573.3359 165.6455)" class="st2 st3 st4 genrenom">BREAK BEAT</text>
 				<text id="folknom" transform="matrix(1 0 0 1 631.3359 83.9941)" class="st2 st3 st4 genrenom">FOLK</text>
@@ -504,7 +504,7 @@
 				<text id="hiphopnom" transform="matrix(1 0 0 1 725.0859 174.4941)" class="st2 st3 st4 genrenom">HIP-HOP</text>
 				<text id="popbaroquenom" transform="matrix(1 0 0 1 631.1479 148.3726)" class="st2 st3 st4 genrenom">POP BAROQUE</text>
 				<text id="softrocknom" transform="matrix(1 0 0 1 547.3359 264.6455)" class="st2 st3 st4 genrenom">SOFT ROCK</text>
-				<text id="rnbnom" transform="matrix(1 0 0 1 618.5029 235.1455)" class="st2 st3 st4 genrenom">R’N’B</text>
+				<text id="rnbnom" transform="matrix(1 0 0 1 618.5029 235.1455)" class="st2 st3 st4 genrenom">R N B</text>
 			</g>
 			<g id="nom_x5F_etat">
 				<text id="XMLID_4_" transform="matrix(1 0 0 1 28 75.3276)" class="st5 st6 st7 territoirenom grungeterritoirenom garagerockterritoirenom">WASHINGTON</text>

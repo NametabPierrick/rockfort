@@ -23,13 +23,14 @@
 	$nbmax = $bdd->query("SELECT MAX(compteur) FROM couteau");
 
 	$unwantedchars = array('-','\'',' ');
+	$unwantedchars2 = array('é','è','ê','ë');
 ?>	
 	<table id="tabassos">
 <?php
 	while ($resultat = $requete->fetch()){
 ?>
 		<tr class="genreassociation">
-			<td class="iddugenre"><?php echo strtolower(str_replace($unwantedchars, '', $resultat["nom_genre"])); ?></td>
+			<td class="iddugenre"><?php echo strtolower(str_replace($unwantedchars2, 'e', str_replace($unwantedchars, '', $resultat["nom_genre"]))); ?></td>
 			<td class="compteurdugenre"><?php echo $resultat["compteur"]; ?></td>
 		</tr>
 	

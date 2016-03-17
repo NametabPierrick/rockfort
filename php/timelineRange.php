@@ -3,8 +3,38 @@
 	require_once('connexion.php');
 	$new_periode = $_POST['new_periode'];;
 	$new_annee = explode(',', $new_periode);
+	$genreselectionner = $_POST['genreselectionner'];
 
-	$reponse = $bdd->query("SELECT * FROM rf_morceau, rf_artiste WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND annee BETWEEN'.$new_annee[0].'AND'.$new_annee[1].'");
+	if(empty($genreselectionner)){
+		$reponse = $bdd->query("SELECT * 
+		FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre
+		WHERE rf_morceau.id_morceau = rf_genre_morceau.id_morceau
+		AND rf_morceau.id_artiste = rf_artiste.id_artiste
+		AND rf_genre_morceau.id_genre = rf_genre.id_genre
+		AND rf_morceau.annee
+		BETWEEN  '$new_annee[0]'
+		AND '$new_annee[1]'");
+	}else{
+		$reponse = $bdd->query("SELECT * 
+		FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre
+		WHERE rf_morceau.id_morceau = rf_genre_morceau.id_morceau
+		AND rf_morceau.id_artiste = rf_artiste.id_artiste
+		AND rf_genre_morceau.id_genre = rf_genre.id_genre
+		AND rf_genre.nom_genre =  '".$genreselectionner."'
+		AND rf_morceau.annee
+		BETWEEN '$new_annee[0]'
+		AND '$new_annee[1]'");
+	}
+
+	/*$reponse = $bdd->query("SELECT * 
+		FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre
+		WHERE rf_morceau.id_morceau = rf_genre_morceau.id_morceau
+		AND rf_morceau.id_artiste = rf_artiste.id_artiste
+		AND rf_genre_morceau.id_genre = rf_genre.id_genre
+		AND rf_genre.nom_genre =  '".$genreselectionner."'
+		AND rf_morceau.annee
+		BETWEEN  '$new_annee[0]'
+		AND  '$new_annee[1]'");*/
 	/*$reponse = $bdd->query("SELECT * FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND rf_genre_morceau.id_genre = rf_genre.id_genre AND annee BETWEEN'.$annee[0].'AND'.$annee[1].'");*/
 	// On affiche chaque entrée une à une
 	while ($donnees = $reponse->fetch()){
