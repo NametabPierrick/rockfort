@@ -6,8 +6,8 @@ var App = {
 	init: function() {
 		this._ctx = new AudioContext();
 
-		this._modes.math = new App.Math();
-		this._modes.signal = new App.Signal();
+		// this._modes.math = new App.Math();
+		// this._modes.signal = new App.Signal();
 		this._modes.local = new App.Local();
 
 		this._multiMode = "overlay";
@@ -23,9 +23,9 @@ var App = {
 			pixelsPerSample:1
 		});
 		
-		// document.body.insertBefore(this._oscope.getNode(), document.body.firstChild);
+		//document.body.insertBefore(this._oscope.getNode(), document.body.firstChild);
 		document.getElementById("container_equalizer").insertBefore(this._oscope.getNode(), document.getElementById("container_equalizer").firstChild);
-		document.body.appendChild(this._oscope.getFPS());
+		//document.body.appendChild(this._oscope.getFPS());
 		this._oscope.start();
 
 		this._setMode("local");
@@ -133,6 +133,7 @@ Object.assign(App.Math.prototype, {
 });
 
 App.Signal = function() {
+
 	this._oscillators = [];
 	this._inputs = [];
 	
@@ -220,7 +221,7 @@ Object.assign(App.File.prototype, {
 	
 	_play: function(url, parent) {
 		this._audio = new Audio(url);
-		this._audio.autoplay = false;
+		this._audio.autoplay = true;
 		this._audio.controls = true;
 		parent.appendChild(this._audio);
 
@@ -245,33 +246,21 @@ Object.assign(App.File.prototype, {
 
 App.Local = function() {
 	App.File.call(this);
-	document.querySelector("#local").addEventListener("click", this);
+	// document.querySelector("#local").addEventListener("click", this);
+	document.querySelector("#playlist_dynamique").addEventListener("click", this);
+
 }
 
 Object.assign(App.Local.prototype, App.File.prototype, {
 	handleEvent: function(e) {
 		this._clear();
 
+		var url = e.target.href;
+		if(url == undefined)url = e.target.parentNode.href;
 
-
-		var url = $( e.target ).attr('name'); // à utilise pour les boutons : <button class="track" name="Rolling Stones-GimmeShelter.mp3" type="button" />The Rolling Stones, Gimme shelter</button>
-		var url2 = $(e.target).parent().attr("name");
-		var target = "";
-
-		if(url == "" || url == "undefined" || url == 0)target = url2;
-		else target = url;
-
-		console.log(target);
-
-
-		// var target = $( e.target ).attr('name'); // à utiliser pour les listes. Les éléments <li> doivent avoir un attribut name="nom_morceau.mp3" : <li class="track" name="Pink Floyd-Wish.mp3">Pink Floyd, Wish you were here</li>
-		$('#equalizer').empty();
-		wavesurfer.load(target);
-		// alert(target);
+		this._play(url, document.querySelector("#start_song"));
+		// this.stop(url, document.querySelector("#start_song"));
 		
-		this._play(target, document.querySelector("#player"));
-		$('canvas').css('background-color', 'hsl('+Math.floor(Math.random()*360)+',50%,50%)');
-
 	}
 });
 
