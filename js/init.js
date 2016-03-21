@@ -274,12 +274,19 @@ function hoverGenre(){
 
 // suggestions
 
-var refreshsuggestion;
+//var refreshsuggestion;
+
+$('.track').click(function(){
+	songSelected(idsong);
+});
+
+/****************************************/
 function songSelected(idsong){
-console.log(window.location.pathname);
-var periode = '<?php echo implode(",", $annee);?>';
-console.log(periode);
-$.post(window.location.pathname, {"id_morceau":idsong,"periode":periode}, function(result){
+/****************************************/	
+	console.log(window.location.pathname);
+	var periode = '<?php echo implode(",", $annee);?>';
+	console.log(periode);
+	$.post(window.location.pathname, {"id_morceau":idsong,"periode":periode}, function(result){
 		var div = $(result).find("#divsug");
 		var divm = $(result).find("#divmot");
           $('#divsug').html(div);
