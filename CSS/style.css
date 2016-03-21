@@ -923,7 +923,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,{
 
 /* Modifs J */
 #playlist{
-  max-height: 300px;
+  max-height: 380px;
   overflow: auto;
 }
   #local ul {
@@ -973,4 +973,15 @@ Slide
   #mox4 { font-size:90%; margin-top:1.9em;  color: #e2e6fd; border-color: #e2e6fd; text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;}
   textarea {
     display: none;
+  }
+
+  #parametre, #mots {
+    background-color: #262b40;
+  }
+  #player {
+    padding-top: 20px;
+  }
+  #equalizer input {
+    width: 30px !important;
+    margin-top: 20px;
   }
