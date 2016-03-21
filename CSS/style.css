@@ -936,6 +936,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,{
     padding: 10px 30px;
     border-top: 1px solid #343b58;
     position: relative;
+    cursor:pointer
   }
 
   .track .playlistTitle{
