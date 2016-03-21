@@ -947,4 +947,29 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,{
     font-size: 14px;
   }
 
+/************************************************
+Slide
+************************************************/
 
+    * { box-sizing:border-box;}
+    
+  #result {
+    background-color:#262b40;
+    width:980px; height:106px;
+  }
+   #mox0, #mox1,  #mox2, #mox3, #mox4 { margin-left:2em; }
+   #mox0, #mox1, #mox2 {
+    float:left; text-transform:uppercase; 
+  }
+  #mox3, #mox4 {
+    float:left;
+  }
+  
+  #mox0 { font-size:300%; margin-top:.2em; color: #e2e6fd; border-color: #e2e6fd; text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;}
+  #mox1 { font-size:200%; margin-top:.55em;  color: #e2e6fd; border-color: #e2e6fd; text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;}
+  #mox2 { font-size:150%; margin-top:.9em;  color: #e2e6fd; border-color: #e2e6fd; text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;}
+  #mox3 { font-size:100%; margin-top:1.5em;  color: #e2e6fd; border-color: #e2e6fd; text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;}
+  #mox4 { font-size:90%; margin-top:1.9em;  color: #e2e6fd; border-color: #e2e6fd; text-shadow: rgb(81, 107, 240) 0px 0px 20px, rgb(81, 107, 240) 0px 0px 20px;}
+  textarea {
+    display: none;
+  }

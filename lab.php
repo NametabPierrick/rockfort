@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="css/bar-ui.css" />
 		<link rel="stylesheet" href="js/jquery.range.css">
 		<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" /><link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" /><link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" /><meta name="msapplication-TileImage" content="mstile-144x144.png" /><meta name="msapplication-square70x70logo" content="mstile-70x70.png" /><meta name="msapplication-square150x150logo" content="mstile-150x150.png" /><meta name="msapplication-wide310x150logo" content="mstile-310x150.png" /><meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-		
+
 		<!-- <link rel="stylesheet" href="css/demo.css" /> -->
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 	</head>
@@ -92,7 +92,32 @@
 						</div>
 					</div>
 				</section>
-			<section id="mots"></section>
+			<section id="mots">
+				<div id="divmot">
+					<?php
+
+					if(is_null($morceauActuel))
+						{
+							$query = "SELECT  * from rf_morceau where rf_morceau.id_morceau LIMIT 0";
+						}
+						else
+						{
+							$query = "SELECT  * from rf_morceau where rf_morceau.id_morceau =".$morceauActuel." LIMIT 1";
+						}	
+						$reponse = $bdd->query($query);
+						while ($donnees = $reponse->fetch()){
+							?>
+							<script>
+	   						 console.log(<? echo json_encode($donnees); ?>);
+							</script>
+							<textarea id="textbox"><?php echo $donnees['parole']; ?></textarea>
+							<div id="result" class="clear"></div>
+					<?php
+						}
+						$reponse->closeCursor();
+					?>
+				</div>
+			</section>
 			<section id="suggestion">
 				<div id="divsug">
 					<h3 class="titre_encart">Ecoute aussi ...</h3>
@@ -296,6 +321,11 @@
 <script src="js/oscope.js"></script>
 <script src="js/app_1_1.js"></script>
 <script src="js/wavesurf.js"></script>
+<script type="text/javascript" src="js/range.js"></script> 
+<script type="text/javascript" src="js/stats.min.js"></script>
+<script type="text/javascript" src="js/count.min.js" ></script>
+<script type="text/javascript" src="js/script.js"></script>
+
 
 <!-- fin script pour spectre -->
 <script src="js/init.js"></script>
