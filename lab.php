@@ -280,7 +280,7 @@
 						while ($donnees = $reponse->fetch()){
 						?>
 						
-						<li class="track" name="<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>">
+						<li <?php $morceauActuel = $donnees['id_morceau']; echo "onclick='songSelected(".$donnees['id_morceau'].")'";?> class="track" name="<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>">
 							<?php echo "<span name='song/".$donnees['id_morceau'].".mp3' class='playlistTitle'>".$donnees['titre']."</span> - <span name='song/".$donnees['id_morceau'].".mp3' class='playlistNom'>".$donnees['nom']."</span>"; ?>
 
 							<img src="img/fleche_bottom.png" class="fleche_bottom">

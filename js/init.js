@@ -276,9 +276,6 @@ function hoverGenre(){
 
 //var refreshsuggestion;
 
-$('.track').click(function(){
-	songSelected(idsong);
-});
 
 /****************************************/
 function songSelected(idsong){
