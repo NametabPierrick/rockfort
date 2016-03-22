@@ -63,21 +63,21 @@ $(document).ready( function () {
 function cacheList(){
 //========================
 	// On cache les sous-menus :
-	$(".sm2-playlist-bd ul.subMenu").hide();
+	$(".track ul.subMenu").hide();
 	// On sélectionne tous les items de liste portant la classe "toggleSubMenu"
 	// On modifie l'évènement "click" sur les liens dans les items de liste
 	// qui portent la classe "toggleSubMenu" :
-	$(".sm2-playlist-bd li.toggleSubMenu > img").click( function () {
+	$(".track > img").click( function () {
 	// Si le sous-menu était déjà ouvert, on le referme :
 		if ($(this).next("ul.subMenu:visible").length != 0) {
 			$(this).next("ul.subMenu").slideUp("normal");
-			$('.sm2-playlist-bd li.toggleSubMenu > .fleche_bottom').attr('src','img/fleche_bottom.png');
+			$('.track > .fleche_bottom').attr('src','img/fleche_bottom.png');
 		}
 		// Si le sous-menu est caché, on ferme les autres et on l'affiche :
 		else {
-			$(".sm2-playlist-bd ul.subMenu").slideUp("normal");
+			$(".track ul.subMenu").slideUp("normal");
 			$(this).next("ul.subMenu").slideDown("normal");
-			$('.sm2-playlist-bd li.toggleSubMenu > .fleche_bottom').attr('src','img/fleche_top.png');
+			$('.track > .fleche_bottom').attr('src','img/fleche_top.png');
 	}
 	// On empêche le navigateur de suivre le lien :
 	return false;
@@ -162,7 +162,7 @@ function filtre(){
 	}
 	//var genreselectionner = "funk";
 
-	$.ajax({
+    $.ajax({
 		url: 'php/timelineRange.php',
 		type:'POST',
 		data: 'new_periode='+$("#timelineMap").val()+'&genreselectionner='+genreselectionner,

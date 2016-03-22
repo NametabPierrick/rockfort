@@ -271,7 +271,7 @@
 	<div id="playlist">
 
 		 <section id="local">
-        	<ul>
+        	<ul id="playlist_dynamique">
                 <?php
 						// On récupère tout le contenu de la table jeux_video
 						$reponse = $bdd->query("SELECT * FROM rf_morceau, rf_artiste WHERE rf_morceau.id_artiste = rf_artiste.id_artiste AND annee BETWEEN'.$annee[0].'AND'.$annee[1].'");
@@ -291,7 +291,7 @@
 									<p class="infoSong"><?php echo $donnees['annee']; ?></p>
 									<p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
 									<img id="medaille" src="img/medaille.png"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
-									<p>La chanson devient un hymne de la génération X et fait accéder le groupe à la célébrité internationale, une notoriété que ses membres, et Kurt Cobain en particulier, ont du mal à assumer.</p>
+									<p><?php echo $donnees['anecdote']; ?></p>
 								</li>
 							</ul>
 						</li>

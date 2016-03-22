@@ -39,24 +39,23 @@
 	// On affiche chaque entrée une à une
 	while ($donnees = $reponse->fetch()){
 ?>
-<li class="toggleSubMenu">
-	<a <?php $morceauActuel = $donnees['id_morceau']; echo "onclick='songSelected(".$donnees['id_morceau'].")'";?> href=<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>>
-		<span class="nomArtiste"><?php echo $donnees['titre']; ?></span> - <?php echo $donnees['nom']; ?><!--<span class="label">Essai Label</span>-->
-	</a>
-	<img src="img/fleche_bottom.png" class="fleche_bottom">
-	
-	<ul class="subMenu">
-		<li>
-			<img src=<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>>
-			<p class="infoSong"><?php echo $donnees['annee']; ?></p>
-			<p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
-			<img id="medaille" src="img/medaille.png"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
-			<p>La chanson devient un hymne de la génération X et fait accéder le groupe à la célébrité internationale, une notoriété que ses membres, et Kurt Cobain en particulier, ont du mal à assumer.</p>
-		</li>
-	</ul>
-</li>
+    <li <?php $morceauActuel = $donnees['id_morceau']; echo "onclick='songSelected(".$donnees['id_morceau'].")'";?> class="track" name="<?php echo "song/".$donnees['id_morceau'].".mp3"; ?>">
+        <?php echo "<span name='song/".$donnees['id_morceau'].".mp3' class='playlistTitle'>".$donnees['titre']."</span> - <span name='song/".$donnees['id_morceau'].".mp3' class='playlistNom'>".$donnees['nom']."</span>"; ?>
 
-<?php
+        <img src="img/fleche_bottom.png" class="fleche_bottom">
+
+        <ul class="subMenu">
+            <li>
+                <img src=<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>>
+                <p class="infoSong"><?php echo $donnees['annee']; ?></p>
+                <p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
+                <img id="medaille" src="img/medaille.png"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
+                <p><?php echo $donnees['anecdote']; ?></p>
+            </li>
+        </ul>
+    </li>
+
+    <?php
 	}
 	$reponse->closeCursor(); // Termine le traitement de la requête
 ?>
