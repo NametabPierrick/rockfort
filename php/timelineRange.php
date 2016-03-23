@@ -13,7 +13,8 @@
 		AND rf_genre_morceau.id_genre = rf_genre.id_genre
 		AND rf_morceau.annee
 		BETWEEN  '$new_annee[0]'
-		AND '$new_annee[1]'");
+		AND '$new_annee[1]'
+        ORDER BY rf_morceau.id_morceau");
 	}else{
 		$reponse = $bdd->query("SELECT * 
 		FROM rf_morceau, rf_artiste, rf_genre_morceau, rf_genre
@@ -23,7 +24,8 @@
 		AND rf_genre.nom_genre =  '".$genreselectionner."'
 		AND rf_morceau.annee
 		BETWEEN '$new_annee[0]'
-		AND '$new_annee[1]'");
+		AND '$new_annee[1]'
+        ORDER BY rf_morceau.id_morceau");
 	}
 
 	/*$reponse = $bdd->query("SELECT * 
@@ -48,7 +50,7 @@
             <li>
                 <img src=<?php echo "artistes/".$donnees['id_artiste'].".png"; ?>>
                 <p class="infoSong"><?php echo $donnees['annee']; ?></p>
-                <p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
+                <p class="infoSong invisible"><?php echo $donnees['id_morceau']; ?></p>
                 <img id="medaille" src="img/medaille.png"><p class="infoSong"><?php echo $donnees['id_morceau']; ?></p>
                 <p><?php echo $donnees['anecdote']; ?></p>
             </li>
