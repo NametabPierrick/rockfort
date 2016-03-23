@@ -154,12 +154,15 @@ $("#form_timelineMap input").change(filtre);
 /******************************************/
 function filtre(){
 /******************************************/
+    $('.link').hide();
+    
 	if($(".genre").closest(".selected").attr('id')){
 		var partGenreSel = ($(".genre").closest(".selected").attr('id'));
 		var genreselectionner = $('#'+partGenreSel+'nom').text();
 	}else{
 		var genreselectionner = "";
 	}
+    
 	//var genreselectionner = "funk";
 
     $.ajax({
