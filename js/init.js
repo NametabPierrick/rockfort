@@ -164,6 +164,9 @@ function filtre(){
 	}
     
 	//var genreselectionner = "funk";
+	var genreassoc = $('.'+partGenreSel+"assoc");
+	genreassoc.removeClass("selectedassoc");
+	$(".link").hide();
 
     $.ajax({
 		url: 'php/timelineRange.php',
@@ -210,9 +213,28 @@ function selectGenre(){
 		$(".genre").removeClass("selectedassoc");
 		territoireGenre.fadeIn();
 		territoireGenreNom.fadeIn();
-		genreAssoc.addClass("selectedassoc");
 		$('.genrenom').hide().removeClass("active");
 		nomGenre.fadeIn().addClass("active");
+		$(".genre").removeClass("genreAssocdead");
+
+		/*$(".selectedassoc").hide(function(){
+			$(".selectedassoc").removeClass("selectedassoc");
+		})
+
+		$(".genreAssocdead").hide(function(){
+			$(".genreAssocdead").removeClass("genreAssocdead");
+		})*/
+
+		/*var genremort = $("."+idGenre+"assoc:hidden")
+		genremort.addClass("genreAssocdead").show();*/
+
+		genreAssoc.each(function(){
+			if($(this).css("display") == "inline"){
+				$(this).addClass("selectedassoc");
+			}else{
+				$(this).addClass("genreAssocdead").show();
+			}
+		})
 
 		// var path = document.querySelector('.squiggle-animated path');
 		var length = path.getTotalLength();

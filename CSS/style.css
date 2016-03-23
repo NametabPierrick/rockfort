@@ -789,6 +789,14 @@ SVG
   transition: 0.2s ease;
 }
 
+.genreAssocdead{
+  display: inline;
+  opacity: 0.6;
+  fill:#cccccc;
+  stroke: #ffffff;
+  transition: 0.2s ease;
+}
+
 .genrenom{
   display: none;
 }
