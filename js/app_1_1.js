@@ -270,7 +270,8 @@ Object.assign(App.Local.prototype, App.File.prototype, {
 		// alert(target);
 		
 		this._play(target, document.querySelector("#player"));
-		$('canvas').css('background-color', 'hsl('+Math.floor(Math.random()*360)+',50%,50%)');
+        $('canvas').css('background-color','#262b40');
+		//$('canvas').css('background-color', 'hsl('+Math.floor(Math.random()*360)+',50%,50%)');
 
 	}
 });
