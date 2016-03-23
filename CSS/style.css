@@ -791,9 +791,9 @@ SVG
 
 .genreAssocdead{
   display: inline;
-  opacity: 0.6;
-  fill:#cccccc;
-  stroke: #ffffff;
+  opacity: 0.1;
+  fill:#ffffff;
+  stroke: #8EB2DD;
   transition: 0.2s ease;
 }
 
